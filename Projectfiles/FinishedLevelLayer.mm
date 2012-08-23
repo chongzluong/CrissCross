@@ -64,9 +64,29 @@ float score = 0.00;
     [self addChild:label];
     
     timeLabel =[CCLabelTTF labelWithString:[NSString stringWithFormat:@"Time:%.2f", score] fontName:@"Futura-CondensedExtraBold" fontSize:14];
-    timeLabel.position = ccp(160, 200);
+    timeLabel.position = ccp(160, 220);
     timeLabel.color = ccGREEN;
     [self addChild: timeLabel];
+    
+    int levelCompleted = finishedtag-1;
+    
+    NSNumber *currentHighScore = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Level%i highScore", levelCompleted]];
+    float hs = [currentHighScore floatValue];
+    
+    if (hs == 0 || hs>score)
+    {
+        NSNumber *highScore = [NSNumber numberWithFloat:score];
+        [[NSUserDefaults standardUserDefaults] setObject:highScore forKey:[NSString stringWithFormat:@"Level%i highScore", levelCompleted]];
+    }
+    
+    currentHighScore = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Level%i highScore", levelCompleted]];
+    hs = [currentHighScore floatValue];
+    
+    highScoreLabel =[CCLabelTTF labelWithString:[NSString stringWithFormat:@"Current HighScore:%.2f", hs] fontName:@"Futura-CondensedExtraBold" fontSize:14];
+    highScoreLabel.position = ccp(160, 200);
+    highScoreLabel.color = ccGREEN;
+    [self addChild: highScoreLabel];
+    
     
     
     //Create menu buttons

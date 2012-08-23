@@ -37,10 +37,28 @@ int leveltag = 0;
         
         start = [NSDate date];
         
-        timeLabel =[CCLabelTTF labelWithString:[NSString stringWithFormat:@"%f", 0.00] fontName:@"Futura-CondensedExtraBold" fontSize:14];
-        timeLabel.position = ccp(300, 450);
+        timeLabel =[CCLabelTTF labelWithString:[NSString stringWithFormat:@"Time:%f", 0.00] fontName:@"Futura-CondensedExtraBold" fontSize:14];
+        timeLabel.position = ccp(260, 450);
         timeLabel.color = ccGREEN;
         [self addChild: timeLabel];
+        
+        NSNumber *currentHighScore = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Level%i highScore", leveltag]];
+        float hs = [currentHighScore floatValue];
+        
+        if (hs == 0)
+        {
+            CCLabelTTF *highScoreLabel = [CCLabelTTF labelWithString:@"Best: N/A" fontName:@"Futura-CondensedExtraBold" fontSize:14];
+            highScoreLabel.position = ccp(60, 450);
+            highScoreLabel.color = ccGREEN;
+            [self addChild:highScoreLabel];
+        }
+        else
+        {
+           CCLabelTTF *highScoreLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"Best:%.2f", hs] fontName:@"Futura-CondensedExtraBold" fontSize:14];
+           highScoreLabel.position = ccp(60, 450);
+           highScoreLabel.color = ccGREEN;
+           [self addChild:highScoreLabel];
+        }
         
         test = [NSDictionary dictionaryWithContentsOfFile:[NSString stringWithFormat:@"Level%i.plist", leveltag]];
         leveltag = [[test objectForKey:@"LevelTag"] intValue];
@@ -750,7 +768,7 @@ int leveltag = 0;
     }
         timeInterval = [start timeIntervalSinceNow];
         time = [NSNumber numberWithDouble:fabs(timeInterval)];
-        [timeLabel setString:[NSString stringWithFormat:@"%.2f", [time floatValue]]];
+        [timeLabel setString:[NSString stringWithFormat:@"Time:%.2f", [time floatValue]]];
 }
  
 @end

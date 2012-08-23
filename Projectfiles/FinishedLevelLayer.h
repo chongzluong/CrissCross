@@ -14,6 +14,7 @@
 @interface FinishedLevelLayer: CCLayer
 {
     CCLabelTTF *timeLabel;
+    CCLabelTTF *highScoreLabel;
 }
 
 +(id) scene;
