@@ -414,6 +414,25 @@ int leveltag = 0;
         [gate addObject:tempGate];
         [self addChild:tempGate];
     }
+    
+    //Go through all the teleporters
+    for (int k = 0; k<(int)[teleporters count] ; k++)
+    {
+        [[teleporters objectAtIndex:k] removeFromParentAndCleanup:YES];
+    }
+    [teleporters removeAllObjects];
+    
+    //Make the teleporters
+    for (int k = 0; k<(int)[teleporterArray count]; k++)
+    {
+        item = [teleporterArray objectAtIndex:k];
+        CCSprite *tempTeleporter = [CCSprite spriteWithFile:[item objectForKey:@"spriteName"]];
+        x = [item objectForKey:@"x"];
+        y = [item objectForKey:@"y"];
+        tempTeleporter.position = ccp([x floatValue], [y floatValue]);
+        [teleporters addObject:tempTeleporter];
+        [self addChild:tempTeleporter];
+    }
 
 }
 
@@ -488,32 +507,32 @@ int leveltag = 0;
         int test4 = abs(x1 - 220);
         
         int y1 = (int) clicked.y;
-        float y2 = y1;
+        float y3 = y1;
         if (test1 < 30)
         {
-            blah =ccp(40, y2);
+            blah =ccp(40, y3);
         }
         else
         {
             if (test2 < 30)
             {
-                blah =ccp(100, y2);
+                blah =ccp(100, y3);
             }
             else
             {
                 if (test3 < 30)
                 {
-                    blah =ccp(160, y2);
+                    blah =ccp(160, y3);
                 }
                 else 
                 {
                     if (test4 < 30)
                     {
-                        blah =ccp(220, y2);
+                        blah =ccp(220, y3);
                     }
                     else
                     {
-                            blah =ccp(280, y2);
+                            blah =ccp(280, y3);
                     }
                 }
             }
@@ -559,11 +578,11 @@ int leveltag = 0;
     //Draw all the lines
     for (int k = 0; k<(int)[endpoints count]; k++) 
     {
-        CGPoint start = CGPointFromString([startpoints objectAtIndex:k]);
+        CGPoint starter = CGPointFromString([startpoints objectAtIndex:k]);
         CGPoint end = CGPointFromString([endpoints objectAtIndex:k]); 
-        CGPointMake(start.x, start.y);
+        CGPointMake(starter.x, starter.y);
         CGPointMake(end.x, end.y);
-        ccDrawLine(start, end);
+        ccDrawLine(starter, end);
     }
 }
 
@@ -633,27 +652,25 @@ int leveltag = 0;
         //Check whether or not there are teleporters in the level
         if ([teleporters count]>0)
         {
-            
-        //Go through the teleporters
-        CCSprite *tempTeleporter1 = [teleporters objectAtIndex:0];
-        CCSprite *tempTeleporter2 = [teleporters objectAtIndex:1];
-        
-        if (CGPointEqualToPoint(temp.position, tempTeleporter1.position))
+            for (int k = 0; k<(int)[teleporters count]; k++)
             {
-                CGPoint destination = tempTeleporter2.position;
-                temp.position = destination;
-                CGPoint velocity = CGPointMake(0, -1);
-                temp.position = ccpAdd(temp.position, velocity);
+                CCSprite *tempTeleporter = [teleporters objectAtIndex:k];
+                if (CGPointEqualToPoint(temp.position, tempTeleporter.position)&& k%2==0)
+                {
+                    CCSprite *tempTeleporter2 = [teleporters objectAtIndex:k+1];
+                    temp.position = tempTeleporter2.position;
+                    CGPoint velocity = CGPointMake(0, -1);
+                    temp.position = ccpAdd(temp.position, velocity);
+                }
+                else if (CGPointEqualToPoint(temp.position, tempTeleporter.position)&& k%2>0)
+                {
+                    CCSprite *tempTeleporter2 = [teleporters objectAtIndex:k-1];
+                    temp.position = tempTeleporter2.position;
+                    CGPoint velocity = CGPointMake(0, -1);
+                    temp.position = ccpAdd(temp.position, velocity);
+                }
+
             }
-            
-            else if (CGPointEqualToPoint(temp.position, tempTeleporter2.position))
-                     {
-                         CGPoint destination = tempTeleporter1.position;
-                         temp.position = destination;
-                         CGPoint velocity = CGPointMake(0, -1);
-                         temp.position = ccpAdd(temp.position, velocity);
-                     }
-            
         }
         
         //If the point is in the middle of transition, it will continue transitioning across 
@@ -684,37 +701,8 @@ int leveltag = 0;
         //check if the color has reached the end of the line
         if (temp.position.y > 80 && [self whichLength:k] == 0)
         {
-            /*
-            if ([self smallestDistanceFromPoint:blah]<1.0)
-            {
-                temp.position = [self closestPoint:blah];
-            }
-            
-            else if ([self smallestDistanceFromGate:blah]<1.0)
-            {
-                temp.position = [self closestGate:blah];
-            }
-            
-            else if ([self smallestDistanceFromTeleporter:blah]<1.0)
-            {
-                CCSprite *tempTeleporter1 = [teleporters objectAtIndex:0];
-                CCSprite *tempTeleporter2 = [teleporters objectAtIndex:1];
-                
-                if (ccpDistance(blah, tempTeleporter1.position)<ccpDistance(blah, tempTeleporter2.position))
-                {
-                    temp.position = tempTeleporter1.position;
-                }
-                else
-                {
-                    temp.position = tempTeleporter2.position;
-                }
-            }
-            */
-            //else
-            //{
                 CGPoint velocity = CGPointMake(0, -1);
                 temp.position = ccpAdd(temp.position, velocity);
-            //}
         }
     }
         
