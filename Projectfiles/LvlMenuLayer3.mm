@@ -1,23 +1,23 @@
 //
-//  MenuLayer.m
-//  Test2
+//  LvlMenu3.m
+//  Criss Cross
 //
-//  Created by Timothy on 7/31/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Timothy on 8/23/12.
+//
 //
 
 #import "MenuLayer.h"
 #import "LvlMenuLayer3.h"
 #import "HelloWorldLayer.h"
 
-@interface LvlMenuLayer3(PrivateMethods)
+@implementation LvlMenuLayer3(PrivateMethods)
 @end
 
 @implementation LvlMenuLayer3
 
 -(id) init
 {
-    self= [super init];
+    self = [super init];
     {
         [self setUpLevels];
     }
@@ -68,7 +68,7 @@
     
 	// add the menu to your scene
 	[self addChild:myMenu];
-
+    
 }
 
 -(void) startLevel: (CCMenuItem *) menuItem

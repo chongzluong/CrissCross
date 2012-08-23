@@ -1,9 +1,9 @@
 //
-//  MenuLayer.mm
-//  Test2
+//  FinishedLevelLayers.m
+//  Criss Cross
 //
-//  Created by Timothy on 7/31/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Timothy on 8/23/12.
+//
 //
 
 #import "MenuLayer.h"
@@ -13,6 +13,8 @@
 #import "HelloWorldLayer.h"
 
 int finishedtag = 0;
+float score = 0.00;
+
 @interface FinishedLevelLayer (PrivateMethods)
 @end
 
@@ -27,9 +29,10 @@ int finishedtag = 0;
     return self;
 }
 
-+(id) showLevel: (int) i
++(id) showLevel: (int) i timeOf: (float) k
 {
     finishedtag = i;
+    score = k;
     CCScene* myScene = [FinishedLevelLayer scene];
     return myScene;
 }
@@ -47,7 +50,7 @@ int finishedtag = 0;
     
 	// return the scene
 	return scene;
-
+    
 }
 
 //set up the Menus
@@ -55,17 +58,22 @@ int finishedtag = 0;
 {
     
     NSString *title = @"Level Complete!";
-    CCLabelTTF *label = [CCLabelTTF labelWithString:title fontName:@"AvenirNext-Heavy" fontSize:35];
+    CCLabelTTF *label = [CCLabelTTF labelWithString:title fontName:@"Zapfino" fontSize:35];
     label.position = [CCDirector sharedDirector].screenCenter;
     label.color =ccGREEN;
     [self addChild:label];
     
+    timeLabel =[CCLabelTTF labelWithString:[NSString stringWithFormat:@"Time:%.2f", score] fontName:@"Futura-CondensedExtraBold" fontSize:14];
+    timeLabel.position = ccp(160, 200);
+    timeLabel.color = ccGREEN;
+    [self addChild: timeLabel];
+    
     
     //Create menu buttons
-    CCMenuItem *menuItem1 = [CCMenuItemImage itemFromNormalImage:@"NextLevel.png" selectedImage:@"NextLevelSelect.png" target:self selector:@selector(startGame:)];
+    CCMenuItem *menuItem1 = [CCMenuItemImage itemFromNormalImage:@"NextLevel.png" selectedImage:@"NextLevelSelect.png" target:self selector:@selector(nextLevel:)];
     menuItem1.position = ccp(160, 160);
     
-    CCMenuItem *menuItem2 = [CCMenuItemImage itemFromNormalImage:@"homebutton.png" selectedImage:@"homebuttonselect.png" target:self selector:@selector(startGame2:)];
+    CCMenuItem *menuItem2 = [CCMenuItemImage itemFromNormalImage:@"homebutton.png" selectedImage:@"homebuttonselect.png" target:self selector:@selector(goHome:)];
     menuItem2.position = ccp(160, 120);
     menuItem2.tag = 2;
     
@@ -74,19 +82,19 @@ int finishedtag = 0;
     myMenu.position =CGPointZero;
     
 	// Arrange the menu items vertically
-	[myMenu alignItemsHorizontally];
+	//[myMenu alignItemsHorizontally];
     
 	// add the menu to your scene
 	[self addChild:myMenu];
-
+    
 }
 
--(void) startGame: (CCMenuItem *) menuItem
+-(void) nextLevel: (CCMenuItem *) menuItem
 {
     [[CCDirector sharedDirector] replaceScene:[HelloWorldLayer showLevel:finishedtag]];
 }
 
--(void) startGame2: (CCMenuItem *) menuItem
+-(void) goHome: (CCMenuItem *) menuItem
 {
     [[CCDirector sharedDirector] replaceScene:[MenuLayer scene]];
 }

@@ -1,9 +1,9 @@
 //
-//  MenuLayer.h
-//  Test2
+//  LvlMenu3.h
+//  Criss Cross
 //
-//  Created by Timothy on 7/31/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Timothy on 8/23/12.
+//
 //
 
 #import <Foundation/Foundation.h>
@@ -11,11 +11,11 @@
 #import "Box2D.h"
 
 /*
-enum
+ enum
  {
  kTagBatchNode,
  };
-*/
+ */
 
 @interface LvlMenuLayer3 : CCLayer
 

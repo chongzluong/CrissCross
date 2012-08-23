@@ -90,6 +90,6 @@
 
 -(void) startGame3: (CCMenuItem *) menuItem
 {
-    //[[CCDirector sharedDirector] replaceScene:[LvlMenuLayer3 scene]];
+    [[CCDirector sharedDirector] replaceScene:[LvlMenuLayer3 scene]];
 }
 @end

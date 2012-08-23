@@ -1,27 +1,25 @@
 //
-//  MenuLayer.h
-//  Test2
+//  FinishedLevelLayers.h
+//  Criss Cross
 //
-//  Created by Timothy on 7/31/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Timothy on 8/23/12.
+//
 //
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "Box2D.h"
 
-//enum
- //{
- //kTagBatchNode,
- //};
-
 
 @interface FinishedLevelLayer: CCLayer
+{
+    CCLabelTTF *timeLabel;
+}
 
 +(id) scene;
-+(id) showLevel: (int) i;
--(void) startGame:(id) sender;
--(void) startGame2: (id) sender;
++(id) showLevel: (int) i timeOf: (float) k;
+-(void) nextLevel:(id) sender;
+-(void) goHome: (id) sender;
 -(void) setUpMenus;
 
 @end
