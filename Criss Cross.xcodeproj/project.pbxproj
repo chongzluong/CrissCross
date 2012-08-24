@@ -72,6 +72,14 @@
 		572D125415DD9BDE00532BA7 /* Level27.plist in Resources */ = {isa = PBXBuildFile; fileRef = 572D125315DD9BDD00532BA7 /* Level27.plist */; };
 		572D125615DD9D9400532BA7 /* Level28.plist in Resources */ = {isa = PBXBuildFile; fileRef = 572D125515DD9D9400532BA7 /* Level28.plist */; };
 		572D125815DD9FB600532BA7 /* Level29.plist in Resources */ = {isa = PBXBuildFile; fileRef = 572D125715DD9FB500532BA7 /* Level29.plist */; };
+		5733144B15E70CB8008B3027 /* Level32.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5733144A15E70CB8008B3027 /* Level32.plist */; };
+		5733145015E70D83008B3027 /* teleporter3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5733144D15E70D83008B3027 /* teleporter3.png */; };
+		5733145115E70D83008B3027 /* teleporter4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5733144E15E70D83008B3027 /* teleporter4.png */; };
+		5733145215E70D83008B3027 /* teleporter5.png in Resources */ = {isa = PBXBuildFile; fileRef = 5733144F15E70D83008B3027 /* teleporter5.png */; };
+		5733145615E70D94008B3027 /* teleporter3-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 5733145315E70D94008B3027 /* teleporter3-hd.png */; };
+		5733145715E70D94008B3027 /* teleporter4-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 5733145415E70D94008B3027 /* teleporter4-hd.png */; };
+		5733145815E70D94008B3027 /* teleporter5-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 5733145515E70D94008B3027 /* teleporter5-hd.png */; };
+		5733145A15E70F3A008B3027 /* Level1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5733145915E70F3A008B3027 /* Level1.plist */; };
 		5743AB7D15E6B393007F8B6A /* LvlMenuLayer3.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5743AB7C15E6B393007F8B6A /* LvlMenuLayer3.mm */; };
 		5743AB8015E6B4EF007F8B6A /* FinishedLevelLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5743AB7F15E6B4EF007F8B6A /* FinishedLevelLayer.mm */; };
 		5743AB8315E6B6F2007F8B6A /* NextLevel.png in Resources */ = {isa = PBXBuildFile; fileRef = 5743AB8115E6B6F2007F8B6A /* NextLevel.png */; };
@@ -146,7 +154,6 @@
 		5791AB3615E4C96500047EC7 /* NextLevel-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 5791AB3415E4C96400047EC7 /* NextLevel-hd.png */; };
 		5791AB3715E4C96500047EC7 /* NextLevelSelect-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 5791AB3515E4C96500047EC7 /* NextLevelSelect-hd.png */; };
 		57A2420B15C86367006E9FBF /* MenuLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 57A2420A15C86367006E9FBF /* MenuLayer.mm */; };
-		57A29B6015C8DF8800C2DF12 /* Level1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57A29B5F15C8DF8800C2DF12 /* Level1.plist */; };
 		57E2BAA715E16AAF008D907F /* Level30.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57E2BAA615E16AAF008D907F /* Level30.plist */; };
 		DC1BE6A014F417CC00F49D25 /* Ubuntu-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68C14F417CC00F49D25 /* Ubuntu-B.ttf */; };
 		DC1BE6A114F417CC00F49D25 /* Ubuntu-BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68D14F417CC00F49D25 /* Ubuntu-BI.ttf */; };
@@ -271,6 +278,14 @@
 		572D125315DD9BDD00532BA7 /* Level27.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level27.plist; path = ../../../../../Desktop/Levels/Medium/Level27.plist; sourceTree = "<group>"; };
 		572D125515DD9D9400532BA7 /* Level28.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level28.plist; path = ../../../../../Desktop/Levels/Medium/Level28.plist; sourceTree = "<group>"; };
 		572D125715DD9FB500532BA7 /* Level29.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level29.plist; path = ../../../../../Desktop/Levels/Medium/Level29.plist; sourceTree = "<group>"; };
+		5733144A15E70CB8008B3027 /* Level32.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level32.plist; path = ../../../../../Desktop/Levels/Hard/Level32.plist; sourceTree = "<group>"; };
+		5733144D15E70D83008B3027 /* teleporter3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = teleporter3.png; path = "Not Retina/teleporter3.png"; sourceTree = "<group>"; };
+		5733144E15E70D83008B3027 /* teleporter4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = teleporter4.png; path = "Not Retina/teleporter4.png"; sourceTree = "<group>"; };
+		5733144F15E70D83008B3027 /* teleporter5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = teleporter5.png; path = "Not Retina/teleporter5.png"; sourceTree = "<group>"; };
+		5733145315E70D94008B3027 /* teleporter3-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "teleporter3-hd.png"; path = "Retina/teleporter3-hd.png"; sourceTree = "<group>"; };
+		5733145415E70D94008B3027 /* teleporter4-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "teleporter4-hd.png"; path = "Retina/teleporter4-hd.png"; sourceTree = "<group>"; };
+		5733145515E70D94008B3027 /* teleporter5-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "teleporter5-hd.png"; path = "Retina/teleporter5-hd.png"; sourceTree = "<group>"; };
+		5733145915E70F3A008B3027 /* Level1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level1.plist; path = "../../../../../Desktop/Levels/Easy /Level1.plist"; sourceTree = "<group>"; };
 		5743AB7915E6B33D007F8B6A /* LvlMenuLayer3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LvlMenuLayer3.h; sourceTree = "<group>"; };
 		5743AB7C15E6B393007F8B6A /* LvlMenuLayer3.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LvlMenuLayer3.mm; sourceTree = "<group>"; };
 		5743AB7E15E6B4EF007F8B6A /* FinishedLevelLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishedLevelLayer.h; sourceTree = "<group>"; };
@@ -348,7 +363,6 @@
 		5791AB3515E4C96500047EC7 /* NextLevelSelect-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NextLevelSelect-hd.png"; path = "Retina/NextLevelSelect-hd.png"; sourceTree = "<group>"; };
 		57A2420915C86367006E9FBF /* MenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuLayer.h; sourceTree = "<group>"; };
 		57A2420A15C86367006E9FBF /* MenuLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MenuLayer.mm; sourceTree = "<group>"; };
-		57A29B5F15C8DF8800C2DF12 /* Level1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level1.plist; path = ../../../../../Desktop/Levels/Level1.plist; sourceTree = "<group>"; };
 		57E2BAA615E16AAF008D907F /* Level30.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level30.plist; path = ../../../../../Desktop/Levels/Medium/Level30.plist; sourceTree = "<group>"; };
 		DC1BE68614F417CC00F49D25 /* copyright.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyright.txt; sourceTree = "<group>"; };
 		DC1BE68914F417CC00F49D25 /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
@@ -615,10 +629,13 @@
 				578F245D15E411A800DF0207 /* target-hd.png */,
 				578F245E15E411A900DF0207 /* teleporter-hd.png */,
 				578F245F15E411A900DF0207 /* teleporter2-hd.png */,
+				5733145315E70D94008B3027 /* teleporter3-hd.png */,
+				5733145415E70D94008B3027 /* teleporter4-hd.png */,
+				5733145515E70D94008B3027 /* teleporter5-hd.png */,
 				578F246115E411A900DF0207 /* yellow blur-hd.png */,
 				578F246215E411AC00DF0207 /* yellow square-hd.png */,
 				578F246315E411AC00DF0207 /* yellow tear-hd.png */,
-				57A29B5F15C8DF8800C2DF12 /* Level1.plist */,
+				5733145915E70F3A008B3027 /* Level1.plist */,
 				572D110B15DACE9A00532BA7 /* Level2.plist */,
 				572D114315DACFA300532BA7 /* Level3.plist */,
 				572D114515DB4F0700532BA7 /* Level4.plist */,
@@ -649,6 +666,7 @@
 				572D125715DD9FB500532BA7 /* Level29.plist */,
 				57E2BAA615E16AAF008D907F /* Level30.plist */,
 				5711272515E5900400CCC8DE /* Level31.plist */,
+				5733144A15E70CB8008B3027 /* Level32.plist */,
 				572D119415DCDC6100532BA7 /* lvl1button.png */,
 				572D119515DCDC6100532BA7 /* lvl1buttonselect.png */,
 				572D119615DCDC6200532BA7 /* lvl2button.png */,
@@ -713,6 +731,9 @@
 				578F24A115E4145100DF0207 /* target.png */,
 				578F24A215E4145200DF0207 /* teleporter.png */,
 				578F24A315E4145300DF0207 /* teleporter2.png */,
+				5733144D15E70D83008B3027 /* teleporter3.png */,
+				5733144E15E70D83008B3027 /* teleporter4.png */,
+				5733144F15E70D83008B3027 /* teleporter5.png */,
 				578F24A415E4145400DF0207 /* yellow blur.png */,
 				578F24A515E4145500DF0207 /* yellow square.png */,
 				578F24A615E4145600DF0207 /* yellow tear.png */,
@@ -840,7 +861,6 @@
 				DC1BE6AB14F417CC00F49D25 /* UbuntuMono-R.ttf in Resources */,
 				DC1BE6AC14F417CC00F49D25 /* UbuntuMono-RI.ttf in Resources */,
 				5764C46A15BF5276008722FC /* beat.mp3 in Resources */,
-				57A29B6015C8DF8800C2DF12 /* Level1.plist in Resources */,
 				572D110C15DACE9A00532BA7 /* Level2.plist in Resources */,
 				572D114415DACFA300532BA7 /* Level3.plist in Resources */,
 				572D114615DB4F0800532BA7 /* Level4.plist in Resources */,
@@ -975,6 +995,14 @@
 				5711273E15E61C8B00CCC8DE /* Level14.plist in Resources */,
 				5743AB8315E6B6F2007F8B6A /* NextLevel.png in Resources */,
 				5743AB8415E6B6F2007F8B6A /* NextLevelSelect.png in Resources */,
+				5733144B15E70CB8008B3027 /* Level32.plist in Resources */,
+				5733145015E70D83008B3027 /* teleporter3.png in Resources */,
+				5733145115E70D83008B3027 /* teleporter4.png in Resources */,
+				5733145215E70D83008B3027 /* teleporter5.png in Resources */,
+				5733145615E70D94008B3027 /* teleporter3-hd.png in Resources */,
+				5733145715E70D94008B3027 /* teleporter4-hd.png in Resources */,
+				5733145815E70D94008B3027 /* teleporter5-hd.png in Resources */,
+				5733145A15E70F3A008B3027 /* Level1.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

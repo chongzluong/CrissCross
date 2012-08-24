@@ -741,9 +741,9 @@ int leveltag = 0;
             startCounter = 0;
             winCounter = 0;
             
-            leveltag++;
-             CCScene *scene = [CCScene node];
-             [scene addChild:[HelloWorldLayer node]];
+             leveltag++;
+             //CCScene *scene = [CCScene node];
+             //[scene addChild:[HelloWorldLayer node]];
             //[[CCDirector sharedDirector] replaceScene:[CCTransitionShrinkGrow transitionWithDuration:1 scene: [HelloWorldLayer showLevel:leveltag]]];
             [[CCDirector sharedDirector] replaceScene:[FinishedLevelLayer showLevel:leveltag timeOf: [time floatValue]]];
              

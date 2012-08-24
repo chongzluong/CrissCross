@@ -10,6 +10,7 @@
 #import "FinishedLevelLayer.h"
 #import "LvlMenuLayer.h"
 #import "LvlMenuLayer2.h"
+#import "LvlMenuLayer3.h"
 #import "HelloWorldLayer.h"
 
 int finishedtag = 0;
@@ -57,7 +58,7 @@ float score = 0.00;
 -(void) setUpMenus
 {
     
-    NSString *title = @"Level Complete!";
+    NSString *title = [NSString stringWithFormat:@"Level%i Complete!",finishedtag-1];
     CCLabelTTF *label = [CCLabelTTF labelWithString:title fontName:@"Zapfino" fontSize:35];
     label.position = [CCDirector sharedDirector].screenCenter;
     label.color =ccGREEN;
