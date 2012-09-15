@@ -73,17 +73,17 @@ int leveltag = 0;
         label.color =ccGREEN;
         [self addChild:label];
         
-        startButton = [CCMenuItemImage itemFromNormalImage:@"go.png" selectedImage:@"goselect.png" target:self selector:@selector(startGame:)];
+        startButton = [CCMenuItemImage itemFromNormalImage:@"start.png" selectedImage:@"startselect.png" target:self selector:@selector(startGame:)];
         startButton.position = ccp(160, 415);
         tempMenu = [CCMenu menuWithItems:startButton, nil];
         tempMenu.position = CGPointZero;
         [self addChild:tempMenu];
         
         restartButton = [CCMenuItemImage itemFromNormalImage:@"Restart.png" selectedImage:@"RestartClicked.png" target:self selector:@selector(restartGame:)];
-        restartButton.position = ccp(80, 40);
+        restartButton.position = ccp(70, 40);
         
-        clearButton = [CCMenuItemImage itemFromNormalImage:@"Clear.png" selectedImage:@"ClearClicked.png" target:self selector:@selector(clearLines:)];
-        clearButton.position = ccp(240, 40);
+        clearButton = [CCMenuItemImage itemFromNormalImage:@"ClearButton.png" selectedImage:@"ClearButtonClicked.png" target:self selector:@selector(clearLines:)];
+        clearButton.position = ccp(250, 40);
         
         previousButton = [CCMenuItemImage itemFromNormalImage:@"previous.png" selectedImage:@"previousselect.png" target:self selector:@selector(previousLine:)];
         previousButton.position = ccp(135, 42);
@@ -95,7 +95,6 @@ int leveltag = 0;
         [tempMenu addChild:clearButton];
         [tempMenu addChild:previousButton];
         [tempMenu addChild:homeButton];
-        
                
         [self scheduleUpdate];
         [[SimpleAudioEngine sharedEngine] preloadEffect:@"Pow.caf"];
@@ -439,7 +438,15 @@ int leveltag = 0;
 -(void) clearLines: (CCMenuItem *) menuItem
 {
     //If i made temp inside the forloop, it would decrease while the forloop proceeded
-    int temp = [startpoints count];
+    int temp = [endpoints count];
+    
+    if ([startpoints count] > [endpoints count])
+    {
+        [startpoints removeLastObject];
+        [points removeLastObject];
+        counter--;
+        [self removeChild:target cleanup:YES];
+    }
     
     for(int k = 0; k< temp - (int)[startlines count]; k++)
     {
@@ -494,8 +501,12 @@ int leveltag = 0;
         CGPoint b = ccp([x2 floatValue], [y2 floatValue]);
         ccDrawLine(a, b);
     }
-
+    
+    if (startCounter == 0)
+    {
     KKInput *input = [KKInput sharedInput];
+    input.gestureSwipeEnabled = YES;
+        
     if ([input touchesAvailable])
     {
         //Rounds the x value of the click to the nearest line
@@ -574,6 +585,8 @@ int leveltag = 0;
         }
         }
     }
+    }
+     
     }
     //Draw all the lines
     for (int k = 0; k<(int)[endpoints count]; k++) 
@@ -742,9 +755,6 @@ int leveltag = 0;
             winCounter = 0;
             
              leveltag++;
-             //CCScene *scene = [CCScene node];
-             //[scene addChild:[HelloWorldLayer node]];
-            //[[CCDirector sharedDirector] replaceScene:[CCTransitionShrinkGrow transitionWithDuration:1 scene: [HelloWorldLayer showLevel:leveltag]]];
             [[CCDirector sharedDirector] replaceScene:[FinishedLevelLayer showLevel:leveltag timeOf: [time floatValue]]];
              
         
