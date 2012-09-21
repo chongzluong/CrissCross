@@ -25,6 +25,7 @@
     NSMutableArray *teleporters;
     int counter;
     CGPoint blah;
+    CGPoint blah2;
     float speed;
     CCSprite *target;
     int startCounter;

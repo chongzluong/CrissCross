@@ -502,94 +502,8 @@ int leveltag = 0;
         ccDrawLine(a, b);
     }
     
-    if (startCounter == 0)
-    {
-    KKInput *input = [KKInput sharedInput];
-    input.gestureSwipeEnabled = YES;
-        
-    if ([input touchesAvailable])
-    {
-        //Rounds the x value of the click to the nearest line
-        CGPoint clicked = [input locationOfAnyTouchInPhase:KKTouchPhaseAny];
-        int x1 = (int) clicked.x;
-        int test1 = abs(x1 - 40);
-        int test2 = abs(x1 - 100);
-        int test3 = abs(x1 - 160);
-        int test4 = abs(x1 - 220);
-        
-        int y1 = (int) clicked.y;
-        float y3 = y1;
-        if (test1 < 30)
-        {
-            blah =ccp(40, y3);
-        }
-        else
-        {
-            if (test2 < 30)
-            {
-                blah =ccp(100, y3);
-            }
-            else
-            {
-                if (test3 < 30)
-                {
-                    blah =ccp(160, y3);
-                }
-                else 
-                {
-                    if (test4 < 30)
-                    {
-                        blah =ccp(220, y3);
-                    }
-                    else
-                    {
-                            blah =ccp(280, y3);
-                    }
-                }
-            }
-        }
-        
-        
-        NSString *point = NSStringFromCGPoint(blah);
-    if (blah.y>80 && blah.y<380 && [points indexOfObject:point]==NSNotFound && [self smallestDistanceFromPoint:blah]>1 && [self smallestDistanceFromGate:blah]>1 && [self smallestDistanceFromTeleporter:blah]>1)
-    {
-        if (counter == 0) 
-        {
-            [startpoints addObject: point];
-            [points addObject: point];
-            counter++;
-            target = [CCSprite spriteWithFile:@"target.png"];
-            target.position = blah;
-            [self addChild:target];
-        }
-        else 
-        {
-            
-        if (abs(
-                     (int)blah.x - CGPointFromString([startpoints objectAtIndex:[startpoints count]-1]).x)== 60 &&
-                 abs(
-                     (int)blah.y - CGPointFromString([startpoints objectAtIndex:[startpoints count]-1]).y)< 51
-                    )
-        {
-            [endpoints addObject: point];
-            [points addObject: point]; 
-            counter--;
-            [self removeChild:target cleanup:YES];
-        }
-        else
-        {
-            [startpoints removeLastObject];
-            [points removeLastObject];
-            counter--;
-            [self removeChild:target cleanup:YES];
-        }
-        }
-    }
-    }
-     
-    }
     //Draw all the lines
-    for (int k = 0; k<(int)[endpoints count]; k++) 
+    for (int k = 0; k<(int)[endpoints count]; k++)
     {
         CGPoint starter = CGPointFromString([startpoints objectAtIndex:k]);
         CGPoint end = CGPointFromString([endpoints objectAtIndex:k]); 
@@ -756,13 +670,182 @@ int leveltag = 0;
             
              leveltag++;
             [[CCDirector sharedDirector] replaceScene:[FinishedLevelLayer showLevel:leveltag timeOf: [time floatValue]]];
-             
-        
 
         }
         else
         {winCounter = 0;}
         
+    }
+    
+    else
+    {
+        if (startCounter == 0)
+        {
+            KKInput *input = [KKInput sharedInput];
+            
+            input.gestureSwipeEnabled = YES;
+            
+            if ([input gestureSwipeRecognizedThisFrame] && [startpoints count] == [endpoints count])
+            {
+                CGPoint clicked = [input gestureSwipeLocation];
+                int x1 = (int) clicked.x;
+                int test1 = abs(x1 - 40);
+                int test2 = abs(x1 - 100);
+                int test3 = abs(x1 - 160);
+                int test4 = abs(x1 - 220);
+                
+                int y1 = (int) clicked.y;
+                float y3 = y1;
+                if (test1 < 30)
+                {
+                    blah =ccp(40, y3);
+                }
+                else
+                {
+                    if (test2 < 30)
+                    {
+                        blah =ccp(100, y3);
+                    }
+                    else
+                    {
+                        if (test3 < 30)
+                        {
+                            blah =ccp(160, y3);
+                        }
+                        else
+                        {
+                            if (test4 < 30)
+                            {
+                                blah =ccp(220, y3);
+                            }
+                            else
+                            {
+                                blah =ccp(280, y3);
+                            }
+                        }
+                    }
+                }
+                
+                NSString *point = NSStringFromCGPoint(blah);
+                if (blah.y>80 && blah.y<380 && [points indexOfObject:point]==NSNotFound && [self smallestDistanceFromPoint:blah]>1 && [self smallestDistanceFromGate:blah]>1 && [self smallestDistanceFromTeleporter:blah]>1)
+                {
+                    KKSwipeGestureDirection direction = [input gestureSwipeDirection];
+                    if (direction == KKSwipeGestureDirectionLeft && (int)blah.x > 60)
+                    {
+                        blah2 = ccp(blah.x-60, blah.y);
+                        NSString *point2 = NSStringFromCGPoint(blah2);
+                        
+                        if (blah2.y>80 && blah2.y<380 && [points indexOfObject:point2]==NSNotFound && [self smallestDistanceFromPoint:blah2]>1 && [self smallestDistanceFromGate:blah2]>1 && [self smallestDistanceFromTeleporter:blah2]>1)
+                        {
+                            [startpoints addObject:point];
+                            [points addObject:point];
+                            [endpoints addObject:point2];
+                            [points addObject:point2];
+                        }
+                    }
+                    else if (direction == KKSwipeGestureDirectionRight && (int)blah.x < 260)
+                    {
+                        blah2 = ccp(blah.x+60, blah.y);
+                        NSString *point2 = NSStringFromCGPoint(blah2);
+                        
+                        if (blah2.y>80 && blah2.y<380 && [points indexOfObject:point2]==NSNotFound && [self smallestDistanceFromPoint:blah2]>1 && [self smallestDistanceFromGate:blah2]>1 && [self smallestDistanceFromTeleporter:blah2]>1)
+                        {
+                            [startpoints addObject:point];
+                            [points addObject:point];
+                            [endpoints addObject:point2];
+                            [points addObject:point2];
+                        }
+                    }
+                }
+                
+            }
+            
+            else
+            {
+                
+                if ([input touchesAvailable])
+                {
+                    //Rounds the x value of the click to the nearest line
+                    CGPoint clicked = [input locationOfAnyTouchInPhase:KKTouchPhaseAny];
+                    int x1 = (int) clicked.x;
+                    int test1 = abs(x1 - 40);
+                    int test2 = abs(x1 - 100);
+                    int test3 = abs(x1 - 160);
+                    int test4 = abs(x1 - 220);
+                    
+                    int y1 = (int) clicked.y;
+                    float y3 = y1;
+                    if (test1 < 30)
+                    {
+                        blah =ccp(40, y3);
+                    }
+                    else
+                    {
+                        if (test2 < 30)
+                        {
+                            blah =ccp(100, y3);
+                        }
+                        else
+                        {
+                            if (test3 < 30)
+                            {
+                                blah =ccp(160, y3);
+                            }
+                            else
+                            {
+                                if (test4 < 30)
+                                {
+                                    blah =ccp(220, y3);
+                                }
+                                else
+                                {
+                                    blah =ccp(280, y3);
+                                }
+                            }
+                        }
+                    }
+                    
+                    
+                    NSString *point = NSStringFromCGPoint(blah);
+                    if (blah.y>80 && blah.y<380 && [points indexOfObject:point]==NSNotFound && [self smallestDistanceFromPoint:blah]>1 && [self smallestDistanceFromGate:blah]>1 && [self smallestDistanceFromTeleporter:blah]>1)
+                    {
+                        if (counter == 0) 
+                        {
+                            [startpoints addObject: point];
+                            [points addObject: point];
+                            counter++;
+                            target = [CCSprite spriteWithFile:@"target.png"];
+                            target.position = blah;
+                            [self addChild:target];
+                        }
+                        else 
+                        {
+                            
+                            if (abs(
+                                    (int)blah.x - CGPointFromString([startpoints objectAtIndex:[startpoints count]-1]).x)== 60 &&
+                                abs(
+                                    (int)blah.y - CGPointFromString([startpoints objectAtIndex:[startpoints count]-1]).y)< 51
+                                )
+                            {
+                                [endpoints addObject: point];
+                                [points addObject: point]; 
+                                counter--;
+                                [self removeChild:target cleanup:YES];
+                            }
+                            else
+                            {
+                                [startpoints removeLastObject];
+                                [points removeLastObject];
+                                counter--;
+                                [self removeChild:target cleanup:YES];
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+
     }
         timeInterval = [start timeIntervalSinceNow];
         time = [NSNumber numberWithDouble:fabs(timeInterval)];

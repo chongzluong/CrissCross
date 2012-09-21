@@ -19,6 +19,7 @@
 		5733145615E70D94008B3027 /* teleporter3-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 5733145315E70D94008B3027 /* teleporter3-hd.png */; };
 		5733145715E70D94008B3027 /* teleporter4-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 5733145415E70D94008B3027 /* teleporter4-hd.png */; };
 		5733145815E70D94008B3027 /* teleporter5-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 5733145515E70D94008B3027 /* teleporter5-hd.png */; };
+		573A1D93160B6DB2006FF7EE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 573A1D92160B6DB2006FF7EE /* Default-568h@2x.png */; };
 		5743AB7D15E6B393007F8B6A /* LvlMenuLayer3.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5743AB7C15E6B393007F8B6A /* LvlMenuLayer3.mm */; };
 		5743AB8015E6B4EF007F8B6A /* FinishedLevelLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5743AB7F15E6B4EF007F8B6A /* FinishedLevelLayer.mm */; };
 		5743AB8315E6B6F2007F8B6A /* NextLevel.png in Resources */ = {isa = PBXBuildFile; fileRef = 5743AB8115E6B6F2007F8B6A /* NextLevel.png */; };
@@ -254,6 +255,7 @@
 		5733145315E70D94008B3027 /* teleporter3-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "teleporter3-hd.png"; path = "Retina/teleporter3-hd.png"; sourceTree = "<group>"; };
 		5733145415E70D94008B3027 /* teleporter4-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "teleporter4-hd.png"; path = "Retina/teleporter4-hd.png"; sourceTree = "<group>"; };
 		5733145515E70D94008B3027 /* teleporter5-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "teleporter5-hd.png"; path = "Retina/teleporter5-hd.png"; sourceTree = "<group>"; };
+		573A1D92160B6DB2006FF7EE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5743AB7915E6B33D007F8B6A /* LvlMenuLayer3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LvlMenuLayer3.h; sourceTree = "<group>"; };
 		5743AB7C15E6B393007F8B6A /* LvlMenuLayer3.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LvlMenuLayer3.mm; sourceTree = "<group>"; };
 		5743AB7E15E6B4EF007F8B6A /* FinishedLevelLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishedLevelLayer.h; sourceTree = "<group>"; };
@@ -549,6 +551,7 @@
 		DCC1A0D613A94EC0005BD75D = {
 			isa = PBXGroup;
 			children = (
+				573A1D92160B6DB2006FF7EE /* Default-568h@2x.png */,
 				DCC1A38C13A94F1A005BD75D /* Projectfiles */,
 				DCC1A0F713A94ED5005BD75D /* Projectfiles-iOS */,
 				DCC1A26413A94EE6005BD75D /* Projectfiles-Mac */,
@@ -899,7 +902,7 @@
 		DCC1A0D813A94EC0005BD75D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0450;
 			};
 			buildConfigurationList = DCC1A0DB13A94EC0005BD75D /* Build configuration list for PBXProject "Criss Cross" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1122,6 +1125,7 @@
 				57B926141604F03200E55244 /* ClearButtonClicked-hd.png in Resources */,
 				57B926171604F06200E55244 /* ClearButton.png in Resources */,
 				57B926181604F06200E55244 /* ClearButtonClicked.png in Resources */,
+				573A1D93160B6DB2006FF7EE /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
