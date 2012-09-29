@@ -1,21 +1,21 @@
 //
-//  LvlMenu3.m
+//  BeginnerLvlMenuLayer.mm
 //  Criss Cross
 //
-//  Created by Timothy on 8/23/12.
+//  Created by Timothy on 9/29/12.
 //
 //
 
+#import "BeginnerLvlMenuLayer.h"
 #import "MenuLayer.h"
-#import "LvlMenuLayer3.h"
-#import "HelloWorldLayer.h"
+#import "BeginnerHelloWorldLayer.h"
 
-@implementation LvlMenuLayer3(PrivateMethods)
+@implementation BeginnerLvlMenuLayer (PrivateMethods)
 @end
 
-@implementation LvlMenuLayer3
+@implementation BeginnerLvlMenuLayer
 
--(id) init
+-(id)init
 {
     self = [super init];
     {
@@ -27,17 +27,16 @@
 +(id) scene
 {
     // 'scene' is an autorelease object.
-	CCScene *scene = [CCScene node];
+    CCScene *scene = [CCScene node];
     
-	// 'layer' is an autorelease object.
-	LvlMenuLayer3 *layer = [LvlMenuLayer3 node];
+    // 'layer' is an autorelease object.
+    BeginnerLvlMenuLayer *layer = [BeginnerLvlMenuLayer node];
     
-	// add layer as a child to scene
-	[scene addChild: layer];
+    // add layer as a child to scene
+    [scene addChild:layer];
     
-	// return the scene
-	return scene;
-
+    //return the scene
+    return scene;
 }
 
 //set up the Menus
@@ -51,9 +50,9 @@
     //Create menu buttons
     for (int k = 1; k<6; k++)
     {
-        CCMenuItem *menuItem = [CCMenuItemImage itemFromNormalImage:[NSString stringWithFormat:@"lvl%ibutton.png", k]selectedImage:[NSString stringWithFormat:@"lvl%ibuttonselect.png", k] target:self selector:@selector(startLevel:)];
+        CCMenuItem *menuItem = [CCMenuItemImage itemFromNormalImage:[NSString stringWithFormat:@"lvl%ibutton.png", k]selectedImage:[NSString stringWithFormat:@"lvl%ibuttonselect.png", k] target:self selector:@selector(startLevels:)];
         menuItem.position = ccp(160, 160);
-        menuItem.tag = k+30;
+        menuItem.tag = k;
         [myMenu addChild:menuItem];
     }
     
@@ -71,15 +70,14 @@
     
 }
 
--(void) startLevel: (CCMenuItem *) menuItem
+-(void) startLevels: (CCMenuItem *) menuItem
 {
-    [[CCDirector sharedDirector] replaceScene:[HelloWorldLayer showLevel:menuItem.tag]];
+    [[CCDirector sharedDirector] replaceScene:[BeginnerHelloWorldLayer showLevel:menuItem.tag]];
 }
 
 -(void) goHome:(CCMenuItem *) menuItem
 {
     [[CCDirector sharedDirector] replaceScene:[MenuLayer scene]];
+    
 }
-
-
 @end

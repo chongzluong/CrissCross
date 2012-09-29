@@ -19,6 +19,7 @@ enum
 @interface MenuLayer : CCLayer
 
 +(id) scene;
+-(void) startTutorial: (id) sender;
 -(void) startGame:(id) sender;
 -(void) startGame2: (id) sender;
 -(void) startGame3: (id) sender;

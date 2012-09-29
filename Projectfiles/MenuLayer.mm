@@ -11,6 +11,8 @@
 #import "LvlMenuLayer2.h"
 #import "LvlMenuLayer3.h"
 #import "HelloWorldLayer.h"
+#import "BeginnerHelloWorldLayer.h"
+#import "BeginnerLvlMenuLayer.h"
 
 @interface MenuLayer (PrivateMethods)
 @end
@@ -54,20 +56,24 @@
     
     
     //Create menu buttons
+    CCMenuItem *menuItem0 = [CCMenuItemImage itemFromNormalImage:@"beginnerbutton.png" selectedImage:@"beginnerbuttonselect.png" target:self selector:@selector(startTutorial:)];
+    menuItem0.position = ccp(160, 160);
+    menuItem0.tag = 0;
+    
     CCMenuItem *menuItem1 = [CCMenuItemImage itemFromNormalImage:@"easybutton.png" selectedImage:@"easybuttonselect.png" target:self selector:@selector(startGame:)];
-    menuItem1.position = ccp(160, 160);
+    menuItem1.position = ccp(160, 120);
     menuItem1.tag = 1;
     
     CCMenuItem *menuItem2 = [CCMenuItemImage itemFromNormalImage:@"mediumbutton.png" selectedImage:@"mediumbuttonselect.png" target:self selector:@selector(startGame2:)];
-    menuItem2.position = ccp(160, 120);
+    menuItem2.position = ccp(160, 80);
     menuItem2.tag = 2;
     
     CCMenuItem *menuItem3 = [CCMenuItemImage itemFromNormalImage:@"hardbutton.png" selectedImage:@"hardbuttonselect.png" target:self selector:@selector(startGame3:)];
-    menuItem3.position = ccp(160, 80);
+    menuItem3.position = ccp(160, 40);
     menuItem3.tag = 3;
     
     // Create a menu and add your menu items to it
-	CCMenu * myMenu = [CCMenu menuWithItems:menuItem1, menuItem2, menuItem3, nil];
+	CCMenu * myMenu = [CCMenu menuWithItems:menuItem0, menuItem1, menuItem2, menuItem3, nil];
     myMenu.position =CGPointZero;
     
 	// Arrange the menu items vertically
@@ -76,6 +82,11 @@
 	// add the menu to your scene
 	[self addChild:myMenu];
 
+}
+
+-(void) startTutorial:(CCMenuItem *) menuItem
+{
+    [[CCDirector sharedDirector] replaceScene:[BeginnerLvlMenuLayer scene]];
 }
 
 -(void) startGame: (CCMenuItem *) menuItem

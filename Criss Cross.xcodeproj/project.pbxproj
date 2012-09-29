@@ -7,10 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5702ABAA1616CD1E00158382 /* BeginnerHelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5702ABA91616CD1E00158382 /* BeginnerHelloWorldLayer.mm */; };
+		5702ABAD161768AC00158382 /* BeginnerLvlMenuLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5702ABAC161768AC00158382 /* BeginnerLvlMenuLayer.mm */; };
+		5702ABB016176BDE00158382 /* beginnerbutton-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 5702ABAE16176BDE00158382 /* beginnerbutton-hd.png */; };
+		5702ABB116176BDE00158382 /* beginnerbuttonselect-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 5702ABAF16176BDE00158382 /* beginnerbuttonselect-hd.png */; };
+		5702ABB416176BEB00158382 /* beginnerbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5702ABB216176BEB00158382 /* beginnerbutton.png */; };
+		5702ABB516176BEB00158382 /* beginnerbuttonselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 5702ABB316176BEB00158382 /* beginnerbuttonselect.png */; };
+		5702ABB716176CB200158382 /* BeginnerLevel1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5702ABB616176CB200158382 /* BeginnerLevel1.plist */; };
+		5702ABB916176CB600158382 /* BeginnerLevel2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5702ABB816176CB600158382 /* BeginnerLevel2.plist */; };
+		5702ABBB16176CB900158382 /* BeginnerLevel4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5702ABBA16176CB900158382 /* BeginnerLevel4.plist */; };
+		5702ABBE1617712B00158382 /* BeginnerFinishedLevelLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5702ABBD1617712B00158382 /* BeginnerFinishedLevelLayer.mm */; };
 		5711272A15E591B500CCC8DE /* hardbutton-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 5711272815E591B500CCC8DE /* hardbutton-hd.png */; };
 		5711272B15E591B500CCC8DE /* hardbuttonselect-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 5711272915E591B500CCC8DE /* hardbuttonselect-hd.png */; };
 		5711272E15E591C400CCC8DE /* hardbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5711272C15E591C400CCC8DE /* hardbutton.png */; };
 		5711272F15E591C400CCC8DE /* hardbuttonselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 5711272D15E591C400CCC8DE /* hardbuttonselect.png */; };
+		571A255D16168CD800BC5B62 /* BeginnerLevel3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 571A255C16168CD800BC5B62 /* BeginnerLevel3.plist */; };
+		571A256116168CEA00BC5B62 /* BeginnerLevel5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 571A256016168CEA00BC5B62 /* BeginnerLevel5.plist */; };
 		572D11D215DCDCCE00532BA7 /* LvlMenuLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 572D11D115DCDCCE00532BA7 /* LvlMenuLayer.mm */; };
 		572D123E15DD752B00532BA7 /* LvlMenuLayer2.mm in Sources */ = {isa = PBXBuildFile; fileRef = 572D123D15DD752B00532BA7 /* LvlMenuLayer2.mm */; };
 		5733145015E70D83008B3027 /* teleporter3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5733144D15E70D83008B3027 /* teleporter3.png */; };
@@ -241,10 +253,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5702ABA81616CD1D00158382 /* BeginnerHelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeginnerHelloWorldLayer.h; sourceTree = "<group>"; };
+		5702ABA91616CD1E00158382 /* BeginnerHelloWorldLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BeginnerHelloWorldLayer.mm; sourceTree = "<group>"; };
+		5702ABAB161768AC00158382 /* BeginnerLvlMenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeginnerLvlMenuLayer.h; sourceTree = "<group>"; };
+		5702ABAC161768AC00158382 /* BeginnerLvlMenuLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BeginnerLvlMenuLayer.mm; sourceTree = "<group>"; };
+		5702ABAE16176BDE00158382 /* beginnerbutton-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beginnerbutton-hd.png"; path = "Retina/beginnerbutton-hd.png"; sourceTree = "<group>"; };
+		5702ABAF16176BDE00158382 /* beginnerbuttonselect-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beginnerbuttonselect-hd.png"; path = "Retina/beginnerbuttonselect-hd.png"; sourceTree = "<group>"; };
+		5702ABB216176BEB00158382 /* beginnerbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beginnerbutton.png; path = "Not Retina/beginnerbutton.png"; sourceTree = "<group>"; };
+		5702ABB316176BEB00158382 /* beginnerbuttonselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beginnerbuttonselect.png; path = "Not Retina/beginnerbuttonselect.png"; sourceTree = "<group>"; };
+		5702ABB616176CB200158382 /* BeginnerLevel1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = BeginnerLevel1.plist; path = Levels/Beginner/BeginnerLevel1.plist; sourceTree = "<group>"; };
+		5702ABB816176CB600158382 /* BeginnerLevel2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = BeginnerLevel2.plist; path = Levels/Beginner/BeginnerLevel2.plist; sourceTree = "<group>"; };
+		5702ABBA16176CB900158382 /* BeginnerLevel4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = BeginnerLevel4.plist; path = Levels/Beginner/BeginnerLevel4.plist; sourceTree = "<group>"; };
+		5702ABBC1617712B00158382 /* BeginnerFinishedLevelLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeginnerFinishedLevelLayer.h; sourceTree = "<group>"; };
+		5702ABBD1617712B00158382 /* BeginnerFinishedLevelLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BeginnerFinishedLevelLayer.mm; sourceTree = "<group>"; };
 		5711272815E591B500CCC8DE /* hardbutton-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hardbutton-hd.png"; path = "Retina/hardbutton-hd.png"; sourceTree = "<group>"; };
 		5711272915E591B500CCC8DE /* hardbuttonselect-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hardbuttonselect-hd.png"; path = "Retina/hardbuttonselect-hd.png"; sourceTree = "<group>"; };
 		5711272C15E591C400CCC8DE /* hardbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hardbutton.png; path = "Not Retina/hardbutton.png"; sourceTree = "<group>"; };
 		5711272D15E591C400CCC8DE /* hardbuttonselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hardbuttonselect.png; path = "Not Retina/hardbuttonselect.png"; sourceTree = "<group>"; };
+		571A255C16168CD800BC5B62 /* BeginnerLevel3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = BeginnerLevel3.plist; path = Levels/Beginner/BeginnerLevel3.plist; sourceTree = "<group>"; };
+		571A256016168CEA00BC5B62 /* BeginnerLevel5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = BeginnerLevel5.plist; path = Levels/Beginner/BeginnerLevel5.plist; sourceTree = "<group>"; };
 		572D11D015DCDCCD00532BA7 /* LvlMenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LvlMenuLayer.h; sourceTree = "<group>"; };
 		572D11D115DCDCCE00532BA7 /* LvlMenuLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LvlMenuLayer.mm; sourceTree = "<group>"; };
 		572D123C15DD752B00532BA7 /* LvlMenuLayer2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LvlMenuLayer2.h; sourceTree = "<group>"; };
@@ -551,13 +578,13 @@
 		DCC1A0D613A94EC0005BD75D = {
 			isa = PBXGroup;
 			children = (
-				573A1D92160B6DB2006FF7EE /* Default-568h@2x.png */,
 				DCC1A38C13A94F1A005BD75D /* Projectfiles */,
 				DCC1A0F713A94ED5005BD75D /* Projectfiles-iOS */,
 				DCC1A26413A94EE6005BD75D /* Projectfiles-Mac */,
 				DCFA90ED13B4F6A0009DD35A /* BuildSettings */,
 				DCC1A0E613A94ED5005BD75D /* Frameworks */,
 				DCC1A0E413A94ED5005BD75D /* Products */,
+				573A1D92160B6DB2006FF7EE /* Default-568h@2x.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -638,6 +665,10 @@
 				57A2420A15C86367006E9FBF /* MenuLayer.mm */,
 				DCC1A38F13A94F1A005BD75D /* HelloWorldLayer.h */,
 				57B925BF1604E8EB00E55244 /* HelloWorldLayer.mm */,
+				5702ABAB161768AC00158382 /* BeginnerLvlMenuLayer.h */,
+				5702ABAC161768AC00158382 /* BeginnerLvlMenuLayer.mm */,
+				5702ABA81616CD1D00158382 /* BeginnerHelloWorldLayer.h */,
+				5702ABA91616CD1E00158382 /* BeginnerHelloWorldLayer.mm */,
 				572D11D015DCDCCD00532BA7 /* LvlMenuLayer.h */,
 				572D11D115DCDCCE00532BA7 /* LvlMenuLayer.mm */,
 				572D123C15DD752B00532BA7 /* LvlMenuLayer2.h */,
@@ -646,6 +677,8 @@
 				5743AB7C15E6B393007F8B6A /* LvlMenuLayer3.mm */,
 				DCC1A38D13A94F1A005BD75D /* AppDelegate.h */,
 				DCC1A38E13A94F1A005BD75D /* AppDelegate.m */,
+				5702ABBC1617712B00158382 /* BeginnerFinishedLevelLayer.h */,
+				5702ABBD1617712B00158382 /* BeginnerFinishedLevelLayer.mm */,
 				5743AB7E15E6B4EF007F8B6A /* FinishedLevelLayer.h */,
 				5743AB7F15E6B4EF007F8B6A /* FinishedLevelLayer.mm */,
 				DCC1A39413A94F1A005BD75D /* Resources */,
@@ -657,6 +690,8 @@
 		DCC1A39413A94F1A005BD75D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5702ABAE16176BDE00158382 /* beginnerbutton-hd.png */,
+				5702ABAF16176BDE00158382 /* beginnerbuttonselect-hd.png */,
 				578F244215E4119F00DF0207 /* blue blur-hd.png */,
 				578F244315E411A000DF0207 /* blue square-hd.png */,
 				578F244415E411A000DF0207 /* blue tear-hd.png */,
@@ -757,6 +792,11 @@
 				57B925E21604EAC600E55244 /* lvl14buttonselect.png */,
 				57B925E31604EAC600E55244 /* lvl15button.png */,
 				57B925E41604EAC700E55244 /* lvl15buttonselect.png */,
+				5702ABB616176CB200158382 /* BeginnerLevel1.plist */,
+				5702ABB816176CB600158382 /* BeginnerLevel2.plist */,
+				571A255C16168CD800BC5B62 /* BeginnerLevel3.plist */,
+				5702ABBA16176CB900158382 /* BeginnerLevel4.plist */,
+				571A256016168CEA00BC5B62 /* BeginnerLevel5.plist */,
 				57B9257F1604E7FF00E55244 /* Level1.plist */,
 				57B925801604E7FF00E55244 /* Level2.plist */,
 				57B925811604E7FF00E55244 /* Level3.plist */,
@@ -789,6 +829,8 @@
 				57B925AB1604E81D00E55244 /* Level30.plist */,
 				57B925BB1604E82800E55244 /* Level31.plist */,
 				57B925BC1604E82800E55244 /* Level32.plist */,
+				5702ABB216176BEB00158382 /* beginnerbutton.png */,
+				5702ABB316176BEB00158382 /* beginnerbuttonselect.png */,
 				578F248615E4143700DF0207 /* blue blur.png */,
 				578F248715E4143800DF0207 /* blue square.png */,
 				578F248815E4143900DF0207 /* blue tear.png */,
@@ -1126,6 +1168,15 @@
 				57B926171604F06200E55244 /* ClearButton.png in Resources */,
 				57B926181604F06200E55244 /* ClearButtonClicked.png in Resources */,
 				573A1D93160B6DB2006FF7EE /* Default-568h@2x.png in Resources */,
+				571A255D16168CD800BC5B62 /* BeginnerLevel3.plist in Resources */,
+				571A256116168CEA00BC5B62 /* BeginnerLevel5.plist in Resources */,
+				5702ABB016176BDE00158382 /* beginnerbutton-hd.png in Resources */,
+				5702ABB116176BDE00158382 /* beginnerbuttonselect-hd.png in Resources */,
+				5702ABB416176BEB00158382 /* beginnerbutton.png in Resources */,
+				5702ABB516176BEB00158382 /* beginnerbuttonselect.png in Resources */,
+				5702ABB716176CB200158382 /* BeginnerLevel1.plist in Resources */,
+				5702ABB916176CB600158382 /* BeginnerLevel2.plist in Resources */,
+				5702ABBB16176CB900158382 /* BeginnerLevel4.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1157,6 +1208,9 @@
 				5743AB7D15E6B393007F8B6A /* LvlMenuLayer3.mm in Sources */,
 				5743AB8015E6B4EF007F8B6A /* FinishedLevelLayer.mm in Sources */,
 				57B925C01604E8EB00E55244 /* HelloWorldLayer.mm in Sources */,
+				5702ABAA1616CD1E00158382 /* BeginnerHelloWorldLayer.mm in Sources */,
+				5702ABAD161768AC00158382 /* BeginnerLvlMenuLayer.mm in Sources */,
+				5702ABBE1617712B00158382 /* BeginnerFinishedLevelLayer.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

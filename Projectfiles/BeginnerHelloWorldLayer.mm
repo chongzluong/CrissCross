@@ -1,24 +1,22 @@
-/*
- * Kobold2D™ --- http://www.kobold2d.org
- *
- * Copyright (c) 2010-2011 Steffen Itterheim. 
- * Released under MIT License in Germany (LICENSE-Kobold2D.txt).
- * Author: Timothy Luong
- */
+//
+//  BeginnerHelloWorldLayer.m
+//  Criss Cross
+//
+//  Created by Timothy on 9/28/12.
+//
+//
 
+#import "BeginnerHelloWorldLayer.h"
 #import "MenuLayer.h"
-#import "HelloWorldLayer.h"
 #import "SimpleAudioEngine.h"
-#import "FinishedLevelLayer.h"
+#import "BeginnerFinishedLevelLayer.h"
+#import "HelloWorldLayer.h"
 
-int leveltag = 0;
-@interface HelloWorldLayer (PrivateMethods)
+int beginnerleveltag = 0;
+@interface BeginnerHelloWorldLayer (PrivateMethods)
 @end
 
-@implementation HelloWorldLayer
-
-@synthesize helloWorldString, helloWorldFontName;
-@synthesize helloWorldFontSize;
+@implementation BeginnerHelloWorldLayer
 
 
 -(id) init
@@ -35,39 +33,13 @@ int leveltag = 0;
     if ((self = [super init]))
     {
         
-        start = [NSDate date];
-        
-        timeLabel =[CCLabelTTF labelWithString:[NSString stringWithFormat:@"Time:%f", 0.00] fontName:@"Futura-CondensedExtraBold" fontSize:14];
-        timeLabel.position = ccp(260, 450);
-        timeLabel.color = ccGREEN;
-        [self addChild: timeLabel];
-        
-        NSNumber *currentHighScore = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Level%i highScore", leveltag]];
-        float hs = [currentHighScore floatValue];
-        
-        if (hs == 0)
-        {
-            CCLabelTTF *highScoreLabel = [CCLabelTTF labelWithString:@"Best: N/A" fontName:@"Futura-CondensedExtraBold" fontSize:14];
-            highScoreLabel.position = ccp(60, 450);
-            highScoreLabel.color = ccGREEN;
-            [self addChild:highScoreLabel];
-        }
-        else
-        {
-           CCLabelTTF *highScoreLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"Best:%.2f", hs] fontName:@"Futura-CondensedExtraBold" fontSize:14];
-           highScoreLabel.position = ccp(60, 450);
-           highScoreLabel.color = ccGREEN;
-           [self addChild:highScoreLabel];
-        }
-        
-        test = [NSDictionary dictionaryWithContentsOfFile:[NSString stringWithFormat:@"Level%i.plist", leveltag]];
-        leveltag = [[test objectForKey:@"LevelTag"] intValue];
+        test = [NSDictionary dictionaryWithContentsOfFile:[NSString stringWithFormat:@"BeginnerLevel%i.plist", beginnerleveltag]];
+        beginnerleveltag = [[test objectForKey:@"LevelTag"] intValue];
         
         [self buildGame:test];
         
         
-        
-        CCLabelTTF *label = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"Level%i", leveltag] fontName:@"Futura-CondensedExtraBold" fontSize:35];
+        CCLabelTTF *label = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"BeginnerLevel%i", beginnerleveltag] fontName:@"Futura-CondensedExtraBold" fontSize:35];
         //label.position = [CCDirector sharedDirector].screenCenter;
         label.position = ccp(160, 450);
         label.color =ccGREEN;
@@ -95,7 +67,7 @@ int leveltag = 0;
         [tempMenu addChild:clearButton];
         [tempMenu addChild:previousButton];
         [tempMenu addChild:homeButton];
-               
+        
         [self scheduleUpdate];
         [[SimpleAudioEngine sharedEngine] preloadEffect:@"Pow.caf"];
         [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:@"beat.mp3"];
@@ -106,8 +78,8 @@ int leveltag = 0;
 
 +(id) showLevel: (int) i
 {
-    leveltag = i;
-    CCScene* myScene = [HelloWorldLayer scene];
+    beginnerleveltag = i;
+    CCScene* myScene = [BeginnerHelloWorldLayer scene];
     return myScene;
 }
 
@@ -116,7 +88,7 @@ int leveltag = 0;
     CCScene *scene = [CCScene node];
 	
 	// 'layer' is an autorelease object.
-	HelloWorldLayer *layer = [HelloWorldLayer node];
+	BeginnerHelloWorldLayer *layer = [BeginnerHelloWorldLayer node];
 	
 	// add layer as a child to scene
 	[scene addChild: layer];
@@ -306,7 +278,7 @@ int leveltag = 0;
         [endpoints addObject:ender];
         [points addObject:starter];
         [points addObject:ender];
-    } 
+    }
     
     
     //Make the colors
@@ -432,7 +404,7 @@ int leveltag = 0;
         [teleporters addObject:tempTeleporter];
         [self addChild:tempTeleporter];
     }
-
+    
 }
 
 -(void) clearLines: (CCMenuItem *) menuItem
@@ -493,7 +465,7 @@ int leveltag = 0;
     //set the color in RGB to draw the line with
     glColor4ub(255,0,255,255);
     
-    //import plist 
+    //import plist
     vertlines = [test objectForKey:@"VerticalLines"];
     
     for(int k = 0; k<(int)[vertlines count] ; k++)
@@ -512,7 +484,7 @@ int leveltag = 0;
     for (int k = 0; k<(int)[endpoints count]; k++)
     {
         CGPoint starter = CGPointFromString([startpoints objectAtIndex:k]);
-        CGPoint end = CGPointFromString([endpoints objectAtIndex:k]); 
+        CGPoint end = CGPointFromString([endpoints objectAtIndex:k]);
         CGPointMake(starter.x, starter.y);
         CGPointMake(end.x, end.y);
         ccDrawLine(starter, end);
@@ -533,111 +505,111 @@ int leveltag = 0;
             [self removeChild:target cleanup:YES];
         }
         
-    //Go through all the colors. 
-    for (int k = 5; k<10; k++)
-    {
-        CCSprite *temp = (CCSprite *)[self getChildByTag:k];
-        
-        //Go through all the points
-        for (int j = 0; j<(int)[points count]; j++)
+        //Go through all the colors.
+        for (int k = 5; k<10; k++)
         {
+            CCSprite *temp = (CCSprite *)[self getChildByTag:k];
             
-            //check if the position of one of the colors is the same as the position of one of the points
-            if (CGPointEqualToPoint(temp.position, CGPointFromString([points objectAtIndex:j]))==YES)
+            //Go through all the points
+            for (int j = 0; j<(int)[points count]; j++)
             {
-                //check if the index of the point is even, so as to determine end or startpoint
-                if (j%2==0||j==0)
+                
+                //check if the position of one of the colors is the same as the position of one of the points
+                if (CGPointEqualToPoint(temp.position, CGPointFromString([points objectAtIndex:j]))==YES)
                 {
-                    CGPoint destination = CGPointFromString([endpoints objectAtIndex:(j/2)]);
-                    
-                    float tempx = destination.x - temp.position.x;
-                    float tempy = destination.y - temp.position.y;
-                    float length = ccpDistance(temp.position, destination);
-                    [self changeLength:length color:k destination:destination];
-                    
-                    
-                    CGPoint velocity = CGPointMake((tempx/length), (tempy/length));
-                    float subtractionLength = ccpDistance(temp.position, ccpAdd(temp.position,velocity));
-                    temp.position = ccpAdd(temp.position, velocity);
-                    [self subtractLength:subtractionLength color:k];
+                    //check if the index of the point is even, so as to determine end or startpoint
+                    if (j%2==0||j==0)
+                    {
+                        CGPoint destination = CGPointFromString([endpoints objectAtIndex:(j/2)]);
+                        
+                        float tempx = destination.x - temp.position.x;
+                        float tempy = destination.y - temp.position.y;
+                        float length = ccpDistance(temp.position, destination);
+                        [self changeLength:length color:k destination:destination];
+                        
+                        
+                        CGPoint velocity = CGPointMake((tempx/length), (tempy/length));
+                        float subtractionLength = ccpDistance(temp.position, ccpAdd(temp.position,velocity));
+                        temp.position = ccpAdd(temp.position, velocity);
+                        [self subtractLength:subtractionLength color:k];
+                    }
+                    //if it's odd
+                    else
+                    {
+                        CGPoint destination = CGPointFromString([startpoints objectAtIndex:(j/2)]);
+                        
+                        float tempx = destination.x - temp.position.x;
+                        float tempy = destination.y - temp.position.y;
+                        float length = ccpDistance(temp.position, destination);
+                        [self changeLength:length color:k destination:destination];
+                        
+                        
+                        CGPoint velocity = CGPointMake((tempx/length), (tempy/length));
+                        float subtractionLength = ccpDistance(temp.position, ccpAdd(temp.position,velocity));
+                        temp.position = ccpAdd(temp.position, velocity);
+                        [self subtractLength:subtractionLength color:k];
+                        
+                    }
                 }
-                //if it's odd
+                
+            }
+            
+            //Check whether or not there are teleporters in the level
+            if ([teleporters count]>0)
+            {
+                for (int k = 0; k<(int)[teleporters count]; k++)
+                {
+                    CCSprite *tempTeleporter = [teleporters objectAtIndex:k];
+                    if (CGPointEqualToPoint(temp.position, tempTeleporter.position)&& k%2==0)
+                    {
+                        CCSprite *tempTeleporter2 = [teleporters objectAtIndex:k+1];
+                        temp.position = tempTeleporter2.position;
+                        CGPoint velocity = CGPointMake(0, -1);
+                        temp.position = ccpAdd(temp.position, velocity);
+                    }
+                    else if (CGPointEqualToPoint(temp.position, tempTeleporter.position)&& k%2>0)
+                    {
+                        CCSprite *tempTeleporter2 = [teleporters objectAtIndex:k-1];
+                        temp.position = tempTeleporter2.position;
+                        CGPoint velocity = CGPointMake(0, -1);
+                        temp.position = ccpAdd(temp.position, velocity);
+                    }
+                    
+                }
+            }
+            
+            //If the point is in the middle of transition, it will continue transitioning across
+            if ([self whichLength:k]>0)
+            {
+                if ([self whichLength:k]<1)
+                {
+                    temp.position = [self whichDestination:k];
+                    CGPoint velocity = CGPointMake(0, -1);
+                    temp.position = ccpAdd(temp.position, velocity);
+                    [self deleteLength:k];
+                }
                 else
                 {
-                    CGPoint destination = CGPointFromString([startpoints objectAtIndex:(j/2)]);
-
+                    CGPoint destination = [self whichDestination:k];
+                    
                     float tempx = destination.x - temp.position.x;
                     float tempy = destination.y - temp.position.y;
                     float length = ccpDistance(temp.position, destination);
-                    [self changeLength:length color:k destination:destination];
-                    
                     
                     CGPoint velocity = CGPointMake((tempx/length), (tempy/length));
                     float subtractionLength = ccpDistance(temp.position, ccpAdd(temp.position,velocity));
                     temp.position = ccpAdd(temp.position, velocity);
                     [self subtractLength:subtractionLength color:k];
-
                 }
             }
             
-        }
-        
-        //Check whether or not there are teleporters in the level
-        if ([teleporters count]>0)
-        {
-            for (int k = 0; k<(int)[teleporters count]; k++)
+            //check if the color has reached the end of the line
+            if (temp.position.y > 80 && [self whichLength:k] == 0)
             {
-                CCSprite *tempTeleporter = [teleporters objectAtIndex:k];
-                if (CGPointEqualToPoint(temp.position, tempTeleporter.position)&& k%2==0)
-                {
-                    CCSprite *tempTeleporter2 = [teleporters objectAtIndex:k+1];
-                    temp.position = tempTeleporter2.position;
-                    CGPoint velocity = CGPointMake(0, -1);
-                    temp.position = ccpAdd(temp.position, velocity);
-                }
-                else if (CGPointEqualToPoint(temp.position, tempTeleporter.position)&& k%2>0)
-                {
-                    CCSprite *tempTeleporter2 = [teleporters objectAtIndex:k-1];
-                    temp.position = tempTeleporter2.position;
-                    CGPoint velocity = CGPointMake(0, -1);
-                    temp.position = ccpAdd(temp.position, velocity);
-                }
-
-            }
-        }
-        
-        //If the point is in the middle of transition, it will continue transitioning across 
-        if ([self whichLength:k]>0)
-        {
-            if ([self whichLength:k]<1)
-            { 
-                temp.position = [self whichDestination:k];
                 CGPoint velocity = CGPointMake(0, -1);
                 temp.position = ccpAdd(temp.position, velocity);
-                [self deleteLength:k];
-            }
-            else
-            {
-               CGPoint destination = [self whichDestination:k];
-                
-                float tempx = destination.x - temp.position.x;
-                float tempy = destination.y - temp.position.y;
-                float length = ccpDistance(temp.position, destination);                
-                
-                CGPoint velocity = CGPointMake((tempx/length), (tempy/length));
-                float subtractionLength = ccpDistance(temp.position, ccpAdd(temp.position,velocity));
-                temp.position = ccpAdd(temp.position, velocity);
-                [self subtractLength:subtractionLength color:k];
             }
         }
-        
-        //check if the color has reached the end of the line
-        if (temp.position.y > 80 && [self whichLength:k] == 0)
-        {
-                CGPoint velocity = CGPointMake(0, -1);
-                temp.position = ccpAdd(temp.position, velocity);
-        }
-    }
         
         //Go through the gates
         for (int j = 0; j<5; j++)
@@ -648,11 +620,11 @@ int leveltag = 0;
                 CCSprite *tempSprite = (CCSprite *)[self getChildByTag:j];
                 CCSprite *tempColor = (CCSprite *)[self getChildByTag:(j+5)];
                 if (CGPointEqualToPoint(tempSprite.position, tempColor.position))
-                    {
-                        [self removeChild:tempSprite cleanup:YES];
-                        [gate removeObject:tempSprite];
-                        [[SimpleAudioEngine sharedEngine] playEffect:@"explo2.wav"];
-                    }
+                {
+                    [self removeChild:tempSprite cleanup:YES];
+                    [gate removeObject:tempSprite];
+                    [[SimpleAudioEngine sharedEngine] playEffect:@"explo2.wav"];
+                }
             }
             
             //NSNotFound
@@ -670,13 +642,13 @@ int leveltag = 0;
         }
         
         if (winCounter == 5 && [gate count] == 0)
-        { 
+        {
             startCounter = 0;
             winCounter = 0;
             
-             leveltag++;
-            [[CCDirector sharedDirector] replaceScene:[FinishedLevelLayer showLevel:leveltag timeOf: [time floatValue]]];
-
+            beginnerleveltag++;
+            [[CCDirector sharedDirector] replaceScene:[BeginnerFinishedLevelLayer showLevel:beginnerleveltag]];
+            
         }
         else
         {winCounter = 0;}
@@ -770,7 +742,7 @@ int leveltag = 0;
                 }
                 
             }
-
+            
             else
             {
                 
@@ -792,41 +764,41 @@ int leveltag = 0;
                         blah = ccp(40, y3);
                     }
                     else
-                    if (test1 < 30)
-                    {
-                        blah =ccp(40, y3);
-                    }
-                    else
-                    {
-                        if (test2 < 31)
+                        if (test1 < 30)
                         {
-                            blah =ccp(100, y3);
+                            blah =ccp(40, y3);
                         }
                         else
                         {
-                            if (test3 < 30)
+                            if (test2 < 31)
                             {
-                                blah =ccp(160, y3);
+                                blah =ccp(100, y3);
                             }
                             else
                             {
-                                if (test4 < 31)
+                                if (test3 < 30)
                                 {
-                                    blah =ccp(220, y3);
+                                    blah =ccp(160, y3);
                                 }
                                 else
                                 {
-                                    blah =ccp(280, y3);
+                                    if (test4 < 31)
+                                    {
+                                        blah =ccp(220, y3);
+                                    }
+                                    else
+                                    {
+                                        blah =ccp(280, y3);
+                                    }
                                 }
                             }
                         }
-                    }
                     
                     
                     NSString *point = NSStringFromCGPoint(blah);
                     if (blah.y>80 && blah.y<380 && [points indexOfObject:point]==NSNotFound && [self smallestDistanceFromPoint:blah]>1 && [self smallestDistanceFromGate:blah]>1 && [self smallestDistanceFromTeleporter:blah]>1)
                     {
-                        if (counter == 0) 
+                        if (counter == 0)
                         {
                             [startpoints addObject: point];
                             [points addObject: point];
@@ -835,7 +807,7 @@ int leveltag = 0;
                             target.position = blah;
                             [self addChild:target];
                         }
-                        else 
+                        else
                         {
                             
                             if (abs(
@@ -845,7 +817,7 @@ int leveltag = 0;
                                 )
                             {
                                 [endpoints addObject: point];
-                                [points addObject: point]; 
+                                [points addObject: point];
                                 counter--;
                                 [self removeChild:target cleanup:YES];
                             }
@@ -862,11 +834,8 @@ int leveltag = 0;
             }
             
         }
-
+        
     }
-        timeInterval = [start timeIntervalSinceNow];
-        time = [NSNumber numberWithDouble:fabs(timeInterval)];
-        [timeLabel setString:[NSString stringWithFormat:@"Time:%.2f", [time floatValue]]];
 }
- 
+
 @end
