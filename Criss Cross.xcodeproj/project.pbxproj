@@ -132,33 +132,6 @@
 		57A863DC161C0F48004A05D9 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 57A863D2161C0F48004A05D9 /* red.png */; };
 		57A863DD161C0F48004A05D9 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 57A863D3161C0F48004A05D9 /* yellow.png */; };
 		57A863DE161C0F48004A05D9 /* yellowspark.png in Resources */ = {isa = PBXBuildFile; fileRef = 57A863D4161C0F48004A05D9 /* yellowspark.png */; };
-		57B925601604E7CD00E55244 /* lvl1button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925421604E7CD00E55244 /* lvl1button-hd.png */; };
-		57B925611604E7CD00E55244 /* lvl1buttonselect-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925431604E7CD00E55244 /* lvl1buttonselect-hd.png */; };
-		57B925631604E7CD00E55244 /* lvl2buttonselect-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925451604E7CD00E55244 /* lvl2buttonselect-hd.png */; };
-		57B925641604E7CD00E55244 /* lvl3button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925461604E7CD00E55244 /* lvl3button-hd.png */; };
-		57B925651604E7CD00E55244 /* lvl3buttonselect-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925471604E7CD00E55244 /* lvl3buttonselect-hd.png */; };
-		57B925661604E7CD00E55244 /* lvl4button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925481604E7CD00E55244 /* lvl4button-hd.png */; };
-		57B925671604E7CD00E55244 /* lvl4buttonselect-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925491604E7CD00E55244 /* lvl4buttonselect-hd.png */; };
-		57B925681604E7CD00E55244 /* lvl5button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B9254A1604E7CD00E55244 /* lvl5button-hd.png */; };
-		57B925691604E7CD00E55244 /* lvl5buttonselect-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B9254B1604E7CD00E55244 /* lvl5buttonselect-hd.png */; };
-		57B9256B1604E7CD00E55244 /* lvl6buttonselect-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B9254D1604E7CD00E55244 /* lvl6buttonselect-hd.png */; };
-		57B9256C1604E7CD00E55244 /* lvl7button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B9254E1604E7CD00E55244 /* lvl7button-hd.png */; };
-		57B9256D1604E7CD00E55244 /* lvl7buttonselect-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B9254F1604E7CD00E55244 /* lvl7buttonselect-hd.png */; };
-		57B9256F1604E7CD00E55244 /* lvl8buttonselect-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925511604E7CD00E55244 /* lvl8buttonselect-hd.png */; };
-		57B925701604E7CD00E55244 /* lvl9button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925521604E7CD00E55244 /* lvl9button-hd.png */; };
-		57B925711604E7CD00E55244 /* lvl9buttonselect-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925531604E7CD00E55244 /* lvl9buttonselect-hd.png */; };
-		57B925721604E7CD00E55244 /* lvl10button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925541604E7CD00E55244 /* lvl10button-hd.png */; };
-		57B925731604E7CD00E55244 /* lvl10buttonselect-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925551604E7CD00E55244 /* lvl10buttonselect-hd.png */; };
-		57B925741604E7CD00E55244 /* lvl11button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925561604E7CD00E55244 /* lvl11button-hd.png */; };
-		57B925751604E7CD00E55244 /* lvl11buttonselect-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925571604E7CD00E55244 /* lvl11buttonselect-hd.png */; };
-		57B925761604E7CD00E55244 /* lvl12button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925581604E7CD00E55244 /* lvl12button-hd.png */; };
-		57B925771604E7CD00E55244 /* lvl12buttonselect-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925591604E7CD00E55244 /* lvl12buttonselect-hd.png */; };
-		57B925781604E7CD00E55244 /* lvl13button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B9255A1604E7CD00E55244 /* lvl13button-hd.png */; };
-		57B925791604E7CD00E55244 /* lvl13buttonselect-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B9255B1604E7CD00E55244 /* lvl13buttonselect-hd.png */; };
-		57B9257A1604E7CD00E55244 /* lvl14button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B9255C1604E7CD00E55244 /* lvl14button-hd.png */; };
-		57B9257B1604E7CD00E55244 /* lvl14buttonselect-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B9255D1604E7CD00E55244 /* lvl14buttonselect-hd.png */; };
-		57B9257C1604E7CD00E55244 /* lvl15button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B9255E1604E7CD00E55244 /* lvl15button-hd.png */; };
-		57B9257D1604E7CD00E55244 /* lvl15buttonselect-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B9255F1604E7CD00E55244 /* lvl15buttonselect-hd.png */; };
 		57B9258E1604E7FF00E55244 /* Level1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57B9257F1604E7FF00E55244 /* Level1.plist */; };
 		57B9258F1604E7FF00E55244 /* Level2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57B925801604E7FF00E55244 /* Level2.plist */; };
 		57B925901604E7FF00E55244 /* Level3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57B925811604E7FF00E55244 /* Level3.plist */; };
@@ -192,39 +165,6 @@
 		57B925BD1604E82800E55244 /* Level31.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57B925BB1604E82800E55244 /* Level31.plist */; };
 		57B925BE1604E82800E55244 /* Level32.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57B925BC1604E82800E55244 /* Level32.plist */; };
 		57B925C01604E8EB00E55244 /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 57B925BF1604E8EB00E55244 /* HelloWorldLayer.mm */; };
-		57B925C21604E9BA00E55244 /* lvl2button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925C11604E9BA00E55244 /* lvl2button-hd.png */; };
-		57B925C41604E9D800E55244 /* lvl6button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925C31604E9D700E55244 /* lvl6button-hd.png */; };
-		57B925C61604E9E900E55244 /* lvl8button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925C51604E9E800E55244 /* lvl8button-hd.png */; };
-		57B925E51604EAC700E55244 /* lvl1button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925C71604EAB300E55244 /* lvl1button.png */; };
-		57B925E61604EAC700E55244 /* lvl1buttonselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925C81604EAB300E55244 /* lvl1buttonselect.png */; };
-		57B925E71604EAC700E55244 /* lvl2button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925C91604EAB400E55244 /* lvl2button.png */; };
-		57B925E81604EAC700E55244 /* lvl2buttonselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925CA1604EAB500E55244 /* lvl2buttonselect.png */; };
-		57B925E91604EAC700E55244 /* lvl3button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925CB1604EAB600E55244 /* lvl3button.png */; };
-		57B925EA1604EAC700E55244 /* lvl3buttonselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925CC1604EAB600E55244 /* lvl3buttonselect.png */; };
-		57B925EB1604EAC700E55244 /* lvl4button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925CD1604EAB700E55244 /* lvl4button.png */; };
-		57B925EC1604EAC700E55244 /* lvl4buttonselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925CE1604EAB800E55244 /* lvl4buttonselect.png */; };
-		57B925ED1604EAC700E55244 /* lvl5button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925CF1604EAB800E55244 /* lvl5button.png */; };
-		57B925EE1604EAC700E55244 /* lvl5buttonselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925D01604EAB900E55244 /* lvl5buttonselect.png */; };
-		57B925EF1604EAC700E55244 /* lvl6button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925D11604EAB900E55244 /* lvl6button.png */; };
-		57B925F01604EAC700E55244 /* lvl6buttonselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925D21604EABA00E55244 /* lvl6buttonselect.png */; };
-		57B925F11604EAC700E55244 /* lvl7button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925D31604EABD00E55244 /* lvl7button.png */; };
-		57B925F21604EAC700E55244 /* lvl7buttonselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925D41604EABD00E55244 /* lvl7buttonselect.png */; };
-		57B925F31604EAC700E55244 /* lvl8button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925D51604EABE00E55244 /* lvl8button.png */; };
-		57B925F41604EAC700E55244 /* lvl8buttonselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925D61604EABE00E55244 /* lvl8buttonselect.png */; };
-		57B925F51604EAC700E55244 /* lvl9button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925D71604EABF00E55244 /* lvl9button.png */; };
-		57B925F61604EAC700E55244 /* lvl9buttonselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925D81604EABF00E55244 /* lvl9buttonselect.png */; };
-		57B925F71604EAC700E55244 /* lvl10button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925D91604EAC000E55244 /* lvl10button.png */; };
-		57B925F81604EAC700E55244 /* lvl10buttonselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925DA1604EAC100E55244 /* lvl10buttonselect.png */; };
-		57B925F91604EAC700E55244 /* lvl11button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925DB1604EAC100E55244 /* lvl11button.png */; };
-		57B925FA1604EAC700E55244 /* lvl11buttonselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925DC1604EAC200E55244 /* lvl11buttonselect.png */; };
-		57B925FB1604EAC700E55244 /* lvl12button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925DD1604EAC300E55244 /* lvl12button.png */; };
-		57B925FC1604EAC700E55244 /* lvl12buttonselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925DE1604EAC300E55244 /* lvl12buttonselect.png */; };
-		57B925FD1604EAC700E55244 /* lvl13button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925DF1604EAC400E55244 /* lvl13button.png */; };
-		57B925FE1604EAC700E55244 /* lvl13buttonselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925E01604EAC500E55244 /* lvl13buttonselect.png */; };
-		57B925FF1604EAC700E55244 /* lvl14button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925E11604EAC600E55244 /* lvl14button.png */; };
-		57B926001604EAC700E55244 /* lvl14buttonselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925E21604EAC600E55244 /* lvl14buttonselect.png */; };
-		57B926011604EAC700E55244 /* lvl15button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925E31604EAC600E55244 /* lvl15button.png */; };
-		57B926021604EAC700E55244 /* lvl15buttonselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B925E41604EAC700E55244 /* lvl15buttonselect.png */; };
 		57B926051604ED1900E55244 /* Restart-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B926031604ED1400E55244 /* Restart-hd.png */; };
 		57B926061604ED1900E55244 /* RestartClicked-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B926041604ED1600E55244 /* RestartClicked-hd.png */; };
 		57B926091604ED3800E55244 /* Restart.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B926071604ED2700E55244 /* Restart.png */; };
@@ -294,6 +234,132 @@
 		57C4CAF4161EC8C300667FD1 /* easy2-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C4CAF0161EC8BC00667FD1 /* easy2-hd.png */; };
 		57C4CAF5161EC8C300667FD1 /* hard-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C4CAF1161EC8BE00667FD1 /* hard-hd.png */; };
 		57C4CAF6161EC8C300667FD1 /* hard2-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C4CAF2161EC8C100667FD1 /* hard2-hd.png */; };
+		57DCC448161F517E0077A037 /* LevelSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC447161F517E0077A037 /* LevelSelect.png */; };
+		57DCC44A161F51B90077A037 /* LevelSelect-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC449161F51B90077A037 /* LevelSelect-hd.png */; };
+		57DCC45A161F585B0077A037 /* lvl1button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC44B161F58560077A037 /* lvl1button.png */; };
+		57DCC45B161F585B0077A037 /* lvl2button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC44C161F58560077A037 /* lvl2button.png */; };
+		57DCC45C161F585B0077A037 /* lvl3button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC44D161F58560077A037 /* lvl3button.png */; };
+		57DCC45D161F585B0077A037 /* lvl4button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC44E161F58570077A037 /* lvl4button.png */; };
+		57DCC45E161F585B0077A037 /* lvl5button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC44F161F58570077A037 /* lvl5button.png */; };
+		57DCC45F161F585B0077A037 /* lvl6button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC450161F58570077A037 /* lvl6button.png */; };
+		57DCC460161F585B0077A037 /* lvl7button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC451161F58570077A037 /* lvl7button.png */; };
+		57DCC461161F585B0077A037 /* lvl8button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC452161F58570077A037 /* lvl8button.png */; };
+		57DCC462161F585B0077A037 /* lvl9button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC453161F58580077A037 /* lvl9button.png */; };
+		57DCC463161F585B0077A037 /* lvl10button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC454161F58580077A037 /* lvl10button.png */; };
+		57DCC464161F585B0077A037 /* lvl11button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC455161F58580077A037 /* lvl11button.png */; };
+		57DCC465161F585B0077A037 /* lvl12button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC456161F58590077A037 /* lvl12button.png */; };
+		57DCC466161F585B0077A037 /* lvl13button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC457161F58590077A037 /* lvl13button.png */; };
+		57DCC467161F585B0077A037 /* lvl14button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC458161F585A0077A037 /* lvl14button.png */; };
+		57DCC468161F585B0077A037 /* lvl15button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC459161F585A0077A037 /* lvl15button.png */; };
+		57DCC478161F58740077A037 /* lvl1button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC469161F58740077A037 /* lvl1button-hd.png */; };
+		57DCC479161F58740077A037 /* lvl2button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC46A161F58740077A037 /* lvl2button-hd.png */; };
+		57DCC47A161F58740077A037 /* lvl3button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC46B161F58740077A037 /* lvl3button-hd.png */; };
+		57DCC47B161F58740077A037 /* lvl4button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC46C161F58740077A037 /* lvl4button-hd.png */; };
+		57DCC47C161F58740077A037 /* lvl5button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC46D161F58740077A037 /* lvl5button-hd.png */; };
+		57DCC47D161F58740077A037 /* lvl6button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC46E161F58740077A037 /* lvl6button-hd.png */; };
+		57DCC47E161F58740077A037 /* lvl7button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC46F161F58740077A037 /* lvl7button-hd.png */; };
+		57DCC47F161F58740077A037 /* lvl8button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC470161F58740077A037 /* lvl8button-hd.png */; };
+		57DCC480161F58740077A037 /* lvl9button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC471161F58740077A037 /* lvl9button-hd.png */; };
+		57DCC481161F58740077A037 /* lvl10button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC472161F58740077A037 /* lvl10button-hd.png */; };
+		57DCC482161F58740077A037 /* lvl11button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC473161F58740077A037 /* lvl11button-hd.png */; };
+		57DCC483161F58740077A037 /* lvl12button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC474161F58740077A037 /* lvl12button-hd.png */; };
+		57DCC484161F58740077A037 /* lvl13button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC475161F58740077A037 /* lvl13button-hd.png */; };
+		57DCC485161F58740077A037 /* lvl14button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC476161F58740077A037 /* lvl14button-hd.png */; };
+		57DCC486161F58740077A037 /* lvl15button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC477161F58740077A037 /* lvl15button-hd.png */; };
+		57DCC4A3161F987E0077A037 /* Level 21.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC48F161F987E0077A037 /* Level 21.png */; };
+		57DCC4A4161F987E0077A037 /* Level 22.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC490161F987E0077A037 /* Level 22.png */; };
+		57DCC4A5161F987E0077A037 /* Level 23.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC491161F987E0077A037 /* Level 23.png */; };
+		57DCC4A6161F987E0077A037 /* Level 24.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC492161F987E0077A037 /* Level 24.png */; };
+		57DCC4A7161F987E0077A037 /* Level 25.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC493161F987E0077A037 /* Level 25.png */; };
+		57DCC4A8161F987E0077A037 /* Level 26.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC494161F987E0077A037 /* Level 26.png */; };
+		57DCC4A9161F987E0077A037 /* Level 27.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC495161F987E0077A037 /* Level 27.png */; };
+		57DCC4AA161F987E0077A037 /* Level 28.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC496161F987E0077A037 /* Level 28.png */; };
+		57DCC4AB161F987E0077A037 /* Level 29.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC497161F987E0077A037 /* Level 29.png */; };
+		57DCC4AC161F987E0077A037 /* Level 30.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC498161F987E0077A037 /* Level 30.png */; };
+		57DCC4AD161F987E0077A037 /* Level 31.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC499161F987E0077A037 /* Level 31.png */; };
+		57DCC4AE161F987E0077A037 /* Level 32.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC49A161F987E0077A037 /* Level 32.png */; };
+		57DCC4AF161F987E0077A037 /* Level 33.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC49B161F987E0077A037 /* Level 33.png */; };
+		57DCC4B0161F987E0077A037 /* Level 34.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC49C161F987E0077A037 /* Level 34.png */; };
+		57DCC4B1161F987E0077A037 /* Level 35.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC49D161F987E0077A037 /* Level 35.png */; };
+		57DCC4B2161F987E0077A037 /* Level 36.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC49E161F987E0077A037 /* Level 36.png */; };
+		57DCC4B3161F987E0077A037 /* Level 37.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC49F161F987E0077A037 /* Level 37.png */; };
+		57DCC4B4161F987E0077A037 /* Level 38.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4A0161F987E0077A037 /* Level 38.png */; };
+		57DCC4B5161F987E0077A037 /* Level 39.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4A1161F987E0077A037 /* Level 39.png */; };
+		57DCC4B6161F987E0077A037 /* Level 40.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4A2161F987E0077A037 /* Level 40.png */; };
+		57DCC4CC161F98F40077A037 /* Level 21-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4B8161F98F40077A037 /* Level 21-hd.png */; };
+		57DCC4CD161F98F40077A037 /* Level 22-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4B9161F98F40077A037 /* Level 22-hd.png */; };
+		57DCC4CE161F98F40077A037 /* Level 23-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4BA161F98F40077A037 /* Level 23-hd.png */; };
+		57DCC4CF161F98F40077A037 /* Level 24-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4BB161F98F40077A037 /* Level 24-hd.png */; };
+		57DCC4D0161F98F40077A037 /* Level 25-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4BC161F98F40077A037 /* Level 25-hd.png */; };
+		57DCC4D1161F98F40077A037 /* Level 26-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4BD161F98F40077A037 /* Level 26-hd.png */; };
+		57DCC4D2161F98F40077A037 /* Level 27-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4BE161F98F40077A037 /* Level 27-hd.png */; };
+		57DCC4D3161F98F40077A037 /* Level 28-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4BF161F98F40077A037 /* Level 28-hd.png */; };
+		57DCC4D4161F98F40077A037 /* Level 29-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4C0161F98F40077A037 /* Level 29-hd.png */; };
+		57DCC4D5161F98F40077A037 /* Level 30-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4C1161F98F40077A037 /* Level 30-hd.png */; };
+		57DCC4D6161F98F40077A037 /* Level 31-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4C2161F98F40077A037 /* Level 31-hd.png */; };
+		57DCC4D7161F98F40077A037 /* Level 32-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4C3161F98F40077A037 /* Level 32-hd.png */; };
+		57DCC4D8161F98F40077A037 /* Level 33-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4C4161F98F40077A037 /* Level 33-hd.png */; };
+		57DCC4D9161F98F40077A037 /* Level 34-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4C5161F98F40077A037 /* Level 34-hd.png */; };
+		57DCC4DA161F98F40077A037 /* Level 35-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4C6161F98F40077A037 /* Level 35-hd.png */; };
+		57DCC4DB161F98F40077A037 /* Level 36-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4C7161F98F40077A037 /* Level 36-hd.png */; };
+		57DCC4DC161F98F40077A037 /* Level 37-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4C8161F98F40077A037 /* Level 37-hd.png */; };
+		57DCC4DD161F98F40077A037 /* Level 38-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4C9161F98F40077A037 /* Level 38-hd.png */; };
+		57DCC4DE161F98F40077A037 /* Level 39-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4CA161F98F40077A037 /* Level 39-hd.png */; };
+		57DCC4DF161F98F40077A037 /* Level 40-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4CB161F98F40077A037 /* Level 40-hd.png */; };
+		57DCC4F9161F99120077A037 /* lvl16button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4E0161F99120077A037 /* lvl16button-hd.png */; };
+		57DCC4FA161F99120077A037 /* lvl17button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4E1161F99120077A037 /* lvl17button-hd.png */; };
+		57DCC4FB161F99120077A037 /* lvl18button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4E2161F99120077A037 /* lvl18button-hd.png */; };
+		57DCC4FC161F99120077A037 /* lvl19button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4E3161F99120077A037 /* lvl19button-hd.png */; };
+		57DCC4FD161F99120077A037 /* lvl20button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4E4161F99120077A037 /* lvl20button-hd.png */; };
+		57DCC4FE161F99120077A037 /* lvl21button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4E5161F99120077A037 /* lvl21button-hd.png */; };
+		57DCC4FF161F99120077A037 /* lvl22button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4E6161F99120077A037 /* lvl22button-hd.png */; };
+		57DCC500161F99120077A037 /* lvl23button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4E7161F99120077A037 /* lvl23button-hd.png */; };
+		57DCC501161F99120077A037 /* lvl24button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4E8161F99120077A037 /* lvl24button-hd.png */; };
+		57DCC502161F99120077A037 /* lvl25button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4E9161F99120077A037 /* lvl25button-hd.png */; };
+		57DCC503161F99120077A037 /* lvl26button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4EA161F99120077A037 /* lvl26button-hd.png */; };
+		57DCC504161F99120077A037 /* lvl27button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4EB161F99120077A037 /* lvl27button-hd.png */; };
+		57DCC505161F99120077A037 /* lvl28button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4EC161F99120077A037 /* lvl28button-hd.png */; };
+		57DCC506161F99120077A037 /* lvl29button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4ED161F99120077A037 /* lvl29button-hd.png */; };
+		57DCC507161F99120077A037 /* lvl30button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4EE161F99120077A037 /* lvl30button-hd.png */; };
+		57DCC508161F99120077A037 /* lvl31button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4EF161F99120077A037 /* lvl31button-hd.png */; };
+		57DCC509161F99120077A037 /* lvl32button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4F0161F99120077A037 /* lvl32button-hd.png */; };
+		57DCC50A161F99120077A037 /* lvl33button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4F1161F99120077A037 /* lvl33button-hd.png */; };
+		57DCC50B161F99120077A037 /* lvl34button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4F2161F99120077A037 /* lvl34button-hd.png */; };
+		57DCC50C161F99120077A037 /* lvl35button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4F3161F99120077A037 /* lvl35button-hd.png */; };
+		57DCC50D161F99120077A037 /* lvl36button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4F4161F99120077A037 /* lvl36button-hd.png */; };
+		57DCC50E161F99120077A037 /* lvl37button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4F5161F99120077A037 /* lvl37button-hd.png */; };
+		57DCC50F161F99120077A037 /* lvl38button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4F6161F99120077A037 /* lvl38button-hd.png */; };
+		57DCC510161F99120077A037 /* lvl39button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4F7161F99120077A037 /* lvl39button-hd.png */; };
+		57DCC511161F99120077A037 /* lvl40button-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC4F8161F99120077A037 /* lvl40button-hd.png */; };
+		57DCC52B161F99220077A037 /* lvl16button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC512161F99220077A037 /* lvl16button.png */; };
+		57DCC52C161F99220077A037 /* lvl17button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC513161F99220077A037 /* lvl17button.png */; };
+		57DCC52D161F99220077A037 /* lvl18button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC514161F99220077A037 /* lvl18button.png */; };
+		57DCC52E161F99220077A037 /* lvl19button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC515161F99220077A037 /* lvl19button.png */; };
+		57DCC52F161F99220077A037 /* lvl20button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC516161F99220077A037 /* lvl20button.png */; };
+		57DCC530161F99220077A037 /* lvl21button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC517161F99220077A037 /* lvl21button.png */; };
+		57DCC531161F99220077A037 /* lvl22button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC518161F99220077A037 /* lvl22button.png */; };
+		57DCC532161F99220077A037 /* lvl23button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC519161F99220077A037 /* lvl23button.png */; };
+		57DCC533161F99220077A037 /* lvl24button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC51A161F99220077A037 /* lvl24button.png */; };
+		57DCC534161F99220077A037 /* lvl25button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC51B161F99220077A037 /* lvl25button.png */; };
+		57DCC535161F99220077A037 /* lvl26button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC51C161F99220077A037 /* lvl26button.png */; };
+		57DCC536161F99220077A037 /* lvl27button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC51D161F99220077A037 /* lvl27button.png */; };
+		57DCC537161F99220077A037 /* lvl28button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC51E161F99220077A037 /* lvl28button.png */; };
+		57DCC538161F99220077A037 /* lvl29button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC51F161F99220077A037 /* lvl29button.png */; };
+		57DCC539161F99220077A037 /* lvl30button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC520161F99220077A037 /* lvl30button.png */; };
+		57DCC53A161F99220077A037 /* lvl31button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC521161F99220077A037 /* lvl31button.png */; };
+		57DCC53B161F99220077A037 /* lvl32button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC522161F99220077A037 /* lvl32button.png */; };
+		57DCC53C161F99220077A037 /* lvl33button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC523161F99220077A037 /* lvl33button.png */; };
+		57DCC53D161F99220077A037 /* lvl34button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC524161F99220077A037 /* lvl34button.png */; };
+		57DCC53E161F99220077A037 /* lvl35button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC525161F99220077A037 /* lvl35button.png */; };
+		57DCC53F161F99220077A037 /* lvl36button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC526161F99220077A037 /* lvl36button.png */; };
+		57DCC540161F99220077A037 /* lvl37button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC527161F99220077A037 /* lvl37button.png */; };
+		57DCC541161F99220077A037 /* lvl38button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC528161F99220077A037 /* lvl38button.png */; };
+		57DCC542161F99220077A037 /* lvl39button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC529161F99220077A037 /* lvl39button.png */; };
+		57DCC543161F99220077A037 /* lvl40button.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC52A161F99220077A037 /* lvl40button.png */; };
+		57DCC546161F9E640077A037 /* home-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC544161F9E640077A037 /* home-hd.png */; };
+		57DCC547161F9E640077A037 /* home2-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC545161F9E640077A037 /* home2-hd.png */; };
+		57DCC549161FA38A0077A037 /* locked.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC548161FA38A0077A037 /* locked.png */; };
+		57DCC54B161FA3950077A037 /* locked-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57DCC54A161FA3950077A037 /* locked-hd.png */; };
 		DC1BE6A014F417CC00F49D25 /* Ubuntu-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68C14F417CC00F49D25 /* Ubuntu-B.ttf */; };
 		DC1BE6A114F417CC00F49D25 /* Ubuntu-BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68D14F417CC00F49D25 /* Ubuntu-BI.ttf */; };
 		DC1BE6A214F417CC00F49D25 /* Ubuntu-C.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68E14F417CC00F49D25 /* Ubuntu-C.ttf */; };
@@ -481,33 +547,6 @@
 		57A863D2161C0F48004A05D9 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = red.png; path = "Small Resolution/GamePlay/red.png"; sourceTree = "<group>"; };
 		57A863D3161C0F48004A05D9 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yellow.png; path = "Small Resolution/GamePlay/yellow.png"; sourceTree = "<group>"; };
 		57A863D4161C0F48004A05D9 /* yellowspark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yellowspark.png; path = "Small Resolution/GamePlay/yellowspark.png"; sourceTree = "<group>"; };
-		57B925421604E7CD00E55244 /* lvl1button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl1button-hd.png"; path = "Levels/lvlbuttonfolder/lvl1button-hd.png"; sourceTree = "<group>"; };
-		57B925431604E7CD00E55244 /* lvl1buttonselect-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl1buttonselect-hd.png"; path = "Levels/lvlbuttonfolder/lvl1buttonselect-hd.png"; sourceTree = "<group>"; };
-		57B925451604E7CD00E55244 /* lvl2buttonselect-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl2buttonselect-hd.png"; path = "Levels/lvlbuttonfolder/lvl2buttonselect-hd.png"; sourceTree = "<group>"; };
-		57B925461604E7CD00E55244 /* lvl3button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl3button-hd.png"; path = "Levels/lvlbuttonfolder/lvl3button-hd.png"; sourceTree = "<group>"; };
-		57B925471604E7CD00E55244 /* lvl3buttonselect-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl3buttonselect-hd.png"; path = "Levels/lvlbuttonfolder/lvl3buttonselect-hd.png"; sourceTree = "<group>"; };
-		57B925481604E7CD00E55244 /* lvl4button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl4button-hd.png"; path = "Levels/lvlbuttonfolder/lvl4button-hd.png"; sourceTree = "<group>"; };
-		57B925491604E7CD00E55244 /* lvl4buttonselect-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl4buttonselect-hd.png"; path = "Levels/lvlbuttonfolder/lvl4buttonselect-hd.png"; sourceTree = "<group>"; };
-		57B9254A1604E7CD00E55244 /* lvl5button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl5button-hd.png"; path = "Levels/lvlbuttonfolder/lvl5button-hd.png"; sourceTree = "<group>"; };
-		57B9254B1604E7CD00E55244 /* lvl5buttonselect-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl5buttonselect-hd.png"; path = "Levels/lvlbuttonfolder/lvl5buttonselect-hd.png"; sourceTree = "<group>"; };
-		57B9254D1604E7CD00E55244 /* lvl6buttonselect-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl6buttonselect-hd.png"; path = "Levels/lvlbuttonfolder/lvl6buttonselect-hd.png"; sourceTree = "<group>"; };
-		57B9254E1604E7CD00E55244 /* lvl7button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl7button-hd.png"; path = "Levels/lvlbuttonfolder/lvl7button-hd.png"; sourceTree = "<group>"; };
-		57B9254F1604E7CD00E55244 /* lvl7buttonselect-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl7buttonselect-hd.png"; path = "Levels/lvlbuttonfolder/lvl7buttonselect-hd.png"; sourceTree = "<group>"; };
-		57B925511604E7CD00E55244 /* lvl8buttonselect-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl8buttonselect-hd.png"; path = "Levels/lvlbuttonfolder/lvl8buttonselect-hd.png"; sourceTree = "<group>"; };
-		57B925521604E7CD00E55244 /* lvl9button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl9button-hd.png"; path = "Levels/lvlbuttonfolder/lvl9button-hd.png"; sourceTree = "<group>"; };
-		57B925531604E7CD00E55244 /* lvl9buttonselect-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl9buttonselect-hd.png"; path = "Levels/lvlbuttonfolder/lvl9buttonselect-hd.png"; sourceTree = "<group>"; };
-		57B925541604E7CD00E55244 /* lvl10button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl10button-hd.png"; path = "Levels/lvlbuttonfolder/lvl10button-hd.png"; sourceTree = "<group>"; };
-		57B925551604E7CD00E55244 /* lvl10buttonselect-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl10buttonselect-hd.png"; path = "Levels/lvlbuttonfolder/lvl10buttonselect-hd.png"; sourceTree = "<group>"; };
-		57B925561604E7CD00E55244 /* lvl11button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl11button-hd.png"; path = "Levels/lvlbuttonfolder/lvl11button-hd.png"; sourceTree = "<group>"; };
-		57B925571604E7CD00E55244 /* lvl11buttonselect-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl11buttonselect-hd.png"; path = "Levels/lvlbuttonfolder/lvl11buttonselect-hd.png"; sourceTree = "<group>"; };
-		57B925581604E7CD00E55244 /* lvl12button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl12button-hd.png"; path = "Levels/lvlbuttonfolder/lvl12button-hd.png"; sourceTree = "<group>"; };
-		57B925591604E7CD00E55244 /* lvl12buttonselect-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl12buttonselect-hd.png"; path = "Levels/lvlbuttonfolder/lvl12buttonselect-hd.png"; sourceTree = "<group>"; };
-		57B9255A1604E7CD00E55244 /* lvl13button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl13button-hd.png"; path = "Levels/lvlbuttonfolder/lvl13button-hd.png"; sourceTree = "<group>"; };
-		57B9255B1604E7CD00E55244 /* lvl13buttonselect-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl13buttonselect-hd.png"; path = "Levels/lvlbuttonfolder/lvl13buttonselect-hd.png"; sourceTree = "<group>"; };
-		57B9255C1604E7CD00E55244 /* lvl14button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl14button-hd.png"; path = "Levels/lvlbuttonfolder/lvl14button-hd.png"; sourceTree = "<group>"; };
-		57B9255D1604E7CD00E55244 /* lvl14buttonselect-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl14buttonselect-hd.png"; path = "Levels/lvlbuttonfolder/lvl14buttonselect-hd.png"; sourceTree = "<group>"; };
-		57B9255E1604E7CD00E55244 /* lvl15button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl15button-hd.png"; path = "Levels/lvlbuttonfolder/lvl15button-hd.png"; sourceTree = "<group>"; };
-		57B9255F1604E7CD00E55244 /* lvl15buttonselect-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl15buttonselect-hd.png"; path = "Levels/lvlbuttonfolder/lvl15buttonselect-hd.png"; sourceTree = "<group>"; };
 		57B9257F1604E7FF00E55244 /* Level1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level1.plist; path = "Levels/Easy /Level1.plist"; sourceTree = "<group>"; };
 		57B925801604E7FF00E55244 /* Level2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level2.plist; path = "Levels/Easy /Level2.plist"; sourceTree = "<group>"; };
 		57B925811604E7FF00E55244 /* Level3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level3.plist; path = "Levels/Easy /Level3.plist"; sourceTree = "<group>"; };
@@ -541,39 +580,6 @@
 		57B925BB1604E82800E55244 /* Level31.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level31.plist; path = Levels/Hard/Level31.plist; sourceTree = "<group>"; };
 		57B925BC1604E82800E55244 /* Level32.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level32.plist; path = Levels/Hard/Level32.plist; sourceTree = "<group>"; };
 		57B925BF1604E8EB00E55244 /* HelloWorldLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloWorldLayer.mm; sourceTree = "<group>"; };
-		57B925C11604E9BA00E55244 /* lvl2button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl2button-hd.png"; path = "Levels/lvlbuttonfolder/lvl2button-hd.png"; sourceTree = "<group>"; };
-		57B925C31604E9D700E55244 /* lvl6button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl6button-hd.png"; path = "Levels/lvlbuttonfolder/lvl6button-hd.png"; sourceTree = "<group>"; };
-		57B925C51604E9E800E55244 /* lvl8button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl8button-hd.png"; path = "Levels/lvlbuttonfolder/lvl8button-hd.png"; sourceTree = "<group>"; };
-		57B925C71604EAB300E55244 /* lvl1button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl1button.png; path = "Levels/lvlbuttonfolder-notretina/lvl1button.png"; sourceTree = "<group>"; };
-		57B925C81604EAB300E55244 /* lvl1buttonselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl1buttonselect.png; path = "Levels/lvlbuttonfolder-notretina/lvl1buttonselect.png"; sourceTree = "<group>"; };
-		57B925C91604EAB400E55244 /* lvl2button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl2button.png; path = "Levels/lvlbuttonfolder-notretina/lvl2button.png"; sourceTree = "<group>"; };
-		57B925CA1604EAB500E55244 /* lvl2buttonselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl2buttonselect.png; path = "Levels/lvlbuttonfolder-notretina/lvl2buttonselect.png"; sourceTree = "<group>"; };
-		57B925CB1604EAB600E55244 /* lvl3button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl3button.png; path = "Levels/lvlbuttonfolder-notretina/lvl3button.png"; sourceTree = "<group>"; };
-		57B925CC1604EAB600E55244 /* lvl3buttonselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl3buttonselect.png; path = "Levels/lvlbuttonfolder-notretina/lvl3buttonselect.png"; sourceTree = "<group>"; };
-		57B925CD1604EAB700E55244 /* lvl4button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl4button.png; path = "Levels/lvlbuttonfolder-notretina/lvl4button.png"; sourceTree = "<group>"; };
-		57B925CE1604EAB800E55244 /* lvl4buttonselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl4buttonselect.png; path = "Levels/lvlbuttonfolder-notretina/lvl4buttonselect.png"; sourceTree = "<group>"; };
-		57B925CF1604EAB800E55244 /* lvl5button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl5button.png; path = "Levels/lvlbuttonfolder-notretina/lvl5button.png"; sourceTree = "<group>"; };
-		57B925D01604EAB900E55244 /* lvl5buttonselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl5buttonselect.png; path = "Levels/lvlbuttonfolder-notretina/lvl5buttonselect.png"; sourceTree = "<group>"; };
-		57B925D11604EAB900E55244 /* lvl6button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl6button.png; path = "Levels/lvlbuttonfolder-notretina/lvl6button.png"; sourceTree = "<group>"; };
-		57B925D21604EABA00E55244 /* lvl6buttonselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl6buttonselect.png; path = "Levels/lvlbuttonfolder-notretina/lvl6buttonselect.png"; sourceTree = "<group>"; };
-		57B925D31604EABD00E55244 /* lvl7button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl7button.png; path = "Levels/lvlbuttonfolder-notretina/lvl7button.png"; sourceTree = "<group>"; };
-		57B925D41604EABD00E55244 /* lvl7buttonselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl7buttonselect.png; path = "Levels/lvlbuttonfolder-notretina/lvl7buttonselect.png"; sourceTree = "<group>"; };
-		57B925D51604EABE00E55244 /* lvl8button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl8button.png; path = "Levels/lvlbuttonfolder-notretina/lvl8button.png"; sourceTree = "<group>"; };
-		57B925D61604EABE00E55244 /* lvl8buttonselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl8buttonselect.png; path = "Levels/lvlbuttonfolder-notretina/lvl8buttonselect.png"; sourceTree = "<group>"; };
-		57B925D71604EABF00E55244 /* lvl9button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl9button.png; path = "Levels/lvlbuttonfolder-notretina/lvl9button.png"; sourceTree = "<group>"; };
-		57B925D81604EABF00E55244 /* lvl9buttonselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl9buttonselect.png; path = "Levels/lvlbuttonfolder-notretina/lvl9buttonselect.png"; sourceTree = "<group>"; };
-		57B925D91604EAC000E55244 /* lvl10button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl10button.png; path = "Levels/lvlbuttonfolder-notretina/lvl10button.png"; sourceTree = "<group>"; };
-		57B925DA1604EAC100E55244 /* lvl10buttonselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl10buttonselect.png; path = "Levels/lvlbuttonfolder-notretina/lvl10buttonselect.png"; sourceTree = "<group>"; };
-		57B925DB1604EAC100E55244 /* lvl11button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl11button.png; path = "Levels/lvlbuttonfolder-notretina/lvl11button.png"; sourceTree = "<group>"; };
-		57B925DC1604EAC200E55244 /* lvl11buttonselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl11buttonselect.png; path = "Levels/lvlbuttonfolder-notretina/lvl11buttonselect.png"; sourceTree = "<group>"; };
-		57B925DD1604EAC300E55244 /* lvl12button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl12button.png; path = "Levels/lvlbuttonfolder-notretina/lvl12button.png"; sourceTree = "<group>"; };
-		57B925DE1604EAC300E55244 /* lvl12buttonselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl12buttonselect.png; path = "Levels/lvlbuttonfolder-notretina/lvl12buttonselect.png"; sourceTree = "<group>"; };
-		57B925DF1604EAC400E55244 /* lvl13button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl13button.png; path = "Levels/lvlbuttonfolder-notretina/lvl13button.png"; sourceTree = "<group>"; };
-		57B925E01604EAC500E55244 /* lvl13buttonselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl13buttonselect.png; path = "Levels/lvlbuttonfolder-notretina/lvl13buttonselect.png"; sourceTree = "<group>"; };
-		57B925E11604EAC600E55244 /* lvl14button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl14button.png; path = "Levels/lvlbuttonfolder-notretina/lvl14button.png"; sourceTree = "<group>"; };
-		57B925E21604EAC600E55244 /* lvl14buttonselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl14buttonselect.png; path = "Levels/lvlbuttonfolder-notretina/lvl14buttonselect.png"; sourceTree = "<group>"; };
-		57B925E31604EAC600E55244 /* lvl15button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl15button.png; path = "Levels/lvlbuttonfolder-notretina/lvl15button.png"; sourceTree = "<group>"; };
-		57B925E41604EAC700E55244 /* lvl15buttonselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl15buttonselect.png; path = "Levels/lvlbuttonfolder-notretina/lvl15buttonselect.png"; sourceTree = "<group>"; };
 		57B926031604ED1400E55244 /* Restart-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Restart-hd.png"; path = "Retina/Restart-hd.png"; sourceTree = "<group>"; };
 		57B926041604ED1600E55244 /* RestartClicked-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "RestartClicked-hd.png"; path = "Retina/RestartClicked-hd.png"; sourceTree = "<group>"; };
 		57B926071604ED2700E55244 /* Restart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Restart.png; path = "Not Retina/Restart.png"; sourceTree = "<group>"; };
@@ -643,6 +649,132 @@
 		57C4CAF0161EC8BC00667FD1 /* easy2-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "easy2-hd.png"; path = "HD/Level Difficult/easy2-hd.png"; sourceTree = "<group>"; };
 		57C4CAF1161EC8BE00667FD1 /* hard-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hard-hd.png"; path = "HD/Level Difficult/hard-hd.png"; sourceTree = "<group>"; };
 		57C4CAF2161EC8C100667FD1 /* hard2-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hard2-hd.png"; path = "HD/Level Difficult/hard2-hd.png"; sourceTree = "<group>"; };
+		57DCC447161F517E0077A037 /* LevelSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LevelSelect.png; path = "Small Resolution/GamePlay/LevelSelect.png"; sourceTree = "<group>"; };
+		57DCC449161F51B90077A037 /* LevelSelect-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LevelSelect-hd.png"; path = "HD/GamePlay/LevelSelect-hd.png"; sourceTree = "<group>"; };
+		57DCC44B161F58560077A037 /* lvl1button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl1button.png; path = "Level_Numbers/Small Levels/lvl1button.png"; sourceTree = "<group>"; };
+		57DCC44C161F58560077A037 /* lvl2button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl2button.png; path = "Level_Numbers/Small Levels/lvl2button.png"; sourceTree = "<group>"; };
+		57DCC44D161F58560077A037 /* lvl3button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl3button.png; path = "Level_Numbers/Small Levels/lvl3button.png"; sourceTree = "<group>"; };
+		57DCC44E161F58570077A037 /* lvl4button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl4button.png; path = "Level_Numbers/Small Levels/lvl4button.png"; sourceTree = "<group>"; };
+		57DCC44F161F58570077A037 /* lvl5button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl5button.png; path = "Level_Numbers/Small Levels/lvl5button.png"; sourceTree = "<group>"; };
+		57DCC450161F58570077A037 /* lvl6button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl6button.png; path = "Level_Numbers/Small Levels/lvl6button.png"; sourceTree = "<group>"; };
+		57DCC451161F58570077A037 /* lvl7button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl7button.png; path = "Level_Numbers/Small Levels/lvl7button.png"; sourceTree = "<group>"; };
+		57DCC452161F58570077A037 /* lvl8button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl8button.png; path = "Level_Numbers/Small Levels/lvl8button.png"; sourceTree = "<group>"; };
+		57DCC453161F58580077A037 /* lvl9button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl9button.png; path = "Level_Numbers/Small Levels/lvl9button.png"; sourceTree = "<group>"; };
+		57DCC454161F58580077A037 /* lvl10button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl10button.png; path = "Level_Numbers/Small Levels/lvl10button.png"; sourceTree = "<group>"; };
+		57DCC455161F58580077A037 /* lvl11button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl11button.png; path = "Level_Numbers/Small Levels/lvl11button.png"; sourceTree = "<group>"; };
+		57DCC456161F58590077A037 /* lvl12button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl12button.png; path = "Level_Numbers/Small Levels/lvl12button.png"; sourceTree = "<group>"; };
+		57DCC457161F58590077A037 /* lvl13button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl13button.png; path = "Level_Numbers/Small Levels/lvl13button.png"; sourceTree = "<group>"; };
+		57DCC458161F585A0077A037 /* lvl14button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl14button.png; path = "Level_Numbers/Small Levels/lvl14button.png"; sourceTree = "<group>"; };
+		57DCC459161F585A0077A037 /* lvl15button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl15button.png; path = "Level_Numbers/Small Levels/lvl15button.png"; sourceTree = "<group>"; };
+		57DCC469161F58740077A037 /* lvl1button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl1button-hd.png"; path = "Level_Numbers/HD Levels/lvl1button-hd.png"; sourceTree = "<group>"; };
+		57DCC46A161F58740077A037 /* lvl2button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl2button-hd.png"; path = "Level_Numbers/HD Levels/lvl2button-hd.png"; sourceTree = "<group>"; };
+		57DCC46B161F58740077A037 /* lvl3button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl3button-hd.png"; path = "Level_Numbers/HD Levels/lvl3button-hd.png"; sourceTree = "<group>"; };
+		57DCC46C161F58740077A037 /* lvl4button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl4button-hd.png"; path = "Level_Numbers/HD Levels/lvl4button-hd.png"; sourceTree = "<group>"; };
+		57DCC46D161F58740077A037 /* lvl5button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl5button-hd.png"; path = "Level_Numbers/HD Levels/lvl5button-hd.png"; sourceTree = "<group>"; };
+		57DCC46E161F58740077A037 /* lvl6button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl6button-hd.png"; path = "Level_Numbers/HD Levels/lvl6button-hd.png"; sourceTree = "<group>"; };
+		57DCC46F161F58740077A037 /* lvl7button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl7button-hd.png"; path = "Level_Numbers/HD Levels/lvl7button-hd.png"; sourceTree = "<group>"; };
+		57DCC470161F58740077A037 /* lvl8button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl8button-hd.png"; path = "Level_Numbers/HD Levels/lvl8button-hd.png"; sourceTree = "<group>"; };
+		57DCC471161F58740077A037 /* lvl9button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl9button-hd.png"; path = "Level_Numbers/HD Levels/lvl9button-hd.png"; sourceTree = "<group>"; };
+		57DCC472161F58740077A037 /* lvl10button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl10button-hd.png"; path = "Level_Numbers/HD Levels/lvl10button-hd.png"; sourceTree = "<group>"; };
+		57DCC473161F58740077A037 /* lvl11button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl11button-hd.png"; path = "Level_Numbers/HD Levels/lvl11button-hd.png"; sourceTree = "<group>"; };
+		57DCC474161F58740077A037 /* lvl12button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl12button-hd.png"; path = "Level_Numbers/HD Levels/lvl12button-hd.png"; sourceTree = "<group>"; };
+		57DCC475161F58740077A037 /* lvl13button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl13button-hd.png"; path = "Level_Numbers/HD Levels/lvl13button-hd.png"; sourceTree = "<group>"; };
+		57DCC476161F58740077A037 /* lvl14button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl14button-hd.png"; path = "Level_Numbers/HD Levels/lvl14button-hd.png"; sourceTree = "<group>"; };
+		57DCC477161F58740077A037 /* lvl15button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl15button-hd.png"; path = "Level_Numbers/HD Levels/lvl15button-hd.png"; sourceTree = "<group>"; };
+		57DCC48F161F987E0077A037 /* Level 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 21.png"; path = "Level_Numbers/Small Levels/Level 21.png"; sourceTree = "<group>"; };
+		57DCC490161F987E0077A037 /* Level 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 22.png"; path = "Level_Numbers/Small Levels/Level 22.png"; sourceTree = "<group>"; };
+		57DCC491161F987E0077A037 /* Level 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 23.png"; path = "Level_Numbers/Small Levels/Level 23.png"; sourceTree = "<group>"; };
+		57DCC492161F987E0077A037 /* Level 24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 24.png"; path = "Level_Numbers/Small Levels/Level 24.png"; sourceTree = "<group>"; };
+		57DCC493161F987E0077A037 /* Level 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 25.png"; path = "Level_Numbers/Small Levels/Level 25.png"; sourceTree = "<group>"; };
+		57DCC494161F987E0077A037 /* Level 26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 26.png"; path = "Level_Numbers/Small Levels/Level 26.png"; sourceTree = "<group>"; };
+		57DCC495161F987E0077A037 /* Level 27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 27.png"; path = "Level_Numbers/Small Levels/Level 27.png"; sourceTree = "<group>"; };
+		57DCC496161F987E0077A037 /* Level 28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 28.png"; path = "Level_Numbers/Small Levels/Level 28.png"; sourceTree = "<group>"; };
+		57DCC497161F987E0077A037 /* Level 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 29.png"; path = "Level_Numbers/Small Levels/Level 29.png"; sourceTree = "<group>"; };
+		57DCC498161F987E0077A037 /* Level 30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 30.png"; path = "Level_Numbers/Small Levels/Level 30.png"; sourceTree = "<group>"; };
+		57DCC499161F987E0077A037 /* Level 31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 31.png"; path = "Level_Numbers/Small Levels/Level 31.png"; sourceTree = "<group>"; };
+		57DCC49A161F987E0077A037 /* Level 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 32.png"; path = "Level_Numbers/Small Levels/Level 32.png"; sourceTree = "<group>"; };
+		57DCC49B161F987E0077A037 /* Level 33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 33.png"; path = "Level_Numbers/Small Levels/Level 33.png"; sourceTree = "<group>"; };
+		57DCC49C161F987E0077A037 /* Level 34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 34.png"; path = "Level_Numbers/Small Levels/Level 34.png"; sourceTree = "<group>"; };
+		57DCC49D161F987E0077A037 /* Level 35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 35.png"; path = "Level_Numbers/Small Levels/Level 35.png"; sourceTree = "<group>"; };
+		57DCC49E161F987E0077A037 /* Level 36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 36.png"; path = "Level_Numbers/Small Levels/Level 36.png"; sourceTree = "<group>"; };
+		57DCC49F161F987E0077A037 /* Level 37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 37.png"; path = "Level_Numbers/Small Levels/Level 37.png"; sourceTree = "<group>"; };
+		57DCC4A0161F987E0077A037 /* Level 38.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 38.png"; path = "Level_Numbers/Small Levels/Level 38.png"; sourceTree = "<group>"; };
+		57DCC4A1161F987E0077A037 /* Level 39.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 39.png"; path = "Level_Numbers/Small Levels/Level 39.png"; sourceTree = "<group>"; };
+		57DCC4A2161F987E0077A037 /* Level 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 40.png"; path = "Level_Numbers/Small Levels/Level 40.png"; sourceTree = "<group>"; };
+		57DCC4B8161F98F40077A037 /* Level 21-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 21-hd.png"; path = "Level_Numbers/HD Levels/Level 21-hd.png"; sourceTree = "<group>"; };
+		57DCC4B9161F98F40077A037 /* Level 22-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 22-hd.png"; path = "Level_Numbers/HD Levels/Level 22-hd.png"; sourceTree = "<group>"; };
+		57DCC4BA161F98F40077A037 /* Level 23-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 23-hd.png"; path = "Level_Numbers/HD Levels/Level 23-hd.png"; sourceTree = "<group>"; };
+		57DCC4BB161F98F40077A037 /* Level 24-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 24-hd.png"; path = "Level_Numbers/HD Levels/Level 24-hd.png"; sourceTree = "<group>"; };
+		57DCC4BC161F98F40077A037 /* Level 25-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 25-hd.png"; path = "Level_Numbers/HD Levels/Level 25-hd.png"; sourceTree = "<group>"; };
+		57DCC4BD161F98F40077A037 /* Level 26-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 26-hd.png"; path = "Level_Numbers/HD Levels/Level 26-hd.png"; sourceTree = "<group>"; };
+		57DCC4BE161F98F40077A037 /* Level 27-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 27-hd.png"; path = "Level_Numbers/HD Levels/Level 27-hd.png"; sourceTree = "<group>"; };
+		57DCC4BF161F98F40077A037 /* Level 28-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 28-hd.png"; path = "Level_Numbers/HD Levels/Level 28-hd.png"; sourceTree = "<group>"; };
+		57DCC4C0161F98F40077A037 /* Level 29-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 29-hd.png"; path = "Level_Numbers/HD Levels/Level 29-hd.png"; sourceTree = "<group>"; };
+		57DCC4C1161F98F40077A037 /* Level 30-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 30-hd.png"; path = "Level_Numbers/HD Levels/Level 30-hd.png"; sourceTree = "<group>"; };
+		57DCC4C2161F98F40077A037 /* Level 31-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 31-hd.png"; path = "Level_Numbers/HD Levels/Level 31-hd.png"; sourceTree = "<group>"; };
+		57DCC4C3161F98F40077A037 /* Level 32-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 32-hd.png"; path = "Level_Numbers/HD Levels/Level 32-hd.png"; sourceTree = "<group>"; };
+		57DCC4C4161F98F40077A037 /* Level 33-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 33-hd.png"; path = "Level_Numbers/HD Levels/Level 33-hd.png"; sourceTree = "<group>"; };
+		57DCC4C5161F98F40077A037 /* Level 34-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 34-hd.png"; path = "Level_Numbers/HD Levels/Level 34-hd.png"; sourceTree = "<group>"; };
+		57DCC4C6161F98F40077A037 /* Level 35-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 35-hd.png"; path = "Level_Numbers/HD Levels/Level 35-hd.png"; sourceTree = "<group>"; };
+		57DCC4C7161F98F40077A037 /* Level 36-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 36-hd.png"; path = "Level_Numbers/HD Levels/Level 36-hd.png"; sourceTree = "<group>"; };
+		57DCC4C8161F98F40077A037 /* Level 37-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 37-hd.png"; path = "Level_Numbers/HD Levels/Level 37-hd.png"; sourceTree = "<group>"; };
+		57DCC4C9161F98F40077A037 /* Level 38-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 38-hd.png"; path = "Level_Numbers/HD Levels/Level 38-hd.png"; sourceTree = "<group>"; };
+		57DCC4CA161F98F40077A037 /* Level 39-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 39-hd.png"; path = "Level_Numbers/HD Levels/Level 39-hd.png"; sourceTree = "<group>"; };
+		57DCC4CB161F98F40077A037 /* Level 40-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Level 40-hd.png"; path = "Level_Numbers/HD Levels/Level 40-hd.png"; sourceTree = "<group>"; };
+		57DCC4E0161F99120077A037 /* lvl16button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl16button-hd.png"; path = "Level_Numbers/HD Levels/lvl16button-hd.png"; sourceTree = "<group>"; };
+		57DCC4E1161F99120077A037 /* lvl17button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl17button-hd.png"; path = "Level_Numbers/HD Levels/lvl17button-hd.png"; sourceTree = "<group>"; };
+		57DCC4E2161F99120077A037 /* lvl18button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl18button-hd.png"; path = "Level_Numbers/HD Levels/lvl18button-hd.png"; sourceTree = "<group>"; };
+		57DCC4E3161F99120077A037 /* lvl19button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl19button-hd.png"; path = "Level_Numbers/HD Levels/lvl19button-hd.png"; sourceTree = "<group>"; };
+		57DCC4E4161F99120077A037 /* lvl20button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl20button-hd.png"; path = "Level_Numbers/HD Levels/lvl20button-hd.png"; sourceTree = "<group>"; };
+		57DCC4E5161F99120077A037 /* lvl21button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl21button-hd.png"; path = "Level_Numbers/HD Levels/lvl21button-hd.png"; sourceTree = "<group>"; };
+		57DCC4E6161F99120077A037 /* lvl22button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl22button-hd.png"; path = "Level_Numbers/HD Levels/lvl22button-hd.png"; sourceTree = "<group>"; };
+		57DCC4E7161F99120077A037 /* lvl23button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl23button-hd.png"; path = "Level_Numbers/HD Levels/lvl23button-hd.png"; sourceTree = "<group>"; };
+		57DCC4E8161F99120077A037 /* lvl24button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl24button-hd.png"; path = "Level_Numbers/HD Levels/lvl24button-hd.png"; sourceTree = "<group>"; };
+		57DCC4E9161F99120077A037 /* lvl25button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl25button-hd.png"; path = "Level_Numbers/HD Levels/lvl25button-hd.png"; sourceTree = "<group>"; };
+		57DCC4EA161F99120077A037 /* lvl26button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl26button-hd.png"; path = "Level_Numbers/HD Levels/lvl26button-hd.png"; sourceTree = "<group>"; };
+		57DCC4EB161F99120077A037 /* lvl27button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl27button-hd.png"; path = "Level_Numbers/HD Levels/lvl27button-hd.png"; sourceTree = "<group>"; };
+		57DCC4EC161F99120077A037 /* lvl28button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl28button-hd.png"; path = "Level_Numbers/HD Levels/lvl28button-hd.png"; sourceTree = "<group>"; };
+		57DCC4ED161F99120077A037 /* lvl29button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl29button-hd.png"; path = "Level_Numbers/HD Levels/lvl29button-hd.png"; sourceTree = "<group>"; };
+		57DCC4EE161F99120077A037 /* lvl30button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl30button-hd.png"; path = "Level_Numbers/HD Levels/lvl30button-hd.png"; sourceTree = "<group>"; };
+		57DCC4EF161F99120077A037 /* lvl31button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl31button-hd.png"; path = "Level_Numbers/HD Levels/lvl31button-hd.png"; sourceTree = "<group>"; };
+		57DCC4F0161F99120077A037 /* lvl32button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl32button-hd.png"; path = "Level_Numbers/HD Levels/lvl32button-hd.png"; sourceTree = "<group>"; };
+		57DCC4F1161F99120077A037 /* lvl33button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl33button-hd.png"; path = "Level_Numbers/HD Levels/lvl33button-hd.png"; sourceTree = "<group>"; };
+		57DCC4F2161F99120077A037 /* lvl34button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl34button-hd.png"; path = "Level_Numbers/HD Levels/lvl34button-hd.png"; sourceTree = "<group>"; };
+		57DCC4F3161F99120077A037 /* lvl35button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl35button-hd.png"; path = "Level_Numbers/HD Levels/lvl35button-hd.png"; sourceTree = "<group>"; };
+		57DCC4F4161F99120077A037 /* lvl36button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl36button-hd.png"; path = "Level_Numbers/HD Levels/lvl36button-hd.png"; sourceTree = "<group>"; };
+		57DCC4F5161F99120077A037 /* lvl37button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl37button-hd.png"; path = "Level_Numbers/HD Levels/lvl37button-hd.png"; sourceTree = "<group>"; };
+		57DCC4F6161F99120077A037 /* lvl38button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl38button-hd.png"; path = "Level_Numbers/HD Levels/lvl38button-hd.png"; sourceTree = "<group>"; };
+		57DCC4F7161F99120077A037 /* lvl39button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl39button-hd.png"; path = "Level_Numbers/HD Levels/lvl39button-hd.png"; sourceTree = "<group>"; };
+		57DCC4F8161F99120077A037 /* lvl40button-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lvl40button-hd.png"; path = "Level_Numbers/HD Levels/lvl40button-hd.png"; sourceTree = "<group>"; };
+		57DCC512161F99220077A037 /* lvl16button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl16button.png; path = "Level_Numbers/Small Levels/lvl16button.png"; sourceTree = "<group>"; };
+		57DCC513161F99220077A037 /* lvl17button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl17button.png; path = "Level_Numbers/Small Levels/lvl17button.png"; sourceTree = "<group>"; };
+		57DCC514161F99220077A037 /* lvl18button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl18button.png; path = "Level_Numbers/Small Levels/lvl18button.png"; sourceTree = "<group>"; };
+		57DCC515161F99220077A037 /* lvl19button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl19button.png; path = "Level_Numbers/Small Levels/lvl19button.png"; sourceTree = "<group>"; };
+		57DCC516161F99220077A037 /* lvl20button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl20button.png; path = "Level_Numbers/Small Levels/lvl20button.png"; sourceTree = "<group>"; };
+		57DCC517161F99220077A037 /* lvl21button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl21button.png; path = "Level_Numbers/Small Levels/lvl21button.png"; sourceTree = "<group>"; };
+		57DCC518161F99220077A037 /* lvl22button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl22button.png; path = "Level_Numbers/Small Levels/lvl22button.png"; sourceTree = "<group>"; };
+		57DCC519161F99220077A037 /* lvl23button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl23button.png; path = "Level_Numbers/Small Levels/lvl23button.png"; sourceTree = "<group>"; };
+		57DCC51A161F99220077A037 /* lvl24button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl24button.png; path = "Level_Numbers/Small Levels/lvl24button.png"; sourceTree = "<group>"; };
+		57DCC51B161F99220077A037 /* lvl25button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl25button.png; path = "Level_Numbers/Small Levels/lvl25button.png"; sourceTree = "<group>"; };
+		57DCC51C161F99220077A037 /* lvl26button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl26button.png; path = "Level_Numbers/Small Levels/lvl26button.png"; sourceTree = "<group>"; };
+		57DCC51D161F99220077A037 /* lvl27button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl27button.png; path = "Level_Numbers/Small Levels/lvl27button.png"; sourceTree = "<group>"; };
+		57DCC51E161F99220077A037 /* lvl28button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl28button.png; path = "Level_Numbers/Small Levels/lvl28button.png"; sourceTree = "<group>"; };
+		57DCC51F161F99220077A037 /* lvl29button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl29button.png; path = "Level_Numbers/Small Levels/lvl29button.png"; sourceTree = "<group>"; };
+		57DCC520161F99220077A037 /* lvl30button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl30button.png; path = "Level_Numbers/Small Levels/lvl30button.png"; sourceTree = "<group>"; };
+		57DCC521161F99220077A037 /* lvl31button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl31button.png; path = "Level_Numbers/Small Levels/lvl31button.png"; sourceTree = "<group>"; };
+		57DCC522161F99220077A037 /* lvl32button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl32button.png; path = "Level_Numbers/Small Levels/lvl32button.png"; sourceTree = "<group>"; };
+		57DCC523161F99220077A037 /* lvl33button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl33button.png; path = "Level_Numbers/Small Levels/lvl33button.png"; sourceTree = "<group>"; };
+		57DCC524161F99220077A037 /* lvl34button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl34button.png; path = "Level_Numbers/Small Levels/lvl34button.png"; sourceTree = "<group>"; };
+		57DCC525161F99220077A037 /* lvl35button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl35button.png; path = "Level_Numbers/Small Levels/lvl35button.png"; sourceTree = "<group>"; };
+		57DCC526161F99220077A037 /* lvl36button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl36button.png; path = "Level_Numbers/Small Levels/lvl36button.png"; sourceTree = "<group>"; };
+		57DCC527161F99220077A037 /* lvl37button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl37button.png; path = "Level_Numbers/Small Levels/lvl37button.png"; sourceTree = "<group>"; };
+		57DCC528161F99220077A037 /* lvl38button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl38button.png; path = "Level_Numbers/Small Levels/lvl38button.png"; sourceTree = "<group>"; };
+		57DCC529161F99220077A037 /* lvl39button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl39button.png; path = "Level_Numbers/Small Levels/lvl39button.png"; sourceTree = "<group>"; };
+		57DCC52A161F99220077A037 /* lvl40button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lvl40button.png; path = "Level_Numbers/Small Levels/lvl40button.png"; sourceTree = "<group>"; };
+		57DCC544161F9E640077A037 /* home-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home-hd.png"; path = "HD/GamePlay/home-hd.png"; sourceTree = "<group>"; };
+		57DCC545161F9E640077A037 /* home2-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home2-hd.png"; path = "HD/GamePlay/home2-hd.png"; sourceTree = "<group>"; };
+		57DCC548161FA38A0077A037 /* locked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = locked.png; path = "Level_Numbers/Small Levels/locked.png"; sourceTree = "<group>"; };
+		57DCC54A161FA3950077A037 /* locked-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "locked-hd.png"; path = "Level_Numbers/HD Levels/locked-hd.png"; sourceTree = "<group>"; };
 		DC1BE68614F417CC00F49D25 /* copyright.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyright.txt; sourceTree = "<group>"; };
 		DC1BE68914F417CC00F49D25 /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
 		DC1BE68C14F417CC00F49D25 /* Ubuntu-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-B.ttf"; sourceTree = "<group>"; };
@@ -880,6 +1012,10 @@
 		DCC1A39413A94F1A005BD75D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				57DCC548161FA38A0077A037 /* locked.png */,
+				57DCC54A161FA3950077A037 /* locked-hd.png */,
+				57DCC544161F9E640077A037 /* home-hd.png */,
+				57DCC545161F9E640077A037 /* home2-hd.png */,
 				57C4CAE7161EC89F00667FD1 /* easy.png */,
 				57C4CAE8161EC8A000667FD1 /* easy2.png */,
 				57C4CAE9161EC8A300667FD1 /* hard.png */,
@@ -933,6 +1069,9 @@
 				57A863C3161C058A004A05D9 /* Line.png */,
 				57C4CAAB161EB2A800667FD1 /* light.png */,
 				57C4CAA9161EB29900667FD1 /* light-hd.png */,
+				57DCC447161F517E0077A037 /* LevelSelect.png */,
+				57DCC449161F51B90077A037 /* LevelSelect-hd.png */,
+				574CF16A161BD60400006297 /* background.png */,
 				574CF168161BD5F300006297 /* background-hd.png */,
 				5702ABAE16176BDE00158382 /* beginnerbutton-hd.png */,
 				5702ABAF16176BDE00158382 /* beginnerbuttonselect-hd.png */,
@@ -996,6 +1135,26 @@
 				5702A6A9161EAEE000F1AB5F /* Level 18.png */,
 				5702A6AA161EAEE000F1AB5F /* Level 19.png */,
 				5702A6AB161EAEE000F1AB5F /* Level 20.png */,
+				57DCC48F161F987E0077A037 /* Level 21.png */,
+				57DCC490161F987E0077A037 /* Level 22.png */,
+				57DCC491161F987E0077A037 /* Level 23.png */,
+				57DCC492161F987E0077A037 /* Level 24.png */,
+				57DCC493161F987E0077A037 /* Level 25.png */,
+				57DCC494161F987E0077A037 /* Level 26.png */,
+				57DCC495161F987E0077A037 /* Level 27.png */,
+				57DCC496161F987E0077A037 /* Level 28.png */,
+				57DCC497161F987E0077A037 /* Level 29.png */,
+				57DCC498161F987E0077A037 /* Level 30.png */,
+				57DCC499161F987E0077A037 /* Level 31.png */,
+				57DCC49A161F987E0077A037 /* Level 32.png */,
+				57DCC49B161F987E0077A037 /* Level 33.png */,
+				57DCC49C161F987E0077A037 /* Level 34.png */,
+				57DCC49D161F987E0077A037 /* Level 35.png */,
+				57DCC49E161F987E0077A037 /* Level 36.png */,
+				57DCC49F161F987E0077A037 /* Level 37.png */,
+				57DCC4A0161F987E0077A037 /* Level 38.png */,
+				57DCC4A1161F987E0077A037 /* Level 39.png */,
+				57DCC4A2161F987E0077A037 /* Level 40.png */,
 				57C4CA80161EB02600667FD1 /* Level 1-hd.png */,
 				57C4CA81161EB02600667FD1 /* Level 2-hd.png */,
 				57C4CA82161EB02600667FD1 /* Level 3-hd.png */,
@@ -1016,66 +1175,106 @@
 				57C4CA91161EB02600667FD1 /* Level 18-hd.png */,
 				57C4CA92161EB02600667FD1 /* Level 19-hd.png */,
 				57C4CA93161EB02600667FD1 /* Level 20-hd.png */,
-				57B925421604E7CD00E55244 /* lvl1button-hd.png */,
-				57B925431604E7CD00E55244 /* lvl1buttonselect-hd.png */,
-				57B925C11604E9BA00E55244 /* lvl2button-hd.png */,
-				57B925451604E7CD00E55244 /* lvl2buttonselect-hd.png */,
-				57B925461604E7CD00E55244 /* lvl3button-hd.png */,
-				57B925471604E7CD00E55244 /* lvl3buttonselect-hd.png */,
-				57B925481604E7CD00E55244 /* lvl4button-hd.png */,
-				57B925491604E7CD00E55244 /* lvl4buttonselect-hd.png */,
-				57B9254A1604E7CD00E55244 /* lvl5button-hd.png */,
-				57B9254B1604E7CD00E55244 /* lvl5buttonselect-hd.png */,
-				57B925C31604E9D700E55244 /* lvl6button-hd.png */,
-				57B9254D1604E7CD00E55244 /* lvl6buttonselect-hd.png */,
-				57B9254E1604E7CD00E55244 /* lvl7button-hd.png */,
-				57B9254F1604E7CD00E55244 /* lvl7buttonselect-hd.png */,
-				57B925C51604E9E800E55244 /* lvl8button-hd.png */,
-				57B925511604E7CD00E55244 /* lvl8buttonselect-hd.png */,
-				57B925521604E7CD00E55244 /* lvl9button-hd.png */,
-				57B925531604E7CD00E55244 /* lvl9buttonselect-hd.png */,
-				57B925541604E7CD00E55244 /* lvl10button-hd.png */,
-				57B925551604E7CD00E55244 /* lvl10buttonselect-hd.png */,
-				57B925561604E7CD00E55244 /* lvl11button-hd.png */,
-				57B925571604E7CD00E55244 /* lvl11buttonselect-hd.png */,
-				57B925581604E7CD00E55244 /* lvl12button-hd.png */,
-				57B925591604E7CD00E55244 /* lvl12buttonselect-hd.png */,
-				57B9255A1604E7CD00E55244 /* lvl13button-hd.png */,
-				57B9255B1604E7CD00E55244 /* lvl13buttonselect-hd.png */,
-				57B9255C1604E7CD00E55244 /* lvl14button-hd.png */,
-				57B9255D1604E7CD00E55244 /* lvl14buttonselect-hd.png */,
-				57B9255E1604E7CD00E55244 /* lvl15button-hd.png */,
-				57B9255F1604E7CD00E55244 /* lvl15buttonselect-hd.png */,
-				57B925C71604EAB300E55244 /* lvl1button.png */,
-				57B925C81604EAB300E55244 /* lvl1buttonselect.png */,
-				57B925C91604EAB400E55244 /* lvl2button.png */,
-				57B925CA1604EAB500E55244 /* lvl2buttonselect.png */,
-				57B925CB1604EAB600E55244 /* lvl3button.png */,
-				57B925CC1604EAB600E55244 /* lvl3buttonselect.png */,
-				57B925CD1604EAB700E55244 /* lvl4button.png */,
-				57B925CE1604EAB800E55244 /* lvl4buttonselect.png */,
-				57B925CF1604EAB800E55244 /* lvl5button.png */,
-				57B925D01604EAB900E55244 /* lvl5buttonselect.png */,
-				57B925D11604EAB900E55244 /* lvl6button.png */,
-				57B925D21604EABA00E55244 /* lvl6buttonselect.png */,
-				57B925D31604EABD00E55244 /* lvl7button.png */,
-				57B925D41604EABD00E55244 /* lvl7buttonselect.png */,
-				57B925D51604EABE00E55244 /* lvl8button.png */,
-				57B925D61604EABE00E55244 /* lvl8buttonselect.png */,
-				57B925D71604EABF00E55244 /* lvl9button.png */,
-				57B925D81604EABF00E55244 /* lvl9buttonselect.png */,
-				57B925D91604EAC000E55244 /* lvl10button.png */,
-				57B925DA1604EAC100E55244 /* lvl10buttonselect.png */,
-				57B925DB1604EAC100E55244 /* lvl11button.png */,
-				57B925DC1604EAC200E55244 /* lvl11buttonselect.png */,
-				57B925DD1604EAC300E55244 /* lvl12button.png */,
-				57B925DE1604EAC300E55244 /* lvl12buttonselect.png */,
-				57B925DF1604EAC400E55244 /* lvl13button.png */,
-				57B925E01604EAC500E55244 /* lvl13buttonselect.png */,
-				57B925E11604EAC600E55244 /* lvl14button.png */,
-				57B925E21604EAC600E55244 /* lvl14buttonselect.png */,
-				57B925E31604EAC600E55244 /* lvl15button.png */,
-				57B925E41604EAC700E55244 /* lvl15buttonselect.png */,
+				57DCC4B8161F98F40077A037 /* Level 21-hd.png */,
+				57DCC4B9161F98F40077A037 /* Level 22-hd.png */,
+				57DCC4BA161F98F40077A037 /* Level 23-hd.png */,
+				57DCC4BB161F98F40077A037 /* Level 24-hd.png */,
+				57DCC4BC161F98F40077A037 /* Level 25-hd.png */,
+				57DCC4BD161F98F40077A037 /* Level 26-hd.png */,
+				57DCC4BE161F98F40077A037 /* Level 27-hd.png */,
+				57DCC4BF161F98F40077A037 /* Level 28-hd.png */,
+				57DCC4C0161F98F40077A037 /* Level 29-hd.png */,
+				57DCC4C1161F98F40077A037 /* Level 30-hd.png */,
+				57DCC4C2161F98F40077A037 /* Level 31-hd.png */,
+				57DCC4C3161F98F40077A037 /* Level 32-hd.png */,
+				57DCC4C4161F98F40077A037 /* Level 33-hd.png */,
+				57DCC4C5161F98F40077A037 /* Level 34-hd.png */,
+				57DCC4C6161F98F40077A037 /* Level 35-hd.png */,
+				57DCC4C7161F98F40077A037 /* Level 36-hd.png */,
+				57DCC4C8161F98F40077A037 /* Level 37-hd.png */,
+				57DCC4C9161F98F40077A037 /* Level 38-hd.png */,
+				57DCC4CA161F98F40077A037 /* Level 39-hd.png */,
+				57DCC4CB161F98F40077A037 /* Level 40-hd.png */,
+				57DCC44B161F58560077A037 /* lvl1button.png */,
+				57DCC44C161F58560077A037 /* lvl2button.png */,
+				57DCC44D161F58560077A037 /* lvl3button.png */,
+				57DCC44E161F58570077A037 /* lvl4button.png */,
+				57DCC44F161F58570077A037 /* lvl5button.png */,
+				57DCC450161F58570077A037 /* lvl6button.png */,
+				57DCC451161F58570077A037 /* lvl7button.png */,
+				57DCC452161F58570077A037 /* lvl8button.png */,
+				57DCC453161F58580077A037 /* lvl9button.png */,
+				57DCC454161F58580077A037 /* lvl10button.png */,
+				57DCC455161F58580077A037 /* lvl11button.png */,
+				57DCC456161F58590077A037 /* lvl12button.png */,
+				57DCC457161F58590077A037 /* lvl13button.png */,
+				57DCC458161F585A0077A037 /* lvl14button.png */,
+				57DCC459161F585A0077A037 /* lvl15button.png */,
+				57DCC512161F99220077A037 /* lvl16button.png */,
+				57DCC513161F99220077A037 /* lvl17button.png */,
+				57DCC514161F99220077A037 /* lvl18button.png */,
+				57DCC515161F99220077A037 /* lvl19button.png */,
+				57DCC516161F99220077A037 /* lvl20button.png */,
+				57DCC517161F99220077A037 /* lvl21button.png */,
+				57DCC518161F99220077A037 /* lvl22button.png */,
+				57DCC519161F99220077A037 /* lvl23button.png */,
+				57DCC51A161F99220077A037 /* lvl24button.png */,
+				57DCC51B161F99220077A037 /* lvl25button.png */,
+				57DCC51C161F99220077A037 /* lvl26button.png */,
+				57DCC51D161F99220077A037 /* lvl27button.png */,
+				57DCC51E161F99220077A037 /* lvl28button.png */,
+				57DCC51F161F99220077A037 /* lvl29button.png */,
+				57DCC520161F99220077A037 /* lvl30button.png */,
+				57DCC521161F99220077A037 /* lvl31button.png */,
+				57DCC522161F99220077A037 /* lvl32button.png */,
+				57DCC523161F99220077A037 /* lvl33button.png */,
+				57DCC524161F99220077A037 /* lvl34button.png */,
+				57DCC525161F99220077A037 /* lvl35button.png */,
+				57DCC526161F99220077A037 /* lvl36button.png */,
+				57DCC527161F99220077A037 /* lvl37button.png */,
+				57DCC528161F99220077A037 /* lvl38button.png */,
+				57DCC529161F99220077A037 /* lvl39button.png */,
+				57DCC52A161F99220077A037 /* lvl40button.png */,
+				57DCC469161F58740077A037 /* lvl1button-hd.png */,
+				57DCC46A161F58740077A037 /* lvl2button-hd.png */,
+				57DCC46B161F58740077A037 /* lvl3button-hd.png */,
+				57DCC46C161F58740077A037 /* lvl4button-hd.png */,
+				57DCC46D161F58740077A037 /* lvl5button-hd.png */,
+				57DCC46E161F58740077A037 /* lvl6button-hd.png */,
+				57DCC46F161F58740077A037 /* lvl7button-hd.png */,
+				57DCC470161F58740077A037 /* lvl8button-hd.png */,
+				57DCC471161F58740077A037 /* lvl9button-hd.png */,
+				57DCC472161F58740077A037 /* lvl10button-hd.png */,
+				57DCC473161F58740077A037 /* lvl11button-hd.png */,
+				57DCC474161F58740077A037 /* lvl12button-hd.png */,
+				57DCC475161F58740077A037 /* lvl13button-hd.png */,
+				57DCC476161F58740077A037 /* lvl14button-hd.png */,
+				57DCC477161F58740077A037 /* lvl15button-hd.png */,
+				57DCC4E0161F99120077A037 /* lvl16button-hd.png */,
+				57DCC4E1161F99120077A037 /* lvl17button-hd.png */,
+				57DCC4E2161F99120077A037 /* lvl18button-hd.png */,
+				57DCC4E3161F99120077A037 /* lvl19button-hd.png */,
+				57DCC4E4161F99120077A037 /* lvl20button-hd.png */,
+				57DCC4E5161F99120077A037 /* lvl21button-hd.png */,
+				57DCC4E6161F99120077A037 /* lvl22button-hd.png */,
+				57DCC4E7161F99120077A037 /* lvl23button-hd.png */,
+				57DCC4E8161F99120077A037 /* lvl24button-hd.png */,
+				57DCC4E9161F99120077A037 /* lvl25button-hd.png */,
+				57DCC4EA161F99120077A037 /* lvl26button-hd.png */,
+				57DCC4EB161F99120077A037 /* lvl27button-hd.png */,
+				57DCC4EC161F99120077A037 /* lvl28button-hd.png */,
+				57DCC4ED161F99120077A037 /* lvl29button-hd.png */,
+				57DCC4EE161F99120077A037 /* lvl30button-hd.png */,
+				57DCC4EF161F99120077A037 /* lvl31button-hd.png */,
+				57DCC4F0161F99120077A037 /* lvl32button-hd.png */,
+				57DCC4F1161F99120077A037 /* lvl33button-hd.png */,
+				57DCC4F2161F99120077A037 /* lvl34button-hd.png */,
+				57DCC4F3161F99120077A037 /* lvl35button-hd.png */,
+				57DCC4F4161F99120077A037 /* lvl36button-hd.png */,
+				57DCC4F5161F99120077A037 /* lvl37button-hd.png */,
+				57DCC4F6161F99120077A037 /* lvl38button-hd.png */,
+				57DCC4F7161F99120077A037 /* lvl39button-hd.png */,
+				57DCC4F8161F99120077A037 /* lvl40button-hd.png */,
 				5702ABB616176CB200158382 /* BeginnerLevel1.plist */,
 				5702ABB816176CB600158382 /* BeginnerLevel2.plist */,
 				571A255C16168CD800BC5B62 /* BeginnerLevel3.plist */,
@@ -1113,7 +1312,6 @@
 				57B925AB1604E81D00E55244 /* Level30.plist */,
 				57B925BB1604E82800E55244 /* Level31.plist */,
 				57B925BC1604E82800E55244 /* Level32.plist */,
-				574CF16A161BD60400006297 /* background.png */,
 				5702ABB216176BEB00158382 /* beginnerbutton.png */,
 				5702ABB316176BEB00158382 /* beginnerbuttonselect.png */,
 				578F248615E4143700DF0207 /* blue blur.png */,
@@ -1350,33 +1548,6 @@
 				5733145615E70D94008B3027 /* teleporter3-hd.png in Resources */,
 				5733145715E70D94008B3027 /* teleporter4-hd.png in Resources */,
 				5733145815E70D94008B3027 /* teleporter5-hd.png in Resources */,
-				57B925601604E7CD00E55244 /* lvl1button-hd.png in Resources */,
-				57B925611604E7CD00E55244 /* lvl1buttonselect-hd.png in Resources */,
-				57B925631604E7CD00E55244 /* lvl2buttonselect-hd.png in Resources */,
-				57B925641604E7CD00E55244 /* lvl3button-hd.png in Resources */,
-				57B925651604E7CD00E55244 /* lvl3buttonselect-hd.png in Resources */,
-				57B925661604E7CD00E55244 /* lvl4button-hd.png in Resources */,
-				57B925671604E7CD00E55244 /* lvl4buttonselect-hd.png in Resources */,
-				57B925681604E7CD00E55244 /* lvl5button-hd.png in Resources */,
-				57B925691604E7CD00E55244 /* lvl5buttonselect-hd.png in Resources */,
-				57B9256B1604E7CD00E55244 /* lvl6buttonselect-hd.png in Resources */,
-				57B9256C1604E7CD00E55244 /* lvl7button-hd.png in Resources */,
-				57B9256D1604E7CD00E55244 /* lvl7buttonselect-hd.png in Resources */,
-				57B9256F1604E7CD00E55244 /* lvl8buttonselect-hd.png in Resources */,
-				57B925701604E7CD00E55244 /* lvl9button-hd.png in Resources */,
-				57B925711604E7CD00E55244 /* lvl9buttonselect-hd.png in Resources */,
-				57B925721604E7CD00E55244 /* lvl10button-hd.png in Resources */,
-				57B925731604E7CD00E55244 /* lvl10buttonselect-hd.png in Resources */,
-				57B925741604E7CD00E55244 /* lvl11button-hd.png in Resources */,
-				57B925751604E7CD00E55244 /* lvl11buttonselect-hd.png in Resources */,
-				57B925761604E7CD00E55244 /* lvl12button-hd.png in Resources */,
-				57B925771604E7CD00E55244 /* lvl12buttonselect-hd.png in Resources */,
-				57B925781604E7CD00E55244 /* lvl13button-hd.png in Resources */,
-				57B925791604E7CD00E55244 /* lvl13buttonselect-hd.png in Resources */,
-				57B9257A1604E7CD00E55244 /* lvl14button-hd.png in Resources */,
-				57B9257B1604E7CD00E55244 /* lvl14buttonselect-hd.png in Resources */,
-				57B9257C1604E7CD00E55244 /* lvl15button-hd.png in Resources */,
-				57B9257D1604E7CD00E55244 /* lvl15buttonselect-hd.png in Resources */,
 				57B9258E1604E7FF00E55244 /* Level1.plist in Resources */,
 				57B9258F1604E7FF00E55244 /* Level2.plist in Resources */,
 				57B925901604E7FF00E55244 /* Level3.plist in Resources */,
@@ -1409,39 +1580,6 @@
 				57B925BA1604E81D00E55244 /* Level30.plist in Resources */,
 				57B925BD1604E82800E55244 /* Level31.plist in Resources */,
 				57B925BE1604E82800E55244 /* Level32.plist in Resources */,
-				57B925C21604E9BA00E55244 /* lvl2button-hd.png in Resources */,
-				57B925C41604E9D800E55244 /* lvl6button-hd.png in Resources */,
-				57B925C61604E9E900E55244 /* lvl8button-hd.png in Resources */,
-				57B925E51604EAC700E55244 /* lvl1button.png in Resources */,
-				57B925E61604EAC700E55244 /* lvl1buttonselect.png in Resources */,
-				57B925E71604EAC700E55244 /* lvl2button.png in Resources */,
-				57B925E81604EAC700E55244 /* lvl2buttonselect.png in Resources */,
-				57B925E91604EAC700E55244 /* lvl3button.png in Resources */,
-				57B925EA1604EAC700E55244 /* lvl3buttonselect.png in Resources */,
-				57B925EB1604EAC700E55244 /* lvl4button.png in Resources */,
-				57B925EC1604EAC700E55244 /* lvl4buttonselect.png in Resources */,
-				57B925ED1604EAC700E55244 /* lvl5button.png in Resources */,
-				57B925EE1604EAC700E55244 /* lvl5buttonselect.png in Resources */,
-				57B925EF1604EAC700E55244 /* lvl6button.png in Resources */,
-				57B925F01604EAC700E55244 /* lvl6buttonselect.png in Resources */,
-				57B925F11604EAC700E55244 /* lvl7button.png in Resources */,
-				57B925F21604EAC700E55244 /* lvl7buttonselect.png in Resources */,
-				57B925F31604EAC700E55244 /* lvl8button.png in Resources */,
-				57B925F41604EAC700E55244 /* lvl8buttonselect.png in Resources */,
-				57B925F51604EAC700E55244 /* lvl9button.png in Resources */,
-				57B925F61604EAC700E55244 /* lvl9buttonselect.png in Resources */,
-				57B925F71604EAC700E55244 /* lvl10button.png in Resources */,
-				57B925F81604EAC700E55244 /* lvl10buttonselect.png in Resources */,
-				57B925F91604EAC700E55244 /* lvl11button.png in Resources */,
-				57B925FA1604EAC700E55244 /* lvl11buttonselect.png in Resources */,
-				57B925FB1604EAC700E55244 /* lvl12button.png in Resources */,
-				57B925FC1604EAC700E55244 /* lvl12buttonselect.png in Resources */,
-				57B925FD1604EAC700E55244 /* lvl13button.png in Resources */,
-				57B925FE1604EAC700E55244 /* lvl13buttonselect.png in Resources */,
-				57B925FF1604EAC700E55244 /* lvl14button.png in Resources */,
-				57B926001604EAC700E55244 /* lvl14buttonselect.png in Resources */,
-				57B926011604EAC700E55244 /* lvl15button.png in Resources */,
-				57B926021604EAC700E55244 /* lvl15buttonselect.png in Resources */,
 				57B926051604ED1900E55244 /* Restart-hd.png in Resources */,
 				57B926061604ED1900E55244 /* RestartClicked-hd.png in Resources */,
 				57B926091604ED3800E55244 /* Restart.png in Resources */,
@@ -1557,6 +1695,132 @@
 				57C4CAF4161EC8C300667FD1 /* easy2-hd.png in Resources */,
 				57C4CAF5161EC8C300667FD1 /* hard-hd.png in Resources */,
 				57C4CAF6161EC8C300667FD1 /* hard2-hd.png in Resources */,
+				57DCC448161F517E0077A037 /* LevelSelect.png in Resources */,
+				57DCC44A161F51B90077A037 /* LevelSelect-hd.png in Resources */,
+				57DCC45A161F585B0077A037 /* lvl1button.png in Resources */,
+				57DCC45B161F585B0077A037 /* lvl2button.png in Resources */,
+				57DCC45C161F585B0077A037 /* lvl3button.png in Resources */,
+				57DCC45D161F585B0077A037 /* lvl4button.png in Resources */,
+				57DCC45E161F585B0077A037 /* lvl5button.png in Resources */,
+				57DCC45F161F585B0077A037 /* lvl6button.png in Resources */,
+				57DCC460161F585B0077A037 /* lvl7button.png in Resources */,
+				57DCC461161F585B0077A037 /* lvl8button.png in Resources */,
+				57DCC462161F585B0077A037 /* lvl9button.png in Resources */,
+				57DCC463161F585B0077A037 /* lvl10button.png in Resources */,
+				57DCC464161F585B0077A037 /* lvl11button.png in Resources */,
+				57DCC465161F585B0077A037 /* lvl12button.png in Resources */,
+				57DCC466161F585B0077A037 /* lvl13button.png in Resources */,
+				57DCC467161F585B0077A037 /* lvl14button.png in Resources */,
+				57DCC468161F585B0077A037 /* lvl15button.png in Resources */,
+				57DCC478161F58740077A037 /* lvl1button-hd.png in Resources */,
+				57DCC479161F58740077A037 /* lvl2button-hd.png in Resources */,
+				57DCC47A161F58740077A037 /* lvl3button-hd.png in Resources */,
+				57DCC47B161F58740077A037 /* lvl4button-hd.png in Resources */,
+				57DCC47C161F58740077A037 /* lvl5button-hd.png in Resources */,
+				57DCC47D161F58740077A037 /* lvl6button-hd.png in Resources */,
+				57DCC47E161F58740077A037 /* lvl7button-hd.png in Resources */,
+				57DCC47F161F58740077A037 /* lvl8button-hd.png in Resources */,
+				57DCC480161F58740077A037 /* lvl9button-hd.png in Resources */,
+				57DCC481161F58740077A037 /* lvl10button-hd.png in Resources */,
+				57DCC482161F58740077A037 /* lvl11button-hd.png in Resources */,
+				57DCC483161F58740077A037 /* lvl12button-hd.png in Resources */,
+				57DCC484161F58740077A037 /* lvl13button-hd.png in Resources */,
+				57DCC485161F58740077A037 /* lvl14button-hd.png in Resources */,
+				57DCC486161F58740077A037 /* lvl15button-hd.png in Resources */,
+				57DCC4A3161F987E0077A037 /* Level 21.png in Resources */,
+				57DCC4A4161F987E0077A037 /* Level 22.png in Resources */,
+				57DCC4A5161F987E0077A037 /* Level 23.png in Resources */,
+				57DCC4A6161F987E0077A037 /* Level 24.png in Resources */,
+				57DCC4A7161F987E0077A037 /* Level 25.png in Resources */,
+				57DCC4A8161F987E0077A037 /* Level 26.png in Resources */,
+				57DCC4A9161F987E0077A037 /* Level 27.png in Resources */,
+				57DCC4AA161F987E0077A037 /* Level 28.png in Resources */,
+				57DCC4AB161F987E0077A037 /* Level 29.png in Resources */,
+				57DCC4AC161F987E0077A037 /* Level 30.png in Resources */,
+				57DCC4AD161F987E0077A037 /* Level 31.png in Resources */,
+				57DCC4AE161F987E0077A037 /* Level 32.png in Resources */,
+				57DCC4AF161F987E0077A037 /* Level 33.png in Resources */,
+				57DCC4B0161F987E0077A037 /* Level 34.png in Resources */,
+				57DCC4B1161F987E0077A037 /* Level 35.png in Resources */,
+				57DCC4B2161F987E0077A037 /* Level 36.png in Resources */,
+				57DCC4B3161F987E0077A037 /* Level 37.png in Resources */,
+				57DCC4B4161F987E0077A037 /* Level 38.png in Resources */,
+				57DCC4B5161F987E0077A037 /* Level 39.png in Resources */,
+				57DCC4B6161F987E0077A037 /* Level 40.png in Resources */,
+				57DCC4CC161F98F40077A037 /* Level 21-hd.png in Resources */,
+				57DCC4CD161F98F40077A037 /* Level 22-hd.png in Resources */,
+				57DCC4CE161F98F40077A037 /* Level 23-hd.png in Resources */,
+				57DCC4CF161F98F40077A037 /* Level 24-hd.png in Resources */,
+				57DCC4D0161F98F40077A037 /* Level 25-hd.png in Resources */,
+				57DCC4D1161F98F40077A037 /* Level 26-hd.png in Resources */,
+				57DCC4D2161F98F40077A037 /* Level 27-hd.png in Resources */,
+				57DCC4D3161F98F40077A037 /* Level 28-hd.png in Resources */,
+				57DCC4D4161F98F40077A037 /* Level 29-hd.png in Resources */,
+				57DCC4D5161F98F40077A037 /* Level 30-hd.png in Resources */,
+				57DCC4D6161F98F40077A037 /* Level 31-hd.png in Resources */,
+				57DCC4D7161F98F40077A037 /* Level 32-hd.png in Resources */,
+				57DCC4D8161F98F40077A037 /* Level 33-hd.png in Resources */,
+				57DCC4D9161F98F40077A037 /* Level 34-hd.png in Resources */,
+				57DCC4DA161F98F40077A037 /* Level 35-hd.png in Resources */,
+				57DCC4DB161F98F40077A037 /* Level 36-hd.png in Resources */,
+				57DCC4DC161F98F40077A037 /* Level 37-hd.png in Resources */,
+				57DCC4DD161F98F40077A037 /* Level 38-hd.png in Resources */,
+				57DCC4DE161F98F40077A037 /* Level 39-hd.png in Resources */,
+				57DCC4DF161F98F40077A037 /* Level 40-hd.png in Resources */,
+				57DCC4F9161F99120077A037 /* lvl16button-hd.png in Resources */,
+				57DCC4FA161F99120077A037 /* lvl17button-hd.png in Resources */,
+				57DCC4FB161F99120077A037 /* lvl18button-hd.png in Resources */,
+				57DCC4FC161F99120077A037 /* lvl19button-hd.png in Resources */,
+				57DCC4FD161F99120077A037 /* lvl20button-hd.png in Resources */,
+				57DCC4FE161F99120077A037 /* lvl21button-hd.png in Resources */,
+				57DCC4FF161F99120077A037 /* lvl22button-hd.png in Resources */,
+				57DCC500161F99120077A037 /* lvl23button-hd.png in Resources */,
+				57DCC501161F99120077A037 /* lvl24button-hd.png in Resources */,
+				57DCC502161F99120077A037 /* lvl25button-hd.png in Resources */,
+				57DCC503161F99120077A037 /* lvl26button-hd.png in Resources */,
+				57DCC504161F99120077A037 /* lvl27button-hd.png in Resources */,
+				57DCC505161F99120077A037 /* lvl28button-hd.png in Resources */,
+				57DCC506161F99120077A037 /* lvl29button-hd.png in Resources */,
+				57DCC507161F99120077A037 /* lvl30button-hd.png in Resources */,
+				57DCC508161F99120077A037 /* lvl31button-hd.png in Resources */,
+				57DCC509161F99120077A037 /* lvl32button-hd.png in Resources */,
+				57DCC50A161F99120077A037 /* lvl33button-hd.png in Resources */,
+				57DCC50B161F99120077A037 /* lvl34button-hd.png in Resources */,
+				57DCC50C161F99120077A037 /* lvl35button-hd.png in Resources */,
+				57DCC50D161F99120077A037 /* lvl36button-hd.png in Resources */,
+				57DCC50E161F99120077A037 /* lvl37button-hd.png in Resources */,
+				57DCC50F161F99120077A037 /* lvl38button-hd.png in Resources */,
+				57DCC510161F99120077A037 /* lvl39button-hd.png in Resources */,
+				57DCC511161F99120077A037 /* lvl40button-hd.png in Resources */,
+				57DCC52B161F99220077A037 /* lvl16button.png in Resources */,
+				57DCC52C161F99220077A037 /* lvl17button.png in Resources */,
+				57DCC52D161F99220077A037 /* lvl18button.png in Resources */,
+				57DCC52E161F99220077A037 /* lvl19button.png in Resources */,
+				57DCC52F161F99220077A037 /* lvl20button.png in Resources */,
+				57DCC530161F99220077A037 /* lvl21button.png in Resources */,
+				57DCC531161F99220077A037 /* lvl22button.png in Resources */,
+				57DCC532161F99220077A037 /* lvl23button.png in Resources */,
+				57DCC533161F99220077A037 /* lvl24button.png in Resources */,
+				57DCC534161F99220077A037 /* lvl25button.png in Resources */,
+				57DCC535161F99220077A037 /* lvl26button.png in Resources */,
+				57DCC536161F99220077A037 /* lvl27button.png in Resources */,
+				57DCC537161F99220077A037 /* lvl28button.png in Resources */,
+				57DCC538161F99220077A037 /* lvl29button.png in Resources */,
+				57DCC539161F99220077A037 /* lvl30button.png in Resources */,
+				57DCC53A161F99220077A037 /* lvl31button.png in Resources */,
+				57DCC53B161F99220077A037 /* lvl32button.png in Resources */,
+				57DCC53C161F99220077A037 /* lvl33button.png in Resources */,
+				57DCC53D161F99220077A037 /* lvl34button.png in Resources */,
+				57DCC53E161F99220077A037 /* lvl35button.png in Resources */,
+				57DCC53F161F99220077A037 /* lvl36button.png in Resources */,
+				57DCC540161F99220077A037 /* lvl37button.png in Resources */,
+				57DCC541161F99220077A037 /* lvl38button.png in Resources */,
+				57DCC542161F99220077A037 /* lvl39button.png in Resources */,
+				57DCC543161F99220077A037 /* lvl40button.png in Resources */,
+				57DCC546161F9E640077A037 /* home-hd.png in Resources */,
+				57DCC547161F9E640077A037 /* home2-hd.png in Resources */,
+				57DCC549161FA38A0077A037 /* locked.png in Resources */,
+				57DCC54B161FA3950077A037 /* locked-hd.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

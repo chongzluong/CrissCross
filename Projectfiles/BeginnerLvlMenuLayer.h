@@ -12,6 +12,9 @@
 #import "CCLayer.h"
 
 @interface BeginnerLvlMenuLayer : CCLayer
+{
+    CCSprite *background;
+}
 
 +(id) scene;
 -(void) startLevels:(id) self;

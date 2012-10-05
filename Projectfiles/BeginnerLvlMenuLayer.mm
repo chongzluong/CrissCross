@@ -42,6 +42,9 @@
 //set up the Menus
 -(void) setUpLevels
 {
+    background = [CCSprite spriteWithFile:@"LevelSelect.png"];
+    background.position = ccp(160,240);
+    [self addChild:background];
     
     // Create a menu and add your menu items to it
 	CCMenu * myMenu = [CCMenu menuWithItems:nil];
@@ -50,7 +53,7 @@
     //Create menu buttons
     for (int k = 1; k<6; k++)
     {
-        CCMenuItem *menuItem = [CCMenuItemImage itemFromNormalImage:[NSString stringWithFormat:@"lvl%ibutton.png", k]selectedImage:[NSString stringWithFormat:@"lvl%ibuttonselect.png", k] target:self selector:@selector(startLevels:)];
+        CCMenuItem *menuItem = [CCMenuItemImage itemFromNormalImage:[NSString stringWithFormat:@"lvl%ibutton.png", k]selectedImage:[NSString stringWithFormat:@"lvl%ibutton.png", k] target:self selector:@selector(startLevels:)];
         menuItem.position = ccp(160, 160);
         menuItem.tag = k;
         [myMenu addChild:menuItem];
@@ -60,10 +63,14 @@
 	// Arrange the menu items vertically
 	[myMenu alignItemsInColumns:[NSNumber numberWithUnsignedInt:1], [NSNumber numberWithUnsignedInt:1],[NSNumber numberWithUnsignedInt:1],[NSNumber numberWithUnsignedInt:1],[NSNumber numberWithUnsignedInt:1],nil];
     
+    myMenu.position = ccp(160,170);
+    
+    /*
     CCMenuItem *homeButton = [CCMenuItemImage itemFromNormalImage:@"homebutton.png" selectedImage:@"homebuttonselect.png" target:self selector:@selector(goHome:)];
     homeButton.position = ccp(0, -200);
     
     [myMenu addChild:homeButton];
+    */
     
 	// add the menu to your scene
 	[self addChild:myMenu];

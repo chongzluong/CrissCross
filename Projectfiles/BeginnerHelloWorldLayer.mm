@@ -61,16 +61,16 @@ int beginnerleveltag = 0;
         [self addChild:tempMenu];
         
         restartButton = [CCMenuItemImage itemFromNormalImage:@"Restart.png" selectedImage:@"RestartClicked.png" target:self selector:@selector(restartGame:)];
-        restartButton.position = ccp(70, 40);
+        restartButton.position = ccp(60, 30);
         
         clearButton = [CCMenuItemImage itemFromNormalImage:@"ClearButton.png" selectedImage:@"ClearButtonClicked.png" target:self selector:@selector(clearLines:)];
-        clearButton.position = ccp(250, 40);
+        clearButton.position = ccp(260, 30);
         
         previousButton = [CCMenuItemImage itemFromNormalImage:@"previous.png" selectedImage:@"previousselect.png" target:self selector:@selector(previousLine:)];
-        previousButton.position = ccp(135, 42);
+        previousButton.position = ccp(130, 30);
         
         homeButton = [CCMenuItemImage itemFromNormalImage:@"homebutton.png" selectedImage:@"homebuttonselect.png" target:self selector:@selector(goHome:)];
-        homeButton.position = ccp(180, 40);
+        homeButton.position = ccp(190, 30);
         
         [tempMenu addChild:restartButton];
         [tempMenu addChild:clearButton];
