@@ -53,29 +53,16 @@ int finishedleveltag = 0;
 //set up the Menus
 -(void) setUpMenus
 {
-    if (finishedleveltag!=6)
-    {
-        NSString *title = [NSString stringWithFormat:@"Tutorial#%i Complete!",finishedleveltag-1];
-        CCLabelTTF *label = [CCLabelTTF labelWithString:title fontName:@"Zapfino" fontSize:25];
-        label.position = [CCDirector sharedDirector].screenCenter;
-        label.color =ccGREEN;
-        [self addChild:label];
-    }
-    else
-    {
-        NSString *title = [NSString stringWithFormat:@"Tutorial Complete!"];
-        CCLabelTTF *label = [CCLabelTTF labelWithString:title fontName:@"Zapfino" fontSize:30];
-        label.position = [CCDirector sharedDirector].screenCenter;
-        label.color =ccGREEN;
-        [self addChild:label];
-    }
+    background = [CCSprite spriteWithFile:@"Back.png"];
+    background.position = ccp(160,240);
+    [self addChild:background];
     
     //Create menu buttons
-    CCMenuItem *menuItem1 = [CCMenuItemImage itemFromNormalImage:@"NextLevel.png" selectedImage:@"NextLevelSelect.png" target:self selector:@selector(nextLevel:)];
-    menuItem1.position = ccp(160, 160);
+    CCMenuItem *menuItem1 = [CCMenuItemImage itemFromNormalImage:@"YouWon.png" selectedImage:@"YouWon2.png" target:self selector:@selector(nextLevel:)];
+    menuItem1.position = ccp(160, 200);
     
     CCMenuItem *menuItem2 = [CCMenuItemImage itemFromNormalImage:@"homebutton.png" selectedImage:@"homebuttonselect.png" target:self selector:@selector(goHome:)];
-    menuItem2.position = ccp(160, 120);
+    menuItem2.position = ccp(160, 80);
     menuItem2.tag = 2;
     
     // Create a menu and add your menu items to it

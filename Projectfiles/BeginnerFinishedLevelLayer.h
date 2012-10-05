@@ -12,6 +12,9 @@
 #import "Box2D.h"
 
 @interface BeginnerFinishedLevelLayer : CCLayer
+{
+    CCSprite *background;
+}
 
 +(id) scene;
 +(id) showLevel: (int) i; 

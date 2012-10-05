@@ -11,6 +11,8 @@
 #import "SimpleAudioEngine.h"
 #import "BeginnerFinishedLevelLayer.h"
 #import "HelloWorldLayer.h"
+#define d(p1x, p1y, p2x, p2y) sqrt((p1x - p2x) * (p1x - p2x) + (p1y - p2y) * (p1y - p2y))
+
 
 int beginnerleveltag = 0;
 @interface BeginnerHelloWorldLayer (PrivateMethods)
@@ -32,6 +34,13 @@ int beginnerleveltag = 0;
     
     if ((self = [super init]))
     {
+        background = [CCSprite spriteWithFile:@"background.png"];
+        background.position = ccp(160, 240);
+        [self addChild: background];
+        
+        //Add the Sprite Batch AFDSLKHLAKDFSHLAKDSFHLKASDFHASLDKFH
+        batch = [CCSpriteBatchNode batchNodeWithFile:@"Line.png"];
+        [self addChild:batch];
         
         test = [NSDictionary dictionaryWithContentsOfFile:[NSString stringWithFormat:@"BeginnerLevel%i.plist", beginnerleveltag]];
         beginnerleveltag = [[test objectForKey:@"LevelTag"] intValue];
@@ -248,6 +257,15 @@ int beginnerleveltag = 0;
     return temp;
 }
 
+-(void) drawSprites:(CCSpriteBatchNode *)tempBatch point1:(CGPoint)p0 point2:(CGPoint)p1
+{
+    CCSprite *sprite = [CCSprite spriteWithBatchNode:tempBatch
+                                                rect:CGRectMake(0, 0, d(p0.x, p0.y, p1.x, p1.y) + 2, 6)];
+    sprite.position = ccp((p0.x + p1.x)/2, (p0.y + p1.y)/2);
+    sprite.rotation = CC_RADIANS_TO_DEGREES(atan((p0.y - p1.y)/(p0.x - p1.x))) * -1;
+    [tempBatch addChild:sprite];
+}
+
 -(void) buildGame:(NSDictionary *)nextLevel
 {
     colored = [test objectForKey:@"Colors"];
@@ -278,8 +296,30 @@ int beginnerleveltag = 0;
         [endpoints addObject:ender];
         [points addObject:starter];
         [points addObject:ender];
+        [self drawSprites:batch point1:a point2:b];
     }
     
+    //import plist
+    vertlines = [test objectForKey:@"VerticalLines"];
+    //vertLineBatch = [CCSpriteBatchNode batchNodeWithFile:@"Line.png"];
+    
+    for(int k = 0; k<(int)[vertlines count] ; k++)
+    {
+        item = [vertlines objectAtIndex:k];
+        x = [item objectForKey:@"x1"];
+        x2 = [item objectForKey:@"x2"];
+        y = [item objectForKey:@"y1"];
+        y2 = [item objectForKey:@"y2"];
+        CGPoint p0 = ccp([x floatValue],  [y floatValue]);
+        CGPoint p1 = ccp([x2 floatValue], [y2 floatValue]);
+        ccDrawLine(p0, p1);
+        
+        CCSprite *sprite = [CCSprite spriteWithFile:@"VerticalLine.png"];
+        int midy = ([y intValue] + [y2 intValue])/2;
+        NSNumber *y3 = [NSNumber numberWithInt:midy];
+        sprite.position = ccp([x floatValue], [y3 floatValue]);
+        [self addChild:sprite];
+    }
     
     //Make the colors
     for (int k = 0; k<(int)[colored count] ; k++)
@@ -428,6 +468,7 @@ int beginnerleveltag = 0;
             [endpoints removeLastObject];
             [points removeLastObject];
             [points removeLastObject];
+            [batch removeChildAtIndex:[endpoints count] cleanup:YES];
         }
     }
 }
@@ -445,6 +486,7 @@ int beginnerleveltag = 0;
                 [endpoints removeLastObject];
                 [points removeLastObject];
                 [points removeLastObject];
+                [batch removeChildAtIndex:[endpoints count] cleanup:YES];
             }
             else
             {
@@ -456,41 +498,6 @@ int beginnerleveltag = 0;
         }
     }
 }
-
--(void) draw
-{
-    //enable an opengl setting to smooth the line once it is drawn
-    glEnable(GL_LINE_SMOOTH);
-    
-    //set the color in RGB to draw the line with
-    glColor4ub(255,0,255,255);
-    
-    //import plist
-    vertlines = [test objectForKey:@"VerticalLines"];
-    
-    for(int k = 0; k<(int)[vertlines count] ; k++)
-    {
-        item = [vertlines objectAtIndex:k];
-        x = [item objectForKey:@"x1"];
-        x2 = [item objectForKey:@"x2"];
-        y = [item objectForKey:@"y1"];
-        y2 = [item objectForKey:@"y2"];
-        CGPoint a = ccp([x floatValue],  [y floatValue]);
-        CGPoint b = ccp([x2 floatValue], [y2 floatValue]);
-        ccDrawLine(a, b);
-    }
-    
-    //Draw all the lines
-    for (int k = 0; k<(int)[endpoints count]; k++)
-    {
-        CGPoint starter = CGPointFromString([startpoints objectAtIndex:k]);
-        CGPoint end = CGPointFromString([endpoints objectAtIndex:k]);
-        CGPointMake(starter.x, starter.y);
-        CGPointMake(end.x, end.y);
-        ccDrawLine(starter, end);
-    }
-}
-
 
 -(void) update:(ccTime)delta
 {
@@ -724,6 +731,8 @@ int beginnerleveltag = 0;
                             [points addObject:point];
                             [endpoints addObject:point2];
                             [points addObject:point2];
+                            
+                            [self drawSprites:batch point1:blah point2:blah2];
                         }
                     }
                     else if (direction == KKSwipeGestureDirectionRight && (int)blah.x < 260)
@@ -737,6 +746,8 @@ int beginnerleveltag = 0;
                             [points addObject:point];
                             [endpoints addObject:point2];
                             [points addObject:point2];
+                            
+                            [self drawSprites:batch point1:blah point2:blah2];
                         }
                     }
                 }
@@ -820,6 +831,9 @@ int beginnerleveltag = 0;
                                 [points addObject: point];
                                 counter--;
                                 [self removeChild:target cleanup:YES];
+                                
+                                CGPoint tempPoint = CGPointFromString([startpoints objectAtIndex:[startpoints count]-1]);
+                                [self drawSprites:batch point1:tempPoint point2:blah];
                             }
                             else
                             {

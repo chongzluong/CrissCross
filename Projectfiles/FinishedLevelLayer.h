@@ -13,6 +13,7 @@
 
 @interface FinishedLevelLayer: CCLayer
 {
+    CCSprite *background;
     CCLabelTTF *timeLabel;
     CCLabelTTF *highScoreLabel;
 }

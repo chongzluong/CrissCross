@@ -47,20 +47,16 @@
 //set up the Menus
 -(void) setUpMenus
 {
-    
-    NSString *title = @"Criss Cross";
-    CCLabelTTF *label = [CCLabelTTF labelWithString:title fontName:@"Zapfino" fontSize:35];
-    label.position = [CCDirector sharedDirector].screenCenter;
-    label.color =ccGREEN;
-    [self addChild:label];
-    
+    background = [CCSprite spriteWithFile:@"Screen Main Menu.png"];
+    background.position = ccp(160,240);
+    [self addChild:background];
     
     //Create menu buttons
     CCMenuItem *menuItem0 = [CCMenuItemImage itemFromNormalImage:@"beginnerbutton.png" selectedImage:@"beginnerbuttonselect.png" target:self selector:@selector(startTutorial:)];
     menuItem0.position = ccp(160, 160);
     menuItem0.tag = 0;
     
-    CCMenuItem *menuItem1 = [CCMenuItemImage itemFromNormalImage:@"easybutton.png" selectedImage:@"easybuttonselect.png" target:self selector:@selector(startGame:)];
+    CCMenuItem *menuItem1 = [CCMenuItemImage itemFromNormalImage:@"easy.png" selectedImage:@"easy2.png" target:self selector:@selector(startGame:)];
     menuItem1.position = ccp(160, 120);
     menuItem1.tag = 1;
     
@@ -68,7 +64,7 @@
     menuItem2.position = ccp(160, 80);
     menuItem2.tag = 2;
     
-    CCMenuItem *menuItem3 = [CCMenuItemImage itemFromNormalImage:@"hardbutton.png" selectedImage:@"hardbuttonselect.png" target:self selector:@selector(startGame3:)];
+    CCMenuItem *menuItem3 = [CCMenuItemImage itemFromNormalImage:@"hard.png" selectedImage:@"hard2.png" target:self selector:@selector(startGame3:)];
     menuItem3.position = ccp(160, 40);
     menuItem3.tag = 3;
     

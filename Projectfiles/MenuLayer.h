@@ -17,6 +17,9 @@ enum
 
 
 @interface MenuLayer : CCLayer
+{
+    CCSprite *background;
+}
 
 +(id) scene;
 -(void) startTutorial: (id) sender;

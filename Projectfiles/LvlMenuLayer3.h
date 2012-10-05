@@ -18,6 +18,9 @@
  */
 
 @interface LvlMenuLayer3 : CCLayer
+{
+    CCSprite *background;
+}
 
 +(id) scene;
 -(void) startLevel:(id) self;

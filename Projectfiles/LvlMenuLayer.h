@@ -18,6 +18,9 @@ enum
 */
 
 @interface LvlMenuLayer : CCLayer
+{
+    CCSprite *background;
+}
 
 +(id) scene;
 -(void) startLevel:(id) self;

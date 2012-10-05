@@ -61,7 +61,7 @@
 			<key>tag</key>
 			<integer>12</integer>
 			<key>SpriteName</key>
-			<string>blue blur.png</string>
+			<string>blue.png</string>
 			<key>x</key>
 			<integer>40</integer>
 			<key>y</key>
@@ -71,7 +71,7 @@
 			<key>tag</key>
 			<integer>11</integer>
 			<key>SpriteName</key>
-			<string>red blur.png</string>
+			<string>red.png</string>
 			<key>x</key>
 			<integer>100</integer>
 			<key>y</key>
@@ -81,7 +81,7 @@
 			<key>tag</key>
 			<integer>14</integer>
 			<key>SpriteName</key>
-			<string>green blur.png</string>
+			<string>green.png</string>
 			<key>x</key>
 			<integer>160</integer>
 			<key>y</key>
@@ -91,7 +91,7 @@
 			<key>tag</key>
 			<integer>13</integer>
 			<key>SpriteName</key>
-			<string>pink blur.png</string>
+			<string>purple.png</string>
 			<key>x</key>
 			<integer>220</integer>
 			<key>y</key>
@@ -101,7 +101,7 @@
 			<key>tag</key>
 			<integer>10</integer>
 			<key>SpriteName</key>
-			<string>yellow blur.png</string>
+			<string>yellow.png</string>
 			<key>x</key>
 			<integer>280</integer>
 			<key>y</key>
@@ -111,7 +111,7 @@
 			<key>tag</key>
 			<integer>6</integer>
 			<key>SpriteName</key>
-			<string>red square.png</string>
+			<string>redspark.png</string>
 			<key>x</key>
 			<integer>40</integer>
 			<key>y</key>
@@ -121,7 +121,7 @@
 			<key>tag</key>
 			<integer>7</integer>
 			<key>SpriteName</key>
-			<string>blue square.png</string>
+			<string>bluespark.png</string>
 			<key>x</key>
 			<integer>100</integer>
 			<key>y</key>
@@ -131,7 +131,7 @@
 			<key>tag</key>
 			<integer>5</integer>
 			<key>SpriteName</key>
-			<string>yellow square.png</string>
+			<string>yellowspark.png</string>
 			<key>x</key>
 			<integer>160</integer>
 			<key>y</key>
@@ -141,7 +141,7 @@
 			<key>tag</key>
 			<integer>8</integer>
 			<key>SpriteName</key>
-			<string>pink square.png</string>
+			<string>purplespark.png</string>
 			<key>x</key>
 			<integer>220</integer>
 			<key>y</key>
@@ -151,7 +151,7 @@
 			<key>tag</key>
 			<integer>9</integer>
 			<key>SpriteName</key>
-			<string>green square.png</string>
+			<string>greenspark.png</string>
 			<key>x</key>
 			<integer>280</integer>
 			<key>y</key>
@@ -247,7 +247,7 @@
 			<key>tag</key>
 			<integer>1</integer>
 			<key>spriteName</key>
-			<string>red tear.png</string>
+			<string>redtoken.png</string>
 			<key>x</key>
 			<integer>100</integer>
 			<key>y</key>

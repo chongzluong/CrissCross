@@ -10,6 +10,7 @@
 #import "HelloWorldLayer.h"
 #import "SimpleAudioEngine.h"
 #import "FinishedLevelLayer.h"
+#define d(p1x, p1y, p2x, p2y) sqrt((p1x - p2x) * (p1x - p2x) + (p1y - p2y) * (p1y - p2y))
 
 int leveltag = 0;
 @interface HelloWorldLayer (PrivateMethods)
@@ -34,13 +35,20 @@ int leveltag = 0;
     
     if ((self = [super init]))
     {
+        background = [CCSprite spriteWithFile:@"background.png"];
+        background.position = ccp(160, 240);
+        [self addChild: background];
         
         start = [NSDate date];
         
         timeLabel =[CCLabelTTF labelWithString:[NSString stringWithFormat:@"Time:%f", 0.00] fontName:@"Futura-CondensedExtraBold" fontSize:14];
-        timeLabel.position = ccp(260, 450);
-        timeLabel.color = ccGREEN;
+        timeLabel.position = ccp(270, 465);
+        timeLabel.color = ccBLUE;
         [self addChild: timeLabel];
+        
+        //Add the Sprite Batch AFDSLKHLAKDFSHLAKDSFHLKASDFHASLDKFH
+        batch = [CCSpriteBatchNode batchNodeWithFile:@"Line.png"];
+        [self addChild:batch];
         
         NSNumber *currentHighScore = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Level%i highScore", leveltag]];
         float hs = [currentHighScore floatValue];
@@ -48,15 +56,15 @@ int leveltag = 0;
         if (hs == 0)
         {
             CCLabelTTF *highScoreLabel = [CCLabelTTF labelWithString:@"Best: N/A" fontName:@"Futura-CondensedExtraBold" fontSize:14];
-            highScoreLabel.position = ccp(60, 450);
-            highScoreLabel.color = ccGREEN;
+            highScoreLabel.position = ccp(50, 465);
+            highScoreLabel.color = ccBLUE;
             [self addChild:highScoreLabel];
         }
         else
         {
            CCLabelTTF *highScoreLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"Best:%.2f", hs] fontName:@"Futura-CondensedExtraBold" fontSize:14];
-           highScoreLabel.position = ccp(60, 450);
-           highScoreLabel.color = ccGREEN;
+           highScoreLabel.position = ccp(50, 465);
+           highScoreLabel.color = ccBLUE;
            [self addChild:highScoreLabel];
         }
         
@@ -65,13 +73,13 @@ int leveltag = 0;
         
         [self buildGame:test];
         
+        LevelNumber = [CCSprite spriteWithFile:[NSString stringWithFormat:@"Level %i.png",leveltag]];
+        LevelNumber.position = ccp(160,450);
+        [self addChild:LevelNumber];
         
-        
-        CCLabelTTF *label = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"Level%i", leveltag] fontName:@"Futura-CondensedExtraBold" fontSize:35];
-        //label.position = [CCDirector sharedDirector].screenCenter;
-        label.position = ccp(160, 450);
-        label.color =ccGREEN;
-        [self addChild:label];
+        electricLine = [CCSprite spriteWithFile:@"light.png"];
+        electricLine.position = ccp(160,450);
+        [self addChild:electricLine];
         
         startButton = [CCMenuItemImage itemFromNormalImage:@"start.png" selectedImage:@"startselect.png" target:self selector:@selector(startGame:)];
         startButton.position = ccp(160, 415);
@@ -276,6 +284,15 @@ int leveltag = 0;
     return temp;
 }
 
+-(void) drawSprites:(CCSpriteBatchNode *)tempBatch point1:(CGPoint)p0 point2:(CGPoint)p1
+{
+    CCSprite *sprite = [CCSprite spriteWithBatchNode:tempBatch
+                                                rect:CGRectMake(0, 0, d(p0.x, p0.y, p1.x, p1.y) + 2, 6)];
+    sprite.position = ccp((p0.x + p1.x)/2, (p0.y + p1.y)/2);
+    sprite.rotation = CC_RADIANS_TO_DEGREES(atan((p0.y - p1.y)/(p0.x - p1.x))) * -1;
+    [tempBatch addChild:sprite];
+}
+
 -(void) buildGame:(NSDictionary *)nextLevel
 {
     colored = [test objectForKey:@"Colors"];
@@ -306,8 +323,30 @@ int leveltag = 0;
         [endpoints addObject:ender];
         [points addObject:starter];
         [points addObject:ender];
+        [self drawSprites:batch point1:a point2:b];
     } 
     
+    //import plist
+    vertlines = [test objectForKey:@"VerticalLines"];
+    //vertLineBatch = [CCSpriteBatchNode batchNodeWithFile:@"Line.png"];
+    
+    for(int k = 0; k<(int)[vertlines count] ; k++)
+    {
+        item = [vertlines objectAtIndex:k];
+        x = [item objectForKey:@"x1"];
+        x2 = [item objectForKey:@"x2"];
+        y = [item objectForKey:@"y1"];
+        y2 = [item objectForKey:@"y2"];
+        CGPoint p0 = ccp([x floatValue],  [y floatValue]);
+        CGPoint p1 = ccp([x2 floatValue], [y2 floatValue]);
+        ccDrawLine(p0, p1);
+        
+        CCSprite *sprite = [CCSprite spriteWithFile:@"VerticalLine.png"];
+        int midy = ([y intValue] + [y2 intValue])/2;
+        NSNumber *y3 = [NSNumber numberWithInt:midy];
+        sprite.position = ccp([x floatValue], [y3 floatValue]);
+        [self addChild:sprite];
+    }
     
     //Make the colors
     for (int k = 0; k<(int)[colored count] ; k++)
@@ -456,7 +495,9 @@ int leveltag = 0;
             [endpoints removeLastObject];
             [points removeLastObject];
             [points removeLastObject];
+            [batch removeChildAtIndex:[endpoints count] cleanup:YES];
         }
+
     }
 }
 
@@ -473,6 +514,7 @@ int leveltag = 0;
                 [endpoints removeLastObject];
                 [points removeLastObject];
                 [points removeLastObject];
+                [batch removeChildAtIndex:[endpoints count] cleanup:YES];
             }
             else
             {
@@ -485,6 +527,7 @@ int leveltag = 0;
     }
 }
 
+/*
 -(void) draw
 {
     //enable an opengl setting to smooth the line once it is drawn
@@ -495,6 +538,7 @@ int leveltag = 0;
     
     //import plist 
     vertlines = [test objectForKey:@"VerticalLines"];
+    //vertLineBatch = [CCSpriteBatchNode batchNodeWithFile:@"Line.png"];
     
     for(int k = 0; k<(int)[vertlines count] ; k++)
     {
@@ -503,9 +547,15 @@ int leveltag = 0;
         x2 = [item objectForKey:@"x2"];
         y = [item objectForKey:@"y1"];
         y2 = [item objectForKey:@"y2"];
-        CGPoint a = ccp([x floatValue],  [y floatValue]);
-        CGPoint b = ccp([x2 floatValue], [y2 floatValue]);
-        ccDrawLine(a, b);
+        CGPoint p0 = ccp([x floatValue],  [y floatValue]);
+        CGPoint p1 = ccp([x2 floatValue], [y2 floatValue]);
+        ccDrawLine(p0, p1);
+        
+        CCSprite *sprite = [CCSprite spriteWithFile:@"VerticalLine.png"];
+        int midy = ([y intValue] + [y2 intValue])/2;
+        NSNumber *y3 = [NSNumber numberWithInt:midy];
+        sprite.position = ccp([x floatValue], [y3 floatValue]);
+        [self addChild:sprite];
     }
     
     //Draw all the lines
@@ -517,7 +567,18 @@ int leveltag = 0;
         CGPointMake(end.x, end.y);
         ccDrawLine(starter, end);
     }
+    
+    
+    for(int i = 0; i < (int)[endpoints count]; i++)
+    {
+        CGPoint p0 = CGPointFromString([startpoints objectAtIndex:i]);
+        CGPoint p1 = CGPointFromString([endpoints objectAtIndex:i]);
+        [self drawSprites:batch point1:p0 point2:p1];
+    }
+    [self addChild:batch z:1];
+    
 }
+*/
 
 
 -(void) update:(ccTime)delta
@@ -752,6 +813,8 @@ int leveltag = 0;
                             [points addObject:point];
                             [endpoints addObject:point2];
                             [points addObject:point2];
+                            
+                            [self drawSprites:batch point1:blah point2:blah2];
                         }
                     }
                     else if (direction == KKSwipeGestureDirectionRight && (int)blah.x < 260)
@@ -765,6 +828,8 @@ int leveltag = 0;
                             [points addObject:point];
                             [endpoints addObject:point2];
                             [points addObject:point2];
+                            
+                            [self drawSprites:batch point1:blah point2:blah2];
                         }
                     }
                 }
@@ -848,6 +913,9 @@ int leveltag = 0;
                                 [points addObject: point]; 
                                 counter--;
                                 [self removeChild:target cleanup:YES];
+                                
+                                CGPoint tempPoint = CGPointFromString([startpoints objectAtIndex:[startpoints count]-1]);
+                                [self drawSprites:batch point1:tempPoint point2:blah];
                             }
                             else
                             {

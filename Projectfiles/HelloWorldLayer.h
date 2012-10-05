@@ -9,6 +9,11 @@
 
 @interface HelloWorldLayer : CCLayer
 {
+    CCSpriteBatchNode* vertLineBatch;
+    CCSprite *background;
+    CCSpriteBatchNode *batch;
+    CCSprite *LevelNumber;
+    CCSprite *electricLine;
 	NSString* helloWorldString;
 	NSString* helloWorldFontName;
 	int helloWorldFontSize;
@@ -71,6 +76,8 @@
 -(float) smallestDistanceFromPoint: (CGPoint) point;
 -(float) smallestDistanceFromGate: (CGPoint) point;
 -(float) smallestDistanceFromTeleporter: (CGPoint) point;
+
+-(void) drawSprites: (CCSpriteBatchNode*) tempBatch point1:(CGPoint)p0 point2:(CGPoint)p1;
 
 -(CGPoint) closestPoint: (CGPoint) point;
 -(CGPoint) closestGate: (CGPoint) point;

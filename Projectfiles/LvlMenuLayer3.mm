@@ -43,6 +43,9 @@
 //set up the Menus
 -(void) setUpLevels
 {
+    background = [CCSprite spriteWithFile:@"Screen Main Menu.png"];
+    background.position = ccp(160,240);
+    [self addChild:background];
     
     // Create a menu and add your menu items to it
 	CCMenu * myMenu = [CCMenu menuWithItems:nil];

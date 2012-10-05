@@ -57,15 +57,20 @@ float score = 0.00;
 //set up the Menus
 -(void) setUpMenus
 {
+    background = [CCSprite spriteWithFile:@"Back.png"];
+    background.position = ccp(160,240);
+    [self addChild:background];
     
+    /*
     NSString *title = [NSString stringWithFormat:@"Level%i Complete!",finishedtag-1];
     CCLabelTTF *label = [CCLabelTTF labelWithString:title fontName:@"Zapfino" fontSize:35];
     label.position = [CCDirector sharedDirector].screenCenter;
     label.color =ccGREEN;
     [self addChild:label];
+    */
     
     timeLabel =[CCLabelTTF labelWithString:[NSString stringWithFormat:@"Time:%.2f", score] fontName:@"Futura-CondensedExtraBold" fontSize:14];
-    timeLabel.position = ccp(160, 220);
+    timeLabel.position = ccp(160, 300);
     timeLabel.color = ccGREEN;
     [self addChild: timeLabel];
     
@@ -84,18 +89,18 @@ float score = 0.00;
     hs = [currentHighScore floatValue];
     
     highScoreLabel =[CCLabelTTF labelWithString:[NSString stringWithFormat:@"Current HighScore:%.2f", hs] fontName:@"Futura-CondensedExtraBold" fontSize:14];
-    highScoreLabel.position = ccp(160, 200);
+    highScoreLabel.position = ccp(160, 280);
     highScoreLabel.color = ccGREEN;
     [self addChild: highScoreLabel];
     
     
     
     //Create menu buttons
-    CCMenuItem *menuItem1 = [CCMenuItemImage itemFromNormalImage:@"NextLevel.png" selectedImage:@"NextLevelSelect.png" target:self selector:@selector(nextLevel:)];
-    menuItem1.position = ccp(160, 160);
+    CCMenuItem *menuItem1 = [CCMenuItemImage itemFromNormalImage:@"YouWon.png" selectedImage:@"YouWon2.png" target:self selector:@selector(nextLevel:)];
+    menuItem1.position = ccp(160, 200);
     
     CCMenuItem *menuItem2 = [CCMenuItemImage itemFromNormalImage:@"homebutton.png" selectedImage:@"homebuttonselect.png" target:self selector:@selector(goHome:)];
-    menuItem2.position = ccp(160, 120);
+    menuItem2.position = ccp(160, 80);
     menuItem2.tag = 2;
     
     // Create a menu and add your menu items to it
