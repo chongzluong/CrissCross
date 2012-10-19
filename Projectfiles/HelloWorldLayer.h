@@ -9,11 +9,32 @@
 
 @interface HelloWorldLayer : CCLayer
 {
+    CGPoint clicked;
+    
+    CCAction *redspark;
+    CCAction *bluespark;
+    CCAction *greenspark;
+    CCAction *purplespark;
+    CCAction *yellowspark;
+    
+    NSMutableArray *redFrames;
+    NSMutableArray *blueFrames;
+    NSMutableArray *greenFrames;
+    NSMutableArray *purpleFrames;
+    NSMutableArray *yellowFrames;
+    
+    CCAnimation *rsparks;
+    CCAnimation *bsparks;
+    CCAnimation *gsparks;
+    CCAnimation *psparks;
+    CCAnimation *ysparks;
+    
     CCSpriteBatchNode* vertLineBatch;
     CCSprite *background;
     CCSpriteBatchNode *batch;
     CCSprite *LevelNumber;
     CCSprite *electricLine;
+    
 	NSString* helloWorldString;
 	NSString* helloWorldFontName;
 	int helloWorldFontSize;
@@ -42,6 +63,7 @@
     CCMenuItem *clearButton;
     CCMenuItem *previousButton;
     CCMenuItem *homeButton;
+    CCMenuItem *tutorialButton;
     NSDictionary *test;
     NSArray *colored;
     NSArray *startlines;
@@ -82,6 +104,7 @@
 -(CGPoint) closestPoint: (CGPoint) point;
 -(CGPoint) closestGate: (CGPoint) point;
 
+-(void) endTutorial:(id) sender;
 -(void) startGame:(id) sender;
 -(void) restartGame:(id) sender;
 -(void) goHome:(id) sender;

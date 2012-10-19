@@ -132,7 +132,7 @@
 			<integer>5</integer>
 			<key>SpriteName</key>
 			<string>yellowspark.png</string>
-			<key>q</key>
+			<key>x</key>
 			<integer>160</integer>
 			<key>y</key>
 			<integer>380</integer>

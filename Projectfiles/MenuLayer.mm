@@ -51,17 +51,19 @@
     background.position = ccp(160,240);
     [self addChild:background];
     
+    /*
     //Create menu buttons
     CCMenuItem *menuItem0 = [CCMenuItemImage itemFromNormalImage:@"beginnerbutton.png" selectedImage:@"beginnerbuttonselect.png" target:self selector:@selector(startTutorial:)];
-    menuItem0.position = ccp(160, 160);
+    menuItem0.position = ccp(160, 280);
     menuItem0.tag = 0;
+    */
     
     CCMenuItem *menuItem1 = [CCMenuItemImage itemFromNormalImage:@"easy.png" selectedImage:@"easy2.png" target:self selector:@selector(startGame:)];
-    menuItem1.position = ccp(160, 120);
+    menuItem1.position = ccp(160, 200);
     menuItem1.tag = 1;
     
-    CCMenuItem *menuItem2 = [CCMenuItemImage itemFromNormalImage:@"mediumbutton.png" selectedImage:@"mediumbuttonselect.png" target:self selector:@selector(startGame2:)];
-    menuItem2.position = ccp(160, 80);
+    CCMenuItem *menuItem2 = [CCMenuItemImage itemFromNormalImage:@"mediumbutton.png" selectedImage:@"mediumbutton.png" target:self selector:@selector(startGame2:)];
+    menuItem2.position = ccp(160, 120);
     menuItem2.tag = 2;
     
     CCMenuItem *menuItem3 = [CCMenuItemImage itemFromNormalImage:@"hard.png" selectedImage:@"hard2.png" target:self selector:@selector(startGame3:)];
@@ -69,7 +71,7 @@
     menuItem3.tag = 3;
     
     // Create a menu and add your menu items to it
-	CCMenu * myMenu = [CCMenu menuWithItems:menuItem0, menuItem1, menuItem2, menuItem3, nil];
+	CCMenu * myMenu = [CCMenu menuWithItems:menuItem1, menuItem2, menuItem3, nil];
     myMenu.position =CGPointZero;
     
 	// Arrange the menu items vertically

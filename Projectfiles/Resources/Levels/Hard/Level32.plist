@@ -217,7 +217,7 @@
 	<array>
 		<dict>
 			<key>spriteName</key>
-			<string>teleporter.png</string>
+			<string>redtele.png</string>
 			<key>x</key>
 			<integer>40</integer>
 			<key>y</key>
@@ -225,7 +225,7 @@
 		</dict>
 		<dict>
 			<key>spriteName</key>
-			<string>teleporter.png</string>
+			<string>redtele.png</string>
 			<key>x</key>
 			<integer>40</integer>
 			<key>y</key>
@@ -233,7 +233,7 @@
 		</dict>
 		<dict>
 			<key>spriteName</key>
-			<string>teleporter2.png</string>
+			<string>greentele.png</string>
 			<key>x</key>
 			<integer>280</integer>
 			<key>y</key>
@@ -241,7 +241,7 @@
 		</dict>
 		<dict>
 			<key>spriteName</key>
-			<string>teleporter2.png</string>
+			<string>greentele.png</string>
 			<key>x</key>
 			<integer>280</integer>
 			<key>y</key>
@@ -249,7 +249,7 @@
 		</dict>
 		<dict>
 			<key>spriteName</key>
-			<string>teleporter3.png</string>
+			<string>bluetele.png</string>
 			<key>x</key>
 			<integer>100</integer>
 			<key>y</key>
@@ -257,7 +257,7 @@
 		</dict>
 		<dict>
 			<key>spriteName</key>
-			<string>teleporter3.png</string>
+			<string>bluetele.png</string>
 			<key>x</key>
 			<integer>100</integer>
 			<key>y</key>
@@ -265,7 +265,7 @@
 		</dict>
 		<dict>
 			<key>spriteName</key>
-			<string>teleporter4.png</string>
+			<string>yellowtele.png</string>
 			<key>x</key>
 			<integer>160</integer>
 			<key>y</key>
@@ -273,7 +273,7 @@
 		</dict>
 		<dict>
 			<key>spriteName</key>
-			<string>teleporter4.png</string>
+			<string>yellowtele.png</string>
 			<key>x</key>
 			<integer>160</integer>
 			<key>y</key>
@@ -281,7 +281,7 @@
 		</dict>
 		<dict>
 			<key>spriteName</key>
-			<string>teleporter5.png</string>
+			<string>purpletele.png</string>
 			<key>x</key>
 			<integer>220</integer>
 			<key>y</key>
@@ -289,7 +289,7 @@
 		</dict>
 		<dict>
 			<key>spriteName</key>
-			<string>teleporter5.png</string>
+			<string>purpletele.png</string>
 			<key>x</key>
 			<integer>220</integer>
 			<key>y</key>

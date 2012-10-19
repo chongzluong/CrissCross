@@ -76,14 +76,12 @@
 	// Arrange the menu items vertically
 	[myMenu alignItemsInColumns:[NSNumber numberWithUnsignedInt:3], [NSNumber numberWithUnsignedInt:3],[NSNumber numberWithUnsignedInt:3], [NSNumber numberWithUnsignedInt:3], [NSNumber numberWithUnsignedInt:3],nil];
     
-    myMenu.position = ccp(160,170);
+    myMenu.position = ccp(160,195);
     
-    /*
     CCMenuItem *homeButton = [CCMenuItemImage itemFromNormalImage:@"home.png" selectedImage:@"home2.png" target:self selector:@selector(goHome:)];
-    homeButton.position = ccp(0, -2400);
+    homeButton.position = ccp(0, -176);
     
     [myMenu addChild:homeButton];
-    */
     
 	// add the menu to your scene
 	[self addChild:myMenu];

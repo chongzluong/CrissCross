@@ -35,6 +35,64 @@ int leveltag = 0;
     
     if ((self = [super init]))
     {
+        
+        //Load the animation plists
+        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile: @"bluesparkframes.plist"];
+        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile: @"greensparkframes.plist"];
+        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile: @"purplesparkframes.plist"];
+        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile: @"redsparkframes.plist"];
+        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile: @"yellowsparkframes.plist"];
+        
+        //Load the spritesheets
+        CCSpriteBatchNode *spriteSheet1 = [CCSpriteBatchNode batchNodeWithFile:@"bluesparkframes.png"];
+        CCSpriteBatchNode *spriteSheet2 = [CCSpriteBatchNode batchNodeWithFile:@"greensparkframes.png"];
+        CCSpriteBatchNode *spriteSheet3 = [CCSpriteBatchNode batchNodeWithFile:@"purplesparkframes.png"];
+        CCSpriteBatchNode *spriteSheet4 = [CCSpriteBatchNode batchNodeWithFile:@"redsparkframes.png"];
+        CCSpriteBatchNode *spriteSheet5 = [CCSpriteBatchNode batchNodeWithFile:@"yellowsparkframes.png"];
+        [self addChild:spriteSheet1];
+        [self addChild:spriteSheet2];
+        [self addChild:spriteSheet3];
+        [self addChild:spriteSheet4];
+        [self addChild:spriteSheet5];
+        
+        //Define the frames
+        blueFrames = [NSMutableArray array];
+        [blueFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"bluespark.png"]];
+        [blueFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"bluespark2.png"]];
+        [blueFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"bluespark3.png"]];
+        bsparks = [CCAnimation animationWithFrames:blueFrames delay:0.1f];
+        bluespark = [CCRepeatForever actionWithAction: [CCAnimate actionWithAnimation:bsparks restoreOriginalFrame:NO]];
+
+        
+        greenFrames = [NSMutableArray array];
+        [greenFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"greenspark.png"]];
+        [greenFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"greenspark2.png"]];
+        [greenFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"greenspark3.png"]];
+        gsparks = [CCAnimation animationWithFrames:greenFrames delay:0.1f];
+        greenspark = [CCRepeatForever actionWithAction: [CCAnimate actionWithAnimation:gsparks restoreOriginalFrame:NO]];
+        
+        purpleFrames = [NSMutableArray array];
+        [purpleFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"purplespark.png"]];
+        [purpleFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"purplespark2.png"]];
+        [purpleFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"purplespark3.png"]];
+        psparks = [CCAnimation animationWithFrames:purpleFrames delay:0.1f];
+        purplespark = [CCRepeatForever actionWithAction: [CCAnimate actionWithAnimation:psparks restoreOriginalFrame:NO]];
+        
+        redFrames = [NSMutableArray array];
+        [redFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"redspark.png"]];
+        [redFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"redspark2.png"]];
+        [redFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"redspark3.png"]];
+        rsparks = [CCAnimation animationWithFrames:redFrames delay:0.1f];
+        redspark = [CCRepeatForever actionWithAction: [CCAnimate actionWithAnimation:rsparks restoreOriginalFrame:NO]];
+        
+        yellowFrames = [NSMutableArray array];
+        [yellowFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"yellowspark.png"]];
+        [yellowFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"yellowspark2.png"]];
+        [yellowFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"yellowspark3.png"]];
+        ysparks = [CCAnimation animationWithFrames:yellowFrames delay:0.1f];
+        yellowspark = [CCRepeatForever actionWithAction: [CCAnimate actionWithAnimation:ysparks restoreOriginalFrame:NO]];
+        
+        
         background = [CCSprite spriteWithFile:@"background.png"];
         background.position = ccp(160, 240);
         [self addChild: background];
@@ -103,9 +161,19 @@ int leveltag = 0;
         [tempMenu addChild:clearButton];
         [tempMenu addChild:previousButton];
         [tempMenu addChild:homeButton];
+        
+        //Load the tutorials
+        if (leveltag == 15 || 31)
+        {
+            startCounter = 2;
+            tutorialButton = [CCMenuItemImage itemFromNormalImage:@"Teleporter Explanation.png" selectedImage:@"Teleporter Explanation2.png" target:self selector:@selector(endTutorial:)];
+            tutorialButton.position = ccp(160, 240);
+            [tempMenu addChild:tutorialButton];
+        }
                
         [self scheduleUpdate];
-        [[SimpleAudioEngine sharedEngine] preloadEffect:@"Pow.caf"];
+        [[SimpleAudioEngine sharedEngine] preloadEffect:@"ConnectStart.wav"];
+        [[SimpleAudioEngine sharedEngine] preloadEffect:@"ConnectEnd.wav"];
         [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:@"beat.mp3"];
         [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"beat.mp3" loop:TRUE];
 	}
@@ -328,7 +396,6 @@ int leveltag = 0;
     
     //import plist
     vertlines = [test objectForKey:@"VerticalLines"];
-    //vertLineBatch = [CCSpriteBatchNode batchNodeWithFile:@"Line.png"];
     
     for(int k = 0; k<(int)[vertlines count] ; k++)
     {
@@ -351,16 +418,41 @@ int leveltag = 0;
     //Make the colors
     for (int k = 0; k<(int)[colored count] ; k++)
     {
-        item = [colored objectAtIndex:k];
-        CCSprite *color = [CCSprite spriteWithFile:[item objectForKey:@"SpriteName"]];
-        x = [item objectForKey:@"x"];
-        y = [item objectForKey:@"y"];
-        color.position = ccp([x floatValue], [y floatValue]);
+            item = [colored objectAtIndex:k];
+        if (k<5)
+        {
+            CCSprite *color = [CCSprite spriteWithFile:[item objectForKey:@"SpriteName"]];
+            x = [item objectForKey:@"x"];
+            y = [item objectForKey:@"y"];
+            color.position = ccp([x floatValue], [y floatValue]);
         
-        NSNumber *tempTag = [item objectForKey:@"tag"];
-        color.tag = [tempTag intValue];
-        [colors addObject:color];
-        [self addChild:color];
+            NSNumber *tempTag = [item objectForKey:@"tag"];
+            color.tag = [tempTag intValue];
+            [colors addObject:color];
+            [self addChild:color];
+        }
+        else
+        {
+            CCSprite *color = [CCSprite spriteWithSpriteFrameName:[item objectForKey:@"SpriteName"]];
+            x = [item objectForKey:@"x"];
+            y = [item objectForKey:@"y"];
+            color.position = ccp([x floatValue], [y floatValue]);
+            NSNumber *tempTag = [item objectForKey:@"tag"];
+            color.tag = [tempTag intValue];
+            
+            if ([tempTag intValue] == 5)
+            {[color runAction:yellowspark];}
+            else if ([tempTag intValue] == 6)
+            {[color runAction:redspark];}
+            else if ([tempTag intValue] == 7)
+            {[color runAction:bluespark];}
+            else if ([tempTag intValue] == 8)
+            {[color runAction:purplespark];}
+            else if ([tempTag intValue] == 9)
+            {[color runAction:greenspark];}
+            [colors addObject:color];
+            [self addChild:color];
+        }
         
     }
     
@@ -391,6 +483,12 @@ int leveltag = 0;
     }
 }
 
+-(void)endTutorial:(CCMenuItem *) menuItem
+{
+    startCounter = 0;
+    [tutorialButton removeFromParentAndCleanup:YES];
+}
+
 -(void) goHome:(CCMenuItem *) menuItem
 {
     [[CCDirector sharedDirector] replaceScene:[MenuLayer scene]];
@@ -398,7 +496,10 @@ int leveltag = 0;
 
 -(void) startGame: (CCMenuItem *) menuItem
 {
-    startCounter = 1;
+    if (startCounter == 0)
+    {
+        startCounter = 1;
+    }
 }
 
 -(void) restartGame: (CCMenuItem *) menuItem
@@ -418,19 +519,47 @@ int leveltag = 0;
     }
     [colors removeAllObjects];
     
+    //Make the colors
     for (int k = 0; k<(int)[colored count] ; k++)
     {
         item = [colored objectAtIndex:k];
-        CCSprite *color = [CCSprite spriteWithFile:[item objectForKey:@"SpriteName"]];
-        x = [item objectForKey:@"x"];
-        y = [item objectForKey:@"y"];
-        color.position = ccp([x floatValue], [y floatValue]);
+        if (k<5)
+        {
+            CCSprite *color = [CCSprite spriteWithFile:[item objectForKey:@"SpriteName"]];
+            x = [item objectForKey:@"x"];
+            y = [item objectForKey:@"y"];
+            color.position = ccp([x floatValue], [y floatValue]);
+            
+            NSNumber *tempTag = [item objectForKey:@"tag"];
+            color.tag = [tempTag intValue];
+            [colors addObject:color];
+            [self addChild:color];
+        }
+        else
+        {
+            CCSprite *color = [CCSprite spriteWithSpriteFrameName:[item objectForKey:@"SpriteName"]];
+            x = [item objectForKey:@"x"];
+            y = [item objectForKey:@"y"];
+            color.position = ccp([x floatValue], [y floatValue]);
+            NSNumber *tempTag = [item objectForKey:@"tag"];
+            color.tag = [tempTag intValue];
+            
+            if ([tempTag intValue] == 5)
+            {[color runAction:yellowspark];}
+            else if ([tempTag intValue]== 6)
+            {[color runAction:redspark];}
+            else if ([tempTag intValue] == 7)
+            {[color runAction:bluespark];}
+            else if ([tempTag intValue] == 8)
+            {[color runAction:purplespark];}
+            else if ([tempTag intValue] == 9)
+            {[color runAction:greenspark];}
+            [colors addObject:color];
+            [self addChild:color];
+        }
         
-        NSNumber *tempTag = [item objectForKey:@"tag"];
-        color.tag = [tempTag intValue];
-        [colors addObject:color];
-        [self addChild:color];
     }
+
     
     //Go through all the gates
     for (int k = 0; k<(int)[gate count]; k++)
@@ -527,63 +656,9 @@ int leveltag = 0;
     }
 }
 
-/*
--(void) draw
-{
-    //enable an opengl setting to smooth the line once it is drawn
-    glEnable(GL_LINE_SMOOTH);
-    
-    //set the color in RGB to draw the line with
-    glColor4ub(255,0,255,255);
-    
-    //import plist 
-    vertlines = [test objectForKey:@"VerticalLines"];
-    //vertLineBatch = [CCSpriteBatchNode batchNodeWithFile:@"Line.png"];
-    
-    for(int k = 0; k<(int)[vertlines count] ; k++)
-    {
-        item = [vertlines objectAtIndex:k];
-        x = [item objectForKey:@"x1"];
-        x2 = [item objectForKey:@"x2"];
-        y = [item objectForKey:@"y1"];
-        y2 = [item objectForKey:@"y2"];
-        CGPoint p0 = ccp([x floatValue],  [y floatValue]);
-        CGPoint p1 = ccp([x2 floatValue], [y2 floatValue]);
-        ccDrawLine(p0, p1);
-        
-        CCSprite *sprite = [CCSprite spriteWithFile:@"VerticalLine.png"];
-        int midy = ([y intValue] + [y2 intValue])/2;
-        NSNumber *y3 = [NSNumber numberWithInt:midy];
-        sprite.position = ccp([x floatValue], [y3 floatValue]);
-        [self addChild:sprite];
-    }
-    
-    //Draw all the lines
-    for (int k = 0; k<(int)[endpoints count]; k++)
-    {
-        CGPoint starter = CGPointFromString([startpoints objectAtIndex:k]);
-        CGPoint end = CGPointFromString([endpoints objectAtIndex:k]); 
-        CGPointMake(starter.x, starter.y);
-        CGPointMake(end.x, end.y);
-        ccDrawLine(starter, end);
-    }
-    
-    
-    for(int i = 0; i < (int)[endpoints count]; i++)
-    {
-        CGPoint p0 = CGPointFromString([startpoints objectAtIndex:i]);
-        CGPoint p1 = CGPointFromString([endpoints objectAtIndex:i]);
-        [self drawSprites:batch point1:p0 point2:p1];
-    }
-    [self addChild:batch z:1];
-    
-}
-*/
-
-
 -(void) update:(ccTime)delta
 {
-    if (startCounter >0)
+    if (startCounter == 1)
     {
         
         if ([startpoints count] > [endpoints count])
@@ -712,7 +787,6 @@ int leveltag = 0;
                     {
                         [self removeChild:tempSprite cleanup:YES];
                         [gate removeObject:tempSprite];
-                        [[SimpleAudioEngine sharedEngine] playEffect:@"explo2.wav"];
                     }
             }
             
@@ -749,12 +823,19 @@ int leveltag = 0;
         if (startCounter == 0)
         {
             KKInput *input = [KKInput sharedInput];
-            
+
             input.gestureSwipeEnabled = YES;
             
-            if ([input gestureSwipeRecognizedThisFrame] && [startpoints count] == [endpoints count])
+            if ([input gestureSwipeRecognizedThisFrame])
             {
-                CGPoint clicked = [input gestureSwipeLocation];
+                if ([startpoints count] != [endpoints count])
+                {
+                    [startpoints removeLastObject];
+                    [points removeLastObject];
+                    counter--;
+                    [self removeChild:target cleanup:YES];
+                }
+                clicked = [input gestureSwipeLocation];
                 int x1 = (int) clicked.x;
                 int test1 = abs(x1 - 40);
                 int test2 = abs(x1 - 100);
@@ -832,17 +913,18 @@ int leveltag = 0;
                             [self drawSprites:batch point1:blah point2:blah2];
                         }
                     }
+                    [[SimpleAudioEngine sharedEngine] playEffect:@"ConnectEnd.wav"];
                 }
                 
             }
 
             else
             {
-                
                 if ([input touchesAvailable])
                 {
                     //Rounds the x value of the click to the nearest line
-                    CGPoint clicked = [input locationOfAnyTouchInPhase:KKTouchPhaseAny];
+                    clicked = [input locationOfAnyTouchInPhase:KKTouchPhaseAny];
+        
                     int x1 = (int) clicked.x;
                     int test1 = abs(x1 - 40);
                     int test2 = abs(x1 - 100);
@@ -899,6 +981,7 @@ int leveltag = 0;
                             target = [CCSprite spriteWithFile:@"target.png"];
                             target.position = blah;
                             [self addChild:target];
+                            [[SimpleAudioEngine sharedEngine] playEffect:@"ConnectStart.wav"];
                         }
                         else 
                         {
@@ -916,6 +999,7 @@ int leveltag = 0;
                                 
                                 CGPoint tempPoint = CGPointFromString([startpoints objectAtIndex:[startpoints count]-1]);
                                 [self drawSprites:batch point1:tempPoint point2:blah];
+                                [[SimpleAudioEngine sharedEngine] playEffect:@"ConnectEnd.wav"];
                             }
                             else
                             {

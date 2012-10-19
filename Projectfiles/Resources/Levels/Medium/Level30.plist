@@ -298,7 +298,7 @@
 	<array>
 		<dict>
 			<key>spriteName</key>
-			<string>teleporter.png</string>
+			<string>redtele.png</string>
 			<key>x</key>
 			<integer>100</integer>
 			<key>y</key>
@@ -306,7 +306,7 @@
 		</dict>
 		<dict>
 			<key>spriteName</key>
-			<string>teleporter.png</string>
+			<string>redtele.png</string>
 			<key>x</key>
 			<integer>220</integer>
 			<key>y</key>
