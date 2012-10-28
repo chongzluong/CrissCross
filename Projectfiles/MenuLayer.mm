@@ -11,8 +11,6 @@
 #import "LvlMenuLayer2.h"
 #import "LvlMenuLayer3.h"
 #import "HelloWorldLayer.h"
-#import "BeginnerHelloWorldLayer.h"
-#import "BeginnerLvlMenuLayer.h"
 
 @interface MenuLayer (PrivateMethods)
 @end
@@ -80,11 +78,6 @@
 	// add the menu to your scene
 	[self addChild:myMenu];
 
-}
-
--(void) startTutorial:(CCMenuItem *) menuItem
-{
-    [[CCDirector sharedDirector] replaceScene:[BeginnerLvlMenuLayer scene]];
 }
 
 -(void) startGame: (CCMenuItem *) menuItem

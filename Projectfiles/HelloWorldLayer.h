@@ -64,6 +64,7 @@
     CCMenuItem *previousButton;
     CCMenuItem *homeButton;
     CCMenuItem *tutorialButton;
+    CCMenuItem *tutorialButton2;
     NSDictionary *test;
     NSArray *colored;
     NSArray *startlines;
@@ -105,6 +106,7 @@
 -(CGPoint) closestGate: (CGPoint) point;
 
 -(void) endTutorial:(id) sender;
+-(void) endTutorial2:(id) sender;
 -(void) startGame:(id) sender;
 -(void) restartGame:(id) sender;
 -(void) goHome:(id) sender;

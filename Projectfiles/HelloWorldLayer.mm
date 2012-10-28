@@ -10,6 +10,7 @@
 #import "HelloWorldLayer.h"
 #import "SimpleAudioEngine.h"
 #import "FinishedLevelLayer.h"
+#import "FailedLevelLayer.h"
 #define d(p1x, p1y, p2x, p2y) sqrt((p1x - p2x) * (p1x - p2x) + (p1y - p2y) * (p1y - p2y))
 
 int leveltag = 0;
@@ -163,14 +164,38 @@ int leveltag = 0;
         [tempMenu addChild:homeButton];
         
         //Load the tutorials
-        if (leveltag == 15 || 31)
+        if (leveltag == 15)
         {
             startCounter = 2;
             tutorialButton = [CCMenuItemImage itemFromNormalImage:@"Teleporter Explanation.png" selectedImage:@"Teleporter Explanation2.png" target:self selector:@selector(endTutorial:)];
             tutorialButton.position = ccp(160, 240);
             [tempMenu addChild:tutorialButton];
         }
-               
+        
+        if (leveltag == 30)
+        {
+            startCounter = 2;
+            tutorialButton = [CCMenuItemImage itemFromNormalImage:@"Teleporter Explanation.png" selectedImage:@"Teleporter Explanation2.png" target:self selector:@selector(endTutorial:)];
+            tutorialButton.position = ccp(160, 240);
+            [tempMenu addChild:tutorialButton];
+        }
+        
+        if (leveltag == 31)
+        {
+            startCounter = 2;
+            tutorialButton = [CCMenuItemImage itemFromNormalImage:@"Teleporter Explanation.png" selectedImage:@"Teleporter Explanation2.png" target:self selector:@selector(endTutorial:)];
+            tutorialButton.position = ccp(160, 240);
+            [tempMenu addChild:tutorialButton];
+        }
+        
+        if (leveltag == 16)
+        {
+            startCounter = 2;
+            tutorialButton2 = [CCMenuItemImage itemFromNormalImage:@"Token Explanation.png" selectedImage:@"Token Explanation2.png" target:self selector:@selector(endTutorial2:)];
+            tutorialButton2.position = ccp(160, 240);
+            [tempMenu addChild:tutorialButton2];
+        }
+            
         [self scheduleUpdate];
         [[SimpleAudioEngine sharedEngine] preloadEffect:@"ConnectStart.wav"];
         [[SimpleAudioEngine sharedEngine] preloadEffect:@"ConnectEnd.wav"];
@@ -489,6 +514,12 @@ int leveltag = 0;
     [tutorialButton removeFromParentAndCleanup:YES];
 }
 
+-(void)endTutorial2:(CCMenuItem *) menuItem
+{
+    startCounter = 0;
+    [tutorialButton2 removeFromParentAndCleanup:YES];
+}
+
 -(void) goHome:(CCMenuItem *) menuItem
 {
     [[CCDirector sharedDirector] replaceScene:[MenuLayer scene]];
@@ -797,10 +828,14 @@ int leveltag = 0;
         for (int j = 0; j<5; j++)
         {
             CCSprite *tempColor = (CCSprite *)[self getChildByTag:(j+5)];
-            CCSprite *tempBlur = (CCSprite *)[self getChildByTag:(j+10)];
-            if (CGPointEqualToPoint(tempColor.position, tempBlur.position))
+            CCSprite *tempPlug = (CCSprite *)[self getChildByTag:(j+10)];
+            if (CGPointEqualToPoint(tempColor.position, tempPlug.position))
             {
                 winCounter++;
+            }
+            else if (tempColor.position.y == 80.0 && !CGPointEqualToPoint(tempColor.position, tempPlug.position))
+            {
+                [[CCDirector sharedDirector] replaceScene:[FailedLevelLayer showLevel:leveltag]];
             }
         }
         
@@ -1016,9 +1051,10 @@ int leveltag = 0;
         }
 
     }
-        timeInterval = [start timeIntervalSinceNow];
-        time = [NSNumber numberWithDouble:fabs(timeInterval)];
-        [timeLabel setString:[NSString stringWithFormat:@"Time:%.2f", [time floatValue]]];
+    if (startCounter != 2)
+    {timeInterval = [start timeIntervalSinceNow];}
+    time = [NSNumber numberWithDouble:fabs(timeInterval)];
+    [timeLabel setString:[NSString stringWithFormat:@"Time:%.2f", [time floatValue]]];
 }
  
 @end

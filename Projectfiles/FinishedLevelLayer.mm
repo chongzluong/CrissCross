@@ -8,9 +8,6 @@
 
 #import "MenuLayer.h"
 #import "FinishedLevelLayer.h"
-#import "LvlMenuLayer.h"
-#import "LvlMenuLayer2.h"
-#import "LvlMenuLayer3.h"
 #import "HelloWorldLayer.h"
 
 int finishedtag = 0;
@@ -61,14 +58,6 @@ float score = 0.00;
     background.position = ccp(160,240);
     [self addChild:background];
     
-    /*
-    NSString *title = [NSString stringWithFormat:@"Level%i Complete!",finishedtag-1];
-    CCLabelTTF *label = [CCLabelTTF labelWithString:title fontName:@"Zapfino" fontSize:35];
-    label.position = [CCDirector sharedDirector].screenCenter;
-    label.color =ccGREEN;
-    [self addChild:label];
-    */
-    
     timeLabel =[CCLabelTTF labelWithString:[NSString stringWithFormat:@"Time:%.2f", score] fontName:@"Futura-CondensedExtraBold" fontSize:14];
     timeLabel.position = ccp(160, 300);
     timeLabel.color = ccGREEN;
@@ -79,6 +68,8 @@ float score = 0.00;
     NSNumber *currentHighScore = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Level%i highScore", levelCompleted]];
     float hs = [currentHighScore floatValue];
     
+    bolts = [NSNumber numberWithInt:0];
+    
     if (hs == 0 || hs>score)
     {
         NSNumber *highScore = [NSNumber numberWithFloat:score];
@@ -87,6 +78,20 @@ float score = 0.00;
     
     currentHighScore = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Level%i highScore", levelCompleted]];
     hs = [currentHighScore floatValue];
+    
+    if (hs < 30.0)
+    {
+        bolts = [NSNumber numberWithInt:3];
+    }
+    else if (hs < 60.0)
+    {
+        bolts = [NSNumber numberWithInt:2];
+    }
+    else if (hs < 120.0)
+    {
+        bolts = [NSNumber numberWithInt:1];
+    }
+    [[NSUserDefaults standardUserDefaults] setObject:bolts forKey:[NSString stringWithFormat:@"Level%i bolts",levelCompleted]];
     
     highScoreLabel =[CCLabelTTF labelWithString:[NSString stringWithFormat:@"Current HighScore:%.2f", hs] fontName:@"Futura-CondensedExtraBold" fontSize:14];
     highScoreLabel.position = ccp(160, 280);
@@ -101,7 +106,7 @@ float score = 0.00;
     
     CCMenuItem *menuItem2 = [CCMenuItemImage itemFromNormalImage:@"homebutton.png" selectedImage:@"homebuttonselect.png" target:self selector:@selector(goHome:)];
     menuItem2.position = ccp(160, 80);
-    menuItem2.tag = 2;
+    //menuItem2.tag = 2;
     
     // Create a menu and add your menu items to it
 	CCMenu * myMenu = [CCMenu menuWithItems:menuItem1, menuItem2, nil];

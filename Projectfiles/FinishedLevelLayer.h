@@ -16,6 +16,7 @@
     CCSprite *background;
     CCLabelTTF *timeLabel;
     CCLabelTTF *highScoreLabel;
+    NSNumber *bolts;
 }
 
 +(id) scene;
