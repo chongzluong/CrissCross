@@ -66,6 +66,7 @@ float score = 0.00;
     int levelCompleted = finishedtag-1;
     
     NSNumber *currentHighScore = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Level%i highScore", levelCompleted]];
+    //NSNumber *currentHighScore = [MGWU objectForKey:[NSString stringWithFormat:@"Level%i highScore",levelCompleted]];
     float hs = [currentHighScore floatValue];
     
     bolts = [NSNumber numberWithInt:0];
@@ -74,9 +75,11 @@ float score = 0.00;
     {
         NSNumber *highScore = [NSNumber numberWithFloat:score];
         [[NSUserDefaults standardUserDefaults] setObject:highScore forKey:[NSString stringWithFormat:@"Level%i highScore", levelCompleted]];
+        //[MGWU setObject:highScore forKey:[NSString stringWithFormat:@"Level%i highScore",levelCompleted]];
     }
     
     currentHighScore = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Level%i highScore", levelCompleted]];
+    //currentHighScore = [MGWU objectForKey:[NSString stringWithFormat:@"Level%i highScore",levelCompleted]];
     hs = [currentHighScore floatValue];
     
     if (hs < 30.0)
@@ -92,6 +95,7 @@ float score = 0.00;
         bolts = [NSNumber numberWithInt:1];
     }
     [[NSUserDefaults standardUserDefaults] setObject:bolts forKey:[NSString stringWithFormat:@"Level%i bolts",levelCompleted]];
+    //[MGWU setObject:bolts forKey:[NSString stringWithFormat:@"Level%i bolts",levelCompleted]];
     
     highScoreLabel =[CCLabelTTF labelWithString:[NSString stringWithFormat:@"Current HighScore:%.2f", hs] fontName:@"Futura-CondensedExtraBold" fontSize:14];
     highScoreLabel.position = ccp(160, 280);

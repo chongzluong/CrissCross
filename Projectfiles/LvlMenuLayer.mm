@@ -58,10 +58,11 @@
         NSNumber *currentHighScore = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Level%i highScore", k-1]];
         float hs = [currentHighScore floatValue];
         
-        if(hs!=0||k==1)
+        if(k==1 || hs!=0)
         {
             NSNumber *currentBoltNumber = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Level%i bolts",k]];
             int bolts = [currentBoltNumber intValue];
+            printf("@%i",bolts);
             
             CCMenuItem *menuItem = [CCMenuItemImage itemFromNormalImage:[NSString stringWithFormat:@"lvl%ibutton%i.png", k,bolts]selectedImage:[NSString stringWithFormat:@"lvl%ibutton%i.png", k,bolts] target:self selector:@selector (startLevel:)];
             menuItem.position = ccp(160, 160);

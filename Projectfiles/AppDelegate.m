@@ -11,6 +11,8 @@
 
 -(void) initializationComplete
 {
+    [MGWU loadMGWU:@"rLaserman"];
+    [MGWU preFacebook]; //Temporarily disables Facebook until you integrate it later
 #ifdef KK_ARC_ENABLED
 	CCLOG(@"ARC is enabled");
 #else
@@ -27,5 +29,21 @@
 {
 	return nil;
 }
+/*
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)tokenId
+{
+	[MGWU registerForPush:tokenId];
+}
 
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    [MGWU gotPush:userInfo];
+}
+
+
+- (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error
+{
+    [MGWU failedPush:error];
+}
+*/
 @end

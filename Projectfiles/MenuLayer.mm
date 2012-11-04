@@ -56,6 +56,35 @@
     menuItem0.tag = 0;
     */
     
+    CCMenuItem *menuItem1 = [CCMenuItemImage itemFromNormalImage:@"play.png" selectedImage:@"play2.png" target:self selector:@selector(difficultyButtons:)];
+    menuItem1.position = ccp(160, 200);
+    menuItem1.tag = 1;
+    
+    CCMenuItem *menuItem2 = [CCMenuItemImage itemFromNormalImage:@"about.png" selectedImage:@"about2.png" target:self selector:@selector(about:)];
+    menuItem2.position = ccp(160, 120);
+    menuItem2.tag = 2;
+    
+    CCMenuItem *menuItem3 = [CCMenuItemImage itemFromNormalImage:@"MoreGames.png" selectedImage:@"MoreGames2.png" target:self selector:@selector(moreGames:)];
+    menuItem3.position = ccp(160, 40);
+    menuItem3.tag = 3;
+    
+    // Create a menu and add your menu items to it
+	myMenu = [CCMenu menuWithItems:menuItem1, menuItem2, menuItem3, nil];
+    myMenu.position =CGPointZero;
+    
+	// Arrange the menu items vertically
+	//[myMenu alignItemsVertically];
+    
+	// add the menu to your scene
+	[self addChild:myMenu];
+
+}
+
+-(void) difficultyButtons:(CCMenuItem *) menuItem
+{
+    [myMenu removeAllChildrenWithCleanup:YES];
+    [self removeChild:myMenu cleanup:YES];
+    
     CCMenuItem *menuItem1 = [CCMenuItemImage itemFromNormalImage:@"easy.png" selectedImage:@"easy2.png" target:self selector:@selector(startGame:)];
     menuItem1.position = ccp(160, 200);
     menuItem1.tag = 1;
@@ -68,16 +97,21 @@
     menuItem3.position = ccp(160, 40);
     menuItem3.tag = 3;
     
-    // Create a menu and add your menu items to it
-	CCMenu * myMenu = [CCMenu menuWithItems:menuItem1, menuItem2, menuItem3, nil];
-    myMenu.position =CGPointZero;
+    [myMenu addChild:menuItem1];
+    [myMenu addChild:menuItem2];
+    [myMenu addChild:menuItem3];
     
-	// Arrange the menu items vertically
-	//[myMenu alignItemsVertically];
-    
-	// add the menu to your scene
-	[self addChild:myMenu];
+    [self addChild:myMenu];
+}
 
+-(void) about:(id)sender
+{
+    [MGWU displayAboutPage];
+}
+
+-(void) moreGames:(id)sender
+{
+    [MGWU displayCrossPromo];
 }
 
 -(void) startGame: (CCMenuItem *) menuItem

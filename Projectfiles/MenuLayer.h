@@ -19,9 +19,13 @@ enum
 @interface MenuLayer : CCLayer
 {
     CCSprite *background;
+    CCMenu *myMenu;
 }
 
 +(id) scene;
+-(void) about:(id) sender;
+-(void) moreGames: (id) sender;
+-(void) difficultyButtons: (id) sender;
 -(void) startGame:(id) sender;
 -(void) startGame2: (id) sender;
 -(void) startGame3: (id) sender;
