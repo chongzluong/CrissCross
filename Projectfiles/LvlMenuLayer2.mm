@@ -55,12 +55,14 @@
     //Create menu buttons
     for (int k = 16; k<31; k++)
     {
-        NSNumber *currentHighScore = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Level%i highScore", k-1]];
+        //NSNumber *currentHighScore = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Level%i highScore", k-1]];
+        NSNumber *currentHighScore = [MGWU objectForKey:[NSString stringWithFormat:@"Level%i highScore",k-1]];
         float hs = [currentHighScore floatValue];
         
         if(hs!=0||k==16)
         {
-            NSNumber *currentBoltNumber = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Level%i bolts",k]];
+            //NSNumber *currentBoltNumber = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Level%i bolts",k]];
+            NSNumber *currentBoltNumber = [MGWU objectForKey:[NSString stringWithFormat:@"Level%i bolts",k]];
             int bolts = [currentBoltNumber intValue];
             
             CCMenuItem *menuItem = [CCMenuItemImage itemFromNormalImage:[NSString stringWithFormat:@"lvl%ibutton%i.png", k,bolts]selectedImage:[NSString stringWithFormat:@"lvl%ibutton%i.png", k,bolts] target:self selector:@selector (startLevel:)];

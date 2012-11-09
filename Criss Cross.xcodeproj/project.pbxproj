@@ -3008,12 +3008,14 @@
 		DCC1A0DD13A94EC0005BD75D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 			};
 			name = Debug;
 		};
 		DCC1A0DE13A94EC0005BD75D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 			};
 			name = Release;
 		};
@@ -3021,6 +3023,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DCFA90EF13B4F6F7009DD35A /* BuildSettings-Debug-iOS.xcconfig */;
 			buildSettings = {
+				FORCE_LOAD_ISIMULATE = "-force_load $(KKLIBROOT)/iSimulateSDK/libisimulate-4.x-opengl.a";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/mgwuSDK.embeddedframework\"",
@@ -3030,6 +3033,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../__Kobold2D__/libs/GoogleAdMobAdsSDK\"",
 				);
+				LINK_WITH_ADMOB = "$(KKLIBROOT)/GoogleAdMobAdsSDK/libGoogleAdMobAds.a";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"$(KKFRAMEWORKS_IOS)",
@@ -3043,6 +3047,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DCFA90F013B4F811009DD35A /* BuildSettings-Release-iOS.xcconfig */;
 			buildSettings = {
+				FORCE_LOAD_ISIMULATE = "-force_load $(KKLIBROOT)/iSimulateSDK/libisimulate-4.x-opengl.a";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/mgwuSDK.embeddedframework\"",
@@ -3052,6 +3057,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../__Kobold2D__/libs/GoogleAdMobAdsSDK\"",
 				);
+				LINK_WITH_ADMOB = "$(KKLIBROOT)/GoogleAdMobAdsSDK/libGoogleAdMobAds.a";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"$(KKFRAMEWORKS_IOS)",

@@ -97,11 +97,10 @@
     menuItem3.position = ccp(160, 40);
     menuItem3.tag = 3;
     
-    [myMenu addChild:menuItem1];
-    [myMenu addChild:menuItem2];
-    [myMenu addChild:menuItem3];
+    CCMenu *newMenu = [CCMenu menuWithItems:menuItem1, menuItem2, menuItem3, nil];
+    newMenu.position = CGPointZero;
     
-    [self addChild:myMenu];
+    [self addChild:newMenu];
 }
 
 -(void) about:(id)sender
