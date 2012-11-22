@@ -113,7 +113,7 @@
 			<key>SpriteName</key>
 			<string>redspark.png</string>
 			<key>x</key>
-			<integer>40</integer>
+			<integer>160</integer>
 			<key>y</key>
 			<integer>380</integer>
 		</dict>
@@ -123,7 +123,7 @@
 			<key>SpriteName</key>
 			<string>bluespark.png</string>
 			<key>x</key>
-			<integer>100</integer>
+			<integer>40</integer>
 			<key>y</key>
 			<integer>380</integer>
 		</dict>
@@ -133,7 +133,7 @@
 			<key>SpriteName</key>
 			<string>yellowspark.png</string>
 			<key>x</key>
-			<integer>160</integer>
+			<integer>220</integer>
 			<key>y</key>
 			<integer>380</integer>
 		</dict>
@@ -143,7 +143,7 @@
 			<key>SpriteName</key>
 			<string>purplespark.png</string>
 			<key>x</key>
-			<integer>220</integer>
+			<integer>100</integer>
 			<key>y</key>
 			<integer>380</integer>
 		</dict>
@@ -162,53 +162,23 @@
 	<array>
 		<dict>
 			<key>x1</key>
-			<integer>40</integer>
-			<key>y1</key>
-			<integer>160</integer>
-			<key>x2</key>
-			<integer>100</integer>
-			<key>y2</key>
-			<integer>160</integer>
-		</dict>
-		<dict>
-			<key>x1</key>
 			<integer>100</integer>
 			<key>y1</key>
-			<integer>355</integer>
+			<integer>210</integer>
 			<key>x2</key>
 			<integer>160</integer>
 			<key>y2</key>
-			<integer>355</integer>
-		</dict>
-		<dict>
-			<key>x1</key>
-			<integer>100</integer>
-			<key>y1</key>
-			<integer>240</integer>
-			<key>x2</key>
-			<integer>160</integer>
-			<key>y2</key>
-			<integer>240</integer>
-		</dict>
-		<dict>
-			<key>x1</key>
-			<integer>160</integer>
-			<key>y1</key>
-			<integer>300</integer>
-			<key>x2</key>
-			<integer>220</integer>
-			<key>y2</key>
-			<integer>300</integer>
+			<integer>210</integer>
 		</dict>
 		<dict>
 			<key>x1</key>
 			<integer>220</integer>
 			<key>y1</key>
-			<integer>190</integer>
+			<integer>210</integer>
 			<key>x2</key>
 			<integer>280</integer>
 			<key>y2</key>
-			<integer>190</integer>
+			<integer>210</integer>
 		</dict>
 	</array>
 	<key>Gates</key>

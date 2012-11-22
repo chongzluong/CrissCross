@@ -164,91 +164,71 @@
 			<key>x1</key>
 			<integer>40</integer>
 			<key>y1</key>
-			<integer>330</integer>
+			<integer>300</integer>
 			<key>x2</key>
 			<integer>100</integer>
 			<key>y2</key>
-			<integer>330</integer>
+			<integer>300</integer>
 		</dict>
 		<dict>
 			<key>x1</key>
 			<integer>40</integer>
 			<key>y1</key>
-			<integer>290</integer>
+			<integer>245</integer>
 			<key>x2</key>
 			<integer>100</integer>
 			<key>y2</key>
-			<integer>290</integer>
-		</dict>
-		<dict>
-			<key>x1</key>
-			<integer>100</integer>
-			<key>y1</key>
-			<integer>310</integer>
-			<key>x2</key>
-			<integer>160</integer>
-			<key>y2</key>
-			<integer>310</integer>
+			<integer>245</integer>
 		</dict>
 		<dict>
 			<key>x1</key>
 			<integer>100</integer>
-			<key>y1</key>
-			<integer>250</integer>
-			<key>x2</key>
-			<integer>160</integer>
-			<key>y2</key>
-			<integer>250</integer>
-		</dict>
-		<dict>
-			<key>x1</key>
-			<integer>160</integer>
-			<key>y1</key>
-			<integer>370</integer>
-			<key>x2</key>
-			<integer>220</integer>
-			<key>y2</key>
-			<integer>370</integer>
-		</dict>
-		<dict>
-			<key>x1</key>
-			<integer>160</integer>
 			<key>y1</key>
 			<integer>270</integer>
 			<key>x2</key>
-			<integer>220</integer>
+			<integer>160</integer>
 			<key>y2</key>
 			<integer>270</integer>
 		</dict>
 		<dict>
 			<key>x1</key>
+			<integer>100</integer>
+			<key>y1</key>
+			<integer>210</integer>
+			<key>x2</key>
+			<integer>160</integer>
+			<key>y2</key>
+			<integer>210</integer>
+		</dict>
+		<dict>
+			<key>x1</key>
 			<integer>160</integer>
 			<key>y1</key>
-			<integer>230</integer>
+			<integer>245</integer>
 			<key>x2</key>
 			<integer>220</integer>
 			<key>y2</key>
-			<integer>230</integer>
+			<integer>245</integer>
+		</dict>
+		<dict>
+			<key>x1</key>
+			<integer>160</integer>
+			<key>y1</key>
+			<integer>190</integer>
+			<key>x2</key>
+			<integer>220</integer>
+			<key>y2</key>
+			<integer>190</integer>
 		</dict>
 		<dict>
 			<key>x1</key>
 			<integer>220</integer>
 			<key>y1</key>
-			<integer>320</integer>
+			<integer>270</integer>
 			<key>x2</key>
 			<integer>280</integer>
 			<key>y2</key>
-			<integer>320</integer>
-		</dict>
-		<dict>
-			<key>x1</key>
-			<integer>220</integer>
-			<key>y1</key>
-			<integer>250</integer>
-			<key>x2</key>
-			<integer>280</integer>
-			<key>y2</key>
-			<integer>250</integer>
+			<integer>270</integer>
 		</dict>
 		<dict>
 			<key>x1</key>
@@ -265,23 +245,13 @@
 	<array>
 		<dict>
 			<key>tag</key>
-			<integer>0</integer>
-			<key>spriteName</key>
-			<string>yellowtoken.png</string>
-			<key>x</key>
-			<integer>40</integer>
-			<key>y</key>
-			<integer>230</integer>
-		</dict>
-		<dict>
-			<key>tag</key>
 			<integer>1</integer>
 			<key>spriteName</key>
 			<string>redtoken.png</string>
 			<key>x</key>
-			<integer>160</integer>
+			<integer>100</integer>
 			<key>y</key>
-			<integer>260</integer>
+			<integer>255</integer>
 		</dict>
 		<dict>
 			<key>tag</key>
@@ -289,30 +259,23 @@
 			<key>spriteName</key>
 			<string>bluetoken.png</string>
 			<key>x</key>
-			<integer>280</integer>
+			<integer>160</integer>
 			<key>y</key>
-			<integer>230</integer>
+			<integer>200</integer>
 		</dict>
-	</array>
-	<key>Teleporters</key>
-	<array>
 		<dict>
+			<key>tag</key>
+			<integer>4</integer>
 			<key>spriteName</key>
-			<string>redtele.png</string>
+			<string>greentoken.png</string>
 			<key>x</key>
 			<integer>100</integer>
 			<key>y</key>
-			<integer>230</integer>
-		</dict>
-		<dict>
-			<key>spriteName</key>
-			<string>redtele.png</string>
-			<key>x</key>
-			<integer>220</integer>
-			<key>y</key>
-			<integer>340</integer>
+			<integer>280</integer>
 		</dict>
 	</array>
+	<key>Teleporters</key>
+	<array/>
 	<key>LevelTag</key>
 	<integer>30</integer>
 </dict>

@@ -53,7 +53,7 @@
     //myMenu.position =CGPointZero;
     
     //Create menu buttons
-    for (int k = 1; k<16; k++)
+    for (int k = 1; k<21; k++)
     {
         //NSNumber *currentHighScore = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Level%i highScore", k-1]];
         NSNumber *currentHighScore = [MGWU objectForKey:[NSString stringWithFormat:@"Level%i highScore",k-1]];
@@ -64,7 +64,6 @@
             //NSNumber *currentBoltNumber = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Level%i bolts",k]];
             NSNumber *currentBoltNumber = [MGWU objectForKey:[NSString stringWithFormat:@"Level%i bolts",k]];
             int bolts = [currentBoltNumber intValue];
-            printf("@%i",bolts);
             
             CCMenuItem *menuItem = [CCMenuItemImage itemFromNormalImage:[NSString stringWithFormat:@"lvl%ibutton%i.png", k,bolts]selectedImage:[NSString stringWithFormat:@"lvl%ibutton%i.png", k,bolts] target:self selector:@selector (startLevel:)];
             menuItem.position = ccp(160, 160);
@@ -80,7 +79,7 @@
     }
     
 	// Arrange the menu items vertically
-	[myMenu alignItemsInColumns:[NSNumber numberWithUnsignedInt:3], [NSNumber numberWithUnsignedInt:3],[NSNumber numberWithUnsignedInt:3], [NSNumber numberWithUnsignedInt:3], [NSNumber numberWithUnsignedInt:3],nil];
+	[myMenu alignItemsInColumns:[NSNumber numberWithUnsignedInt:4], [NSNumber numberWithUnsignedInt:4],[NSNumber numberWithUnsignedInt:4], [NSNumber numberWithUnsignedInt:4], [NSNumber numberWithUnsignedInt:4],nil];
     
     myMenu.position = ccp(160,195);
     

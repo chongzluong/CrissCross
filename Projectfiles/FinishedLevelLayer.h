@@ -17,12 +17,16 @@
     CCLabelTTF *timeLabel;
     CCLabelTTF *highScoreLabel;
     NSNumber *bolts;
+    UITextField *inputter;
+    int editingcounter;
+    int levelCompleted;
 }
 
 +(id) scene;
-+(id) showLevel: (int) i timeOf: (float) k;
++(id) showLevel: (int) i timeOf: (int) k;
 -(void) nextLevel:(id) sender;
 -(void) goHome: (id) sender;
 -(void) setUpMenus;
+-(void) highScoresList: (id) sender;
 
 @end

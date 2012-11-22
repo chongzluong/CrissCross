@@ -100,7 +100,7 @@ int leveltag = 0;
         
         start = [NSDate date];
         
-        timeLabel =[CCLabelTTF labelWithString:[NSString stringWithFormat:@"Time:%f", 0.00] fontName:@"Futura-CondensedExtraBold" fontSize:14];
+        timeLabel =[CCLabelTTF labelWithString:[NSString stringWithFormat:@"Score:%i", 0] fontName:@"Futura-CondensedExtraBold" fontSize:14];
         timeLabel.position = ccp(270, 465);
         timeLabel.color = ccBLUE;
         [self addChild: timeLabel];
@@ -109,8 +109,9 @@ int leveltag = 0;
         batch = [CCSpriteBatchNode batchNodeWithFile:@"Line.png"];
         [self addChild:batch];
         
-        NSNumber *currentHighScore = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Level%i highScore", leveltag]];
-        float hs = [currentHighScore floatValue];
+        //NSNumber *currentHighScore = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Level%i highScore", leveltag]];
+        NSNumber *currentHighScore = [MGWU objectForKey:[NSString stringWithFormat:@"Level%i highScore", leveltag]];
+        int hs = [currentHighScore intValue];
         
         if (hs == 0)
         {
@@ -121,7 +122,7 @@ int leveltag = 0;
         }
         else
         {
-           CCLabelTTF *highScoreLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"Best:%.2f", hs] fontName:@"Futura-CondensedExtraBold" fontSize:14];
+           CCLabelTTF *highScoreLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"Best:%i", hs] fontName:@"Futura-CondensedExtraBold" fontSize:14];
            highScoreLabel.position = ccp(50, 465);
            highScoreLabel.color = ccBLUE;
            [self addChild:highScoreLabel];
@@ -164,7 +165,7 @@ int leveltag = 0;
         [tempMenu addChild:homeButton];
         
         //Load the tutorials
-        if (leveltag == 15)
+        if (leveltag == 20)
         {
             startCounter = 2;
             tutorialButton = [CCMenuItemImage itemFromNormalImage:@"Teleporter Explanation.png" selectedImage:@"Teleporter Explanation2.png" target:self selector:@selector(endTutorial:)];
@@ -172,7 +173,7 @@ int leveltag = 0;
             [tempMenu addChild:tutorialButton];
         }
         
-        if (leveltag == 30)
+        if (leveltag == 35)
         {
             startCounter = 2;
             tutorialButton = [CCMenuItemImage itemFromNormalImage:@"Teleporter Explanation.png" selectedImage:@"Teleporter Explanation2.png" target:self selector:@selector(endTutorial:)];
@@ -180,7 +181,7 @@ int leveltag = 0;
             [tempMenu addChild:tutorialButton];
         }
         
-        if (leveltag == 31)
+        if (leveltag == 36)
         {
             startCounter = 2;
             tutorialButton = [CCMenuItemImage itemFromNormalImage:@"Teleporter Explanation.png" selectedImage:@"Teleporter Explanation2.png" target:self selector:@selector(endTutorial:)];
@@ -188,7 +189,7 @@ int leveltag = 0;
             [tempMenu addChild:tutorialButton];
         }
         
-        if (leveltag == 16)
+        if (leveltag == 21)
         {
             startCounter = 2;
             tutorialButton2 = [CCMenuItemImage itemFromNormalImage:@"Token Explanation.png" selectedImage:@"Token Explanation2.png" target:self selector:@selector(endTutorial2:)];
@@ -199,8 +200,17 @@ int leveltag = 0;
         [self scheduleUpdate];
         [[SimpleAudioEngine sharedEngine] preloadEffect:@"ConnectStart.wav"];
         [[SimpleAudioEngine sharedEngine] preloadEffect:@"ConnectEnd.wav"];
-        [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:@"beat.mp3"];
-        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"beat.mp3" loop:TRUE];
+        [[SimpleAudioEngine sharedEngine] preloadEffect:@"explo2.wav"];
+        [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:@"Black Diamond.mp3"];
+        [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:@"Pulse.mp3"];
+        [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:@"Super Kukicha.mp3"];
+        if(leveltag>36)
+        {[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Black Diamond.mp3" loop:TRUE];}
+        else if (leveltag>20 && leveltag<36)
+        {[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Pulse.mp3" loop:TRUE];}
+        else if (leveltag<21)
+        {[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Super Kukicha.mp3" loop:TRUE];}
+
 	}
 	return self;
 }
@@ -506,6 +516,68 @@ int leveltag = 0;
         [teleporters addObject:tempTeleporter];
         [self addChild:tempTeleporter];
     }
+    
+    if(leveltag == 1)
+    {
+        CCSprite *greenArrow = [CCSprite spriteWithFile:@"Green Arrow.png"];
+        greenArrow.position = ccp(240,230);
+        [self addChild:greenArrow];
+        
+        CCSprite *redArrow = [CCSprite spriteWithFile:@"Red Arrow.png"];
+        redArrow.position = ccp(70,90);
+        [self addChild:redArrow];
+
+        CCSprite *greenCircle = [CCSprite spriteWithFile:@"green circle.png"];
+        greenCircle.position = ccp(220,380);
+        [self addChild:greenCircle];
+        
+        CCSprite *greenCircle2 = [CCSprite spriteWithFile:@"green circle.png"];
+        greenCircle2.position = ccp(220,80);
+        [self addChild:greenCircle2];
+        
+        CCSprite *yellowCircle = [CCSprite spriteWithFile:@"yellow circle.png"];
+        yellowCircle.position = ccp(100,260);
+        [self addChild:yellowCircle];
+        
+        CCSprite *yellowCircle2 = [CCSprite spriteWithFile:@"yellow circle.png"];
+        yellowCircle2.position = ccp(160,260);
+        [self addChild:yellowCircle2];
+        
+        CCLabelTTF *tutorialLabel = [CCLabelTTF labelWithString:@"Swipe or Click" fontName:@"Futura-CondensedExtraBold" fontSize:14];
+        tutorialLabel.position = ccp(130, 300);
+        tutorialLabel.color = ccGREEN;
+        [self addChild:tutorialLabel];
+        
+        CCLabelTTF *tutorialLabel2 = [CCLabelTTF labelWithString:@"To Draw Lines" fontName:@"Futura-CondensedExtraBold" fontSize:14];
+        tutorialLabel2.position = ccp(130, 285);
+        tutorialLabel2.color = ccGREEN;
+        [self addChild:tutorialLabel2];
+        
+        CCLabelTTF *tutorialLabel3 = [CCLabelTTF labelWithString:@"Lead Colored Sparks" fontName:@"Futura-CondensedExtraBold" fontSize:14];
+        tutorialLabel3.position = ccp(250, 245);
+        tutorialLabel3.color = ccGREEN;
+        [self addChild:tutorialLabel3];
+        
+        CCLabelTTF *tutorialLabel4 = [CCLabelTTF labelWithString:@"To" fontName:@"Futura-CondensedExtraBold" fontSize:14];
+        tutorialLabel4.position = ccp(250, 230);
+        tutorialLabel4.color = ccGREEN;
+        [self addChild:tutorialLabel4];
+        
+        CCLabelTTF *tutorialLabel5 = [CCLabelTTF labelWithString:@"Their Colored Plugs" fontName:@"Futura-CondensedExtraBold" fontSize:14];
+        tutorialLabel5.position = ccp(250, 215);
+        tutorialLabel5.color = ccGREEN;
+        [self addChild:tutorialLabel5];
+        
+        CCLabelTTF *tutorialLabel6 = [CCLabelTTF labelWithString:@"Hit This To" fontName:@"Futura-CondensedExtraBold" fontSize:14];
+        tutorialLabel6.position = ccp(70, 165);
+        tutorialLabel6.color = ccRED;
+        [self addChild:tutorialLabel6];
+        
+        CCLabelTTF *tutorialLabel7 = [CCLabelTTF labelWithString:@"Reset Falling Sparks" fontName:@"Futura-CondensedExtraBold" fontSize:14];
+        tutorialLabel7.position = ccp(70, 150);
+        tutorialLabel7.color = ccRED;
+        [self addChild:tutorialLabel7];
+    }
 }
 
 -(void)endTutorial:(CCMenuItem *) menuItem
@@ -761,6 +833,7 @@ int leveltag = 0;
                     temp.position = tempTeleporter2.position;
                     CGPoint velocity = CGPointMake(0, -1);
                     temp.position = ccpAdd(temp.position, velocity);
+                    [[SimpleAudioEngine sharedEngine] playEffect:@"explo2.wav"];
                 }
                 else if (CGPointEqualToPoint(temp.position, tempTeleporter.position)&& k%2>0)
                 {
@@ -768,6 +841,7 @@ int leveltag = 0;
                     temp.position = tempTeleporter2.position;
                     CGPoint velocity = CGPointMake(0, -1);
                     temp.position = ccpAdd(temp.position, velocity);
+                    [[SimpleAudioEngine sharedEngine] playEffect:@"explo2.wav"];
                 }
 
             }
@@ -845,7 +919,7 @@ int leveltag = 0;
             winCounter = 0;
             
              leveltag++;
-            [[CCDirector sharedDirector] replaceScene:[FinishedLevelLayer showLevel:leveltag timeOf: [time floatValue]]];
+            [[CCDirector sharedDirector] replaceScene:[FinishedLevelLayer showLevel:leveltag timeOf: [time intValue]]];
 
         }
         else
@@ -1053,8 +1127,8 @@ int leveltag = 0;
     }
     if (startCounter != 2)
     {timeInterval = [start timeIntervalSinceNow];}
-    time = [NSNumber numberWithDouble:fabs(timeInterval)];
-    [timeLabel setString:[NSString stringWithFormat:@"Time:%.2f", [time floatValue]]];
+    time = [NSNumber numberWithDouble:(fabs(timeInterval))*100];
+    [timeLabel setString:[NSString stringWithFormat:@"Score:%i", [time intValue]]];
 }
  
 @end

@@ -72,6 +72,13 @@
 	myMenu = [CCMenu menuWithItems:menuItem1, menuItem2, menuItem3, nil];
     myMenu.position =CGPointZero;
     
+    if (![MGWU isFacebookActive])
+    {
+        CCMenuItem *menuItem0 = [CCMenuItemImage itemFromNormalImage:@"FBLoginButton.png" selectedImage:@"FBLoginButtonPressed.png" target:self selector:@selector(fbLogin:)];
+        menuItem0.position = ccp(160, 280);
+        [myMenu addChild:menuItem0];
+    }
+    
 	// Arrange the menu items vertically
 	//[myMenu alignItemsVertically];
     
@@ -127,4 +134,11 @@
 {
     [[CCDirector sharedDirector] replaceScene:[LvlMenuLayer3 scene]];
 }
+
+-(void) fbLogin:(id) sender
+{
+    [MGWU loginToFacebook];
+    [MGWU likeAppWithPageId:@"128509683968807"];
+}
+
 @end

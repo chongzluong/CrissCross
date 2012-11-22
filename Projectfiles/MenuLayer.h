@@ -30,5 +30,6 @@ enum
 -(void) startGame2: (id) sender;
 -(void) startGame3: (id) sender;
 -(void) setUpMenus;
+-(void) fbLogin: (id) sender;
 
 @end

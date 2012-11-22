@@ -164,91 +164,61 @@
 			<key>x1</key>
 			<integer>40</integer>
 			<key>y1</key>
-			<integer>245</integer>
+			<integer>215</integer>
 			<key>x2</key>
 			<integer>100</integer>
 			<key>y2</key>
-			<integer>320</integer>
-		</dict>
-		<dict>
-			<key>x1</key>
-			<integer>40</integer>
-			<key>y1</key>
-			<integer>210</integer>
-			<key>x2</key>
-			<integer>100</integer>
-			<key>y2</key>
-			<integer>185</integer>
+			<integer>215</integer>
 		</dict>
 		<dict>
 			<key>x1</key>
 			<integer>100</integer>
 			<key>y1</key>
-			<integer>300</integer>
+			<integer>270</integer>
 			<key>x2</key>
 			<integer>160</integer>
 			<key>y2</key>
-			<integer>255</integer>
+			<integer>290</integer>
 		</dict>
 		<dict>
 			<key>x1</key>
 			<integer>100</integer>
-			<key>y1</key>
-			<integer>160</integer>
-			<key>x2</key>
-			<integer>160</integer>
-			<key>y2</key>
-			<integer>190</integer>
-		</dict>
-		<dict>
-			<key>x1</key>
-			<integer>160</integer>
-			<key>y1</key>
-			<integer>230</integer>
-			<key>x2</key>
-			<integer>220</integer>
-			<key>y2</key>
-			<integer>280</integer>
-		</dict>
-		<dict>
-			<key>x1</key>
-			<integer>160</integer>
-			<key>y1</key>
-			<integer>205</integer>
-			<key>x2</key>
-			<integer>220</integer>
-			<key>y2</key>
-			<integer>155</integer>
-		</dict>
-		<dict>
-			<key>x1</key>
-			<integer>160</integer>
 			<key>y1</key>
 			<integer>150</integer>
 			<key>x2</key>
+			<integer>160</integer>
+			<key>y2</key>
+			<integer>150</integer>
+		</dict>
+		<dict>
+			<key>x1</key>
+			<integer>160</integer>
+			<key>y1</key>
+			<integer>190</integer>
+			<key>x2</key>
 			<integer>220</integer>
 			<key>y2</key>
-			<integer>200</integer>
+			<integer>170</integer>
 		</dict>
 		<dict>
 			<key>x1</key>
 			<integer>220</integer>
 			<key>y1</key>
-			<integer>265</integer>
+			<integer>300</integer>
 			<key>x2</key>
 			<integer>280</integer>
 			<key>y2</key>
-			<integer>230</integer>
+			<integer>300</integer>
 		</dict>
 		<dict>
 			<key>x1</key>
 			<integer>220</integer>
 			<key>y1</key>
-			<integer>180</integer>
+			<integer>190</integer>
 			<key>x2</key>
 			<integer>280</integer>
 			<key>y2</key>
-			<integer>215</integer>
+			<integer>210</integer>
 		</dict>
 	</array>
 	<key>Gates</key>

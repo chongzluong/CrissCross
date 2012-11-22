@@ -45,7 +45,7 @@ local config =
 		DeviceOrientation = DeviceOrientation.Portrait,
 		AutorotationType = Autorotation.UIViewController,
 		ShouldAutorotateToLandscapeOrientations = NO,
-		ShouldAutorotateToPortraitOrientations = YES,
+		ShouldAutorotateToPortraitOrientations = NO,
 		AllowAutorotateOnFirstAndSecondGenerationDevices = NO,
 	
 		-- iAd setup
