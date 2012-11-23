@@ -69,7 +69,8 @@ int score = 0;
     [self addChild: timeLabel];
     
     //SUBMITS THE HIGH SCORES TO THE LEADERBOARD NAMED Level1HighScores, etc...
-    [MGWU submitHighScore:-(score) byPlayer:@"Fish" forLeaderboard:[NSString stringWithFormat:@"Level%iHighScores",levelCompleted]];
+    [MGWU submitHighScore:-(score) byPlayer:@"Tim" forLeaderboard:[NSString stringWithFormat:@"Level%iHighScores",levelCompleted]];
+    NSLog(@"Blah");
 
     
     if(score<3000)
@@ -177,8 +178,8 @@ int score = 0;
     [[[CCDirector sharedDirector] openGLView] addSubview:inputter];
     MainViewController *blah = [[MainViewController alloc] init];
     inputter.delegate = blah;
-
     */
+
     
 }
 
@@ -196,23 +197,5 @@ int score = 0;
 {
     [[CCDirector sharedDirector] replaceScene:[HighScoreLayer showLevel:finishedtag]];
 }
-
-/*
--(void) update:(ccTime)delta
-{
-    if (inputter.editing == TRUE)
-    {
-        editingcounter++;
-        printf("@%s","blahblahblah");
-    }
-    else if (editingcounter>0)
-    {
-        //SUBMITS THE HIGH SCORES TO THE LEADERBOARD NAMED Level1HighScores, etc...
-        [MGWU submitHighScore:-(score) byPlayer:inputter.text forLeaderboard:[NSString stringWithFormat:@"Level%iHighScores",levelCompleted]];
-        [inputter resignFirstResponder];
-        //printf("@%s","blahblahblah");
-    }
-}
-*/
 
 @end

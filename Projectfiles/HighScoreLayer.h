@@ -18,7 +18,7 @@
     NSString *name;
     CCLabelTTF *nameLabel;
     CCLabelTTF *scoreLabel;
-    float floatScore;
+    float intScore;
     int xvalue;
     int yvalue;
 }

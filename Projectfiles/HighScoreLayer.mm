@@ -87,20 +87,24 @@ int levelCompleted = 0;
 
 -(void) receivedScores:(NSDictionary *)scores
 {
+    //Check what's in the scores
     for (NSString *key in [scores allKeys])
     {
         NSLog(@"%@",[scores objectForKey:key]);
     }
     
     NSArray *tempArray = [scores objectForKey:@"all"];
+    NSLog (@"%i",[tempArray count]);
+    NSLog ([NSString stringWithFormat:@"Level%iHighScores",levelCompleted]);
+    
     for (int k = 0; k<(int)[tempArray count]; k++)
     {
         item = [tempArray objectAtIndex:k];
         name = [item objectForKey:@"name"];
         score = [item objectForKey:@"score"];
         nameLabel = [CCLabelTTF labelWithString:name fontName:@"Futura-CondensedExtraBold" fontSize:14];
-        floatScore = -[score floatValue];
-        scoreLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%.2f",floatScore] fontName:@"Futura-CondensedExtraBold" fontSize:14];
+        intScore = -[score intValue];
+        scoreLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%i",intScore] fontName:@"Futura-CondensedExtraBold" fontSize:14];
         yvalue = 330-k*10;
         nameLabel.position = ccp(100,yvalue);
         scoreLabel.position = ccp(200,yvalue);
