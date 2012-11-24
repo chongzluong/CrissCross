@@ -67,10 +67,6 @@ int score = 0;
     timeLabel.position = ccp(160, 320);
     timeLabel.color = ccGREEN;
     [self addChild: timeLabel];
-    
-    //SUBMITS THE HIGH SCORES TO THE LEADERBOARD NAMED Level1HighScores, etc...
-    [MGWU submitHighScore:-(score) byPlayer:@"Tim" forLeaderboard:[NSString stringWithFormat:@"Level%iHighScores",levelCompleted]];
-    NSLog(@"Blah");
 
     
     if(score<3000)
@@ -114,6 +110,9 @@ int score = 0;
     {
         NSNumber *highScore = [NSNumber numberWithInt:score];
         [MGWU setObject:highScore forKey:[NSString stringWithFormat:@"Level%i highScore",levelCompleted]];
+        
+        //SUBMITS THE HIGH SCORES TO THE LEADERBOARD NAMED Level1HighScores, etc...
+        [MGWU submitHighScore:-(score) byPlayer:@"Timothy" forLeaderboard:[NSString stringWithFormat:@"Level%iHighScores",levelCompleted]];
     }
     
     //currentHighScore = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Level%i highScore", levelCompleted]];

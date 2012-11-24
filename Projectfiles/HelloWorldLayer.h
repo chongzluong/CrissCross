@@ -87,6 +87,8 @@
     NSTimeInterval timeInterval;
     NSNumber *time;
     CCLabelTTF *timeLabel;
+    
+    int updateCounter;
 }
 
 +(id) showLevel: (int) i;
@@ -113,6 +115,8 @@
 -(void) clearLines:(id) sender;
 -(void) previousLine:(id) sender;
 -(void) buildGame:(NSDictionary *) nextLevel;
+
+-(void) resetCounter:(id) sender;
 
 @property (nonatomic, copy) NSString* helloWorldString;
 @property (nonatomic, copy) NSString* helloWorldFontName;

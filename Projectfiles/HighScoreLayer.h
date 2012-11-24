@@ -16,9 +16,7 @@
     NSDictionary *item;
     NSNumber *score;
     NSString *name;
-    CCLabelTTF *nameLabel;
-    CCLabelTTF *scoreLabel;
-    float intScore;
+    int intScore;
     int xvalue;
     int yvalue;
 }

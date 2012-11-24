@@ -27,6 +27,7 @@ int leveltag = 0;
 {
     counter = 0;
     startCounter = 0;
+    updateCounter = 0;
     winCounter = 0;
     yellowlength = 0;
     redlength = 0;
@@ -759,6 +760,11 @@ int leveltag = 0;
     }
 }
 
+-(void) resetCounter:(id)sender
+{
+    updateCounter = 0;
+}
+
 -(void) update:(ccTime)delta
 {
     if (startCounter == 1)
@@ -1024,12 +1030,13 @@ int leveltag = 0;
                     }
                     [[SimpleAudioEngine sharedEngine] playEffect:@"ConnectEnd.wav"];
                 }
-                
+                updateCounter++;
+                [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(resetCounter:) userInfo:nil repeats:NO];
             }
 
             else
             {
-                if ([input touchesAvailable])
+                if ([input touchesAvailable] && updateCounter == 0)
                 {
                     //Rounds the x value of the click to the nearest line
                     clicked = [input locationOfAnyTouchInPhase:KKTouchPhaseAny];
@@ -1116,9 +1123,19 @@ int leveltag = 0;
                                 [points removeLastObject];
                                 counter--;
                                 [self removeChild:target cleanup:YES];
+                                
+                                [startpoints addObject: point];
+                                [points addObject: point];
+                                counter++;
+                                target = [CCSprite spriteWithFile:@"target.png"];
+                                target.position = blah;
+                                [self addChild:target];
+                                [[SimpleAudioEngine sharedEngine] playEffect:@"ConnectStart.wav"];
                             }
                         }
                     }
+                    updateCounter++;
+                    [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(resetCounter:) userInfo:nil repeats:NO];
                 }
             }
             

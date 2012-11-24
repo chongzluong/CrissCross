@@ -94,22 +94,46 @@ int levelCompleted = 0;
     }
     
     NSArray *tempArray = [scores objectForKey:@"all"];
-    NSLog (@"%i",[tempArray count]);
-    NSLog ([NSString stringWithFormat:@"Level%iHighScores",levelCompleted]);
     
-    for (int k = 0; k<(int)[tempArray count]; k++)
+    CCLabelTTF *WordName = [CCLabelTTF labelWithString:@"Name" fontName:@"Futura-CondensedExtraBold" fontSize:14];
+    CCLabelTTF *WordScore = [CCLabelTTF labelWithString:@"Score" fontName:@"Futura-CondensedExtraBold" fontSize:14];
+    CCLabelTTF *WordRank = [CCLabelTTF labelWithString:@"Rank" fontName:@"Futura-CondensedExtraBold" fontSize:14];
+    
+    WordName.position = ccp(170,330);
+    WordScore.position = ccp(220,330);
+    WordRank.position = ccp(100,330);
+    
+    WordName.color = ccBLUE;
+    WordScore.color = ccBLUE;
+    WordRank.color = ccBLUE;
+    
+    [self addChild:WordName];
+    [self addChild:WordScore];
+    [self addChild:WordRank];
+    
+    int x = [tempArray count];
+    //Limit the highscore list to 20
+    if (x>20)
+    {
+        x=20;
+    }
+    for (int k = 0; k<x; k++)
     {
         item = [tempArray objectAtIndex:k];
         name = [item objectForKey:@"name"];
         score = [item objectForKey:@"score"];
-        nameLabel = [CCLabelTTF labelWithString:name fontName:@"Futura-CondensedExtraBold" fontSize:14];
+        CCLabelTTF *nameLabel = [CCLabelTTF labelWithString:name fontName:@"Futura-CondensedExtraBold" fontSize:14];
         intScore = -[score intValue];
-        scoreLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%i",intScore] fontName:@"Futura-CondensedExtraBold" fontSize:14];
-        yvalue = 330-k*10;
-        nameLabel.position = ccp(100,yvalue);
-        scoreLabel.position = ccp(200,yvalue);
+        CCLabelTTF *scoreLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%i",intScore] fontName:@"Futura-CondensedExtraBold" fontSize:14];
+        CCLabelTTF *rankLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%i",k+1] fontName:@"Futura-CondensedExtraBold" fontSize:14];
+        yvalue = 310-k*20;
+        rankLabel.position = ccp(100,yvalue);
+        nameLabel.position = ccp(170,yvalue);
+        scoreLabel.position = ccp(220,yvalue);
+        rankLabel.color = ccBLUE;
         nameLabel.color = ccBLUE;
         scoreLabel.color = ccBLUE;
+        [self addChild:rankLabel];
         [self addChild:nameLabel];
         [self addChild:scoreLabel];
         
