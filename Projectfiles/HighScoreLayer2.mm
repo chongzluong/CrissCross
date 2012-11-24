@@ -102,7 +102,7 @@ int level = 0;
         NSLog(@"%@",[scores objectForKey:key]);
     }
     
-    NSArray *tempArray = [scores objectForKey:@"all"];
+    NSArray *tempArray = [scores objectForKey:@"friends"];
     
     CCLabelTTF *WordName = [CCLabelTTF labelWithString:@"Name" fontName:@"Futura-CondensedExtraBold" fontSize:14];
     CCLabelTTF *WordScore = [CCLabelTTF labelWithString:@"Score" fontName:@"Futura-CondensedExtraBold" fontSize:14];
@@ -129,16 +129,24 @@ int level = 0;
     for (int k = 0; k<x; k++)
     {
         item = [tempArray objectAtIndex:k];
-        name = [item objectForKey:@"name"];
+        //name = [item objectForKey:@"name"];
+        if ([[item objectForKey:@"username"] isKindOfClass:[NSNumber class]])
+        {
+            name = [item objectForKey:@"fbname"];
+        }
+        else
+        {
+            name = [item objectForKey:@"username"];
+        }
         score = [item objectForKey:@"score"];
         CCLabelTTF *nameLabel = [CCLabelTTF labelWithString:name fontName:@"Futura-CondensedExtraBold" fontSize:14];
         intScore = -[score intValue];
         CCLabelTTF *scoreLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%i",intScore] fontName:@"Futura-CondensedExtraBold" fontSize:14];
         CCLabelTTF *rankLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%i",k+1] fontName:@"Futura-CondensedExtraBold" fontSize:14];
         yvalue = 380-k*15;
-        rankLabel.position = ccp(100,yvalue);
-        nameLabel.position = ccp(170,yvalue);
-        scoreLabel.position = ccp(220,yvalue);
+        rankLabel.position = ccp(90,yvalue);
+        nameLabel.position = ccp(160,yvalue);
+        scoreLabel.position = ccp(230,yvalue);
         rankLabel.color = ccBLUE;
         nameLabel.color = ccBLUE;
         scoreLabel.color = ccBLUE;

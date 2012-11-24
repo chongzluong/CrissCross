@@ -67,7 +67,7 @@ int levelCompleted = 0;
     CCMenu *myMenu = [CCMenu menuWithItems:menuItem, nil];
     myMenu.position = CGPointZero;
     
-    if (![MGWU isFacebookActive])
+    if ([MGWU isFacebookActive])
     {
         CCMenuItem *menuItem2 = [CCMenuItemImage itemWithNormalImage:@"nextButton.png" selectedImage:@"nextButtonSelect.png" target:self selector:@selector(nextList:)];
         menuItem2.position = ccp(160,60);
