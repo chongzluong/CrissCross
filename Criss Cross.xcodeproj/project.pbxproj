@@ -153,7 +153,6 @@
 		578F24BA15E4145700DF0207 /* previous.png in Resources */ = {isa = PBXBuildFile; fileRef = 578F249915E4144A00DF0207 /* previous.png */; };
 		578F24BB15E4145700DF0207 /* previousselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 578F249A15E4144B00DF0207 /* previousselect.png */; };
 		578F24C215E4145700DF0207 /* target.png in Resources */ = {isa = PBXBuildFile; fileRef = 578F24A115E4145100DF0207 /* target.png */; };
-		57907FAE165D5BBB00DAF7D5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57907FAD165D5BBB00DAF7D5 /* MainViewController.m */; };
 		57A2420B15C86367006E9FBF /* MenuLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 57A2420A15C86367006E9FBF /* MenuLayer.mm */; };
 		57A863C4161C058A004A05D9 /* Line.png in Resources */ = {isa = PBXBuildFile; fileRef = 57A863C3161C058A004A05D9 /* Line.png */; };
 		57A863C6161C07CF004A05D9 /* Line-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57A863C5161C07CF004A05D9 /* Line-hd.png */; };
@@ -874,8 +873,6 @@
 		578F249915E4144A00DF0207 /* previous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = previous.png; path = "Not Retina/previous.png"; sourceTree = "<group>"; };
 		578F249A15E4144B00DF0207 /* previousselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = previousselect.png; path = "Not Retina/previousselect.png"; sourceTree = "<group>"; };
 		578F24A115E4145100DF0207 /* target.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = target.png; path = "Not Retina/target.png"; sourceTree = "<group>"; };
-		57907FAC165D5BBB00DAF7D5 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		57907FAD165D5BBB00DAF7D5 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		57A2420915C86367006E9FBF /* MenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuLayer.h; sourceTree = "<group>"; };
 		57A2420A15C86367006E9FBF /* MenuLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MenuLayer.mm; sourceTree = "<group>"; };
 		57A863C3161C058A004A05D9 /* Line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Line.png; path = "Small Resolution/GamePlay/Line.png"; sourceTree = "<group>"; };
@@ -1706,8 +1703,6 @@
 				5741B9C816333E9B00112F34 /* FailedLevelLayer.mm */,
 				57F6AF3F16570F79003914EE /* HighScoreLayer.h */,
 				57F6AF4016570F79003914EE /* HighScoreLayer.mm */,
-				57907FAC165D5BBB00DAF7D5 /* MainViewController.h */,
-				57907FAD165D5BBB00DAF7D5 /* MainViewController.m */,
 				DCC1A39413A94F1A005BD75D /* Resources */,
 				DCC1A3CF13A94F2C005BD75D /* Supporting Files */,
 			);
@@ -3107,7 +3102,6 @@
 				5741B9C916333E9B00112F34 /* FailedLevelLayer.mm in Sources */,
 				57E91927163D086D0076F1BB /* FinishedLevelLayer.mm in Sources */,
 				57F6AF4116570F79003914EE /* HighScoreLayer.mm in Sources */,
-				57907FAE165D5BBB00DAF7D5 /* MainViewController.m in Sources */,
 				575FCF84165DCCC500D46436 /* HelloWorldLayer.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

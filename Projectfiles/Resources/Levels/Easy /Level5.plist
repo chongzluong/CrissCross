@@ -151,9 +151,9 @@
 			<key>tag</key>
 			<integer>9</integer>
 			<key>SpriteName</key>
-			<string>160</string>
+			<string>greenspark.png</string>
 			<key>x</key>
-			<integer>280</integer>
+			<integer>160</integer>
 			<key>y</key>
 			<integer>380</integer>
 		</dict>

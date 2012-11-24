@@ -10,7 +10,6 @@
 #import "FinishedLevelLayer.h"
 #import "HelloWorldLayer.h"
 #import "HighScoreLayer.h"
-#import "MainViewController.h"
 
 int finishedtag = 0;
 int score = 0;
@@ -62,6 +61,23 @@ int score = 0;
     background.position = ccp(160,240);
     [self addChild:background];
     
+    //Create menu buttons
+    CCMenuItem *menuItem1 = [CCMenuItemImage itemFromNormalImage:@"YouWon.png" selectedImage:@"YouWon2.png" target:self selector:@selector(nextLevel:)];
+    menuItem1.position = ccp(160, 160);
+    
+    CCMenuItem *menuItem2 = [CCMenuItemImage itemFromNormalImage:@"homebutton.png" selectedImage:@"homebuttonselect.png" target:self selector:@selector(goHome:)];
+    menuItem2.position = ccp(160, 20);
+    
+    CCMenuItem *menuItem3 = [CCMenuItemImage itemWithNormalImage:@"s3.png" selectedImage:@"s4.png" target:self selector:@selector(highScoresList:)];
+    menuItem3.position = ccp(155, 74);
+    
+    // Create a menu and add your menu items to it
+	myMenu = [CCMenu menuWithItems:menuItem1, menuItem2, menuItem3, nil];
+    myMenu.position =CGPointZero;
+    
+	// add the menu to your scene
+	[self addChild:myMenu];
+    
     
     timeLabel =[CCLabelTTF labelWithString:[NSString stringWithFormat:@"Score:%i", score] fontName:@"Futura-CondensedExtraBold" fontSize:14];
     timeLabel.position = ccp(160, 320);
@@ -96,7 +112,7 @@ int score = 0;
     
     levelCompleted = finishedtag-1;
     
-    CCLabelTTF *tutorialLabel = [CCLabelTTF labelWithString:@"The Lower the Score, the Better!" fontName:@"Futura-CondensedExtraBold" fontSize:14];
+    tutorialLabel = [CCLabelTTF labelWithString:@"The Lower the Score, the Better!" fontName:@"Futura-CondensedExtraBold" fontSize:14];
     tutorialLabel.position = ccp(160, 340);
     tutorialLabel.color = ccGREEN;
     [self addChild:tutorialLabel];
@@ -111,11 +127,29 @@ int score = 0;
         NSNumber *highScore = [NSNumber numberWithInt:score];
         [MGWU setObject:highScore forKey:[NSString stringWithFormat:@"Level%i highScore",levelCompleted]];
         
-        //SUBMITS THE HIGH SCORES TO THE LEADERBOARD NAMED Level1HighScores, etc...
-        [MGWU submitHighScore:-(score) byPlayer:@"Timothy" forLeaderboard:[NSString stringWithFormat:@"Level%iHighScores",levelCompleted]];
+        if ([MGWU isFacebookActive])
+        {
+            [MGWU submitHighScore:-(score) byPlayer:[MGWU getUsername] forLeaderboard:[NSString stringWithFormat:@"Level%iHighScores",levelCompleted]];
+        }
+        else
+        {
+            //Lets the user input the name to go along with their high score
+            inputter = [[UITextField alloc] initWithFrame:CGRectMake(40, 100, 240, 30)];
+            inputter.borderStyle = UITextBorderStyleRoundedRect;
+            inputter.font = [UIFont systemFontOfSize:14.0];
+            inputter.placeholder = @"Enter A Name to Submit Your Score!";
+            inputter.backgroundColor = [UIColor blackColor];
+            inputter.keyboardType = UIKeyboardTypeDefault;
+            inputter.returnKeyType = UIReturnKeyDone;
+            inputter.clearButtonMode = UITextFieldViewModeWhileEditing;
+            inputter.textColor = [UIColor blueColor];
+            [inputter setBorderStyle:UITextBorderStyleLine];
+            inputter.delegate = self;
+            
+            [[[CCDirector sharedDirector] openGLView] addSubview:inputter];
+        }
     }
     
-    //currentHighScore = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Level%i highScore", levelCompleted]];
     currentHighScore = [MGWU objectForKey:[NSString stringWithFormat:@"Level%i highScore",levelCompleted]];
     hs = [currentHighScore intValue];
     
@@ -141,45 +175,16 @@ int score = 0;
     highScoreLabel.position = ccp(160, 300);
     highScoreLabel.color = ccGREEN;
     [self addChild: highScoreLabel];
-    
-    
-    
-    //Create menu buttons
-    CCMenuItem *menuItem1 = [CCMenuItemImage itemFromNormalImage:@"YouWon.png" selectedImage:@"YouWon2.png" target:self selector:@selector(nextLevel:)];
-    menuItem1.position = ccp(160, 160);
-    
-    CCMenuItem *menuItem2 = [CCMenuItemImage itemFromNormalImage:@"homebutton.png" selectedImage:@"homebuttonselect.png" target:self selector:@selector(goHome:)];
-    menuItem2.position = ccp(160, 20);
-    
-    CCMenuItem *menuItem3 = [CCMenuItemImage itemWithNormalImage:@"s3.png" selectedImage:@"s4.png" target:self selector:@selector(highScoresList:)];
-    menuItem3.position = ccp(155, 74);
-    
-    // Create a menu and add your menu items to it
-	CCMenu * myMenu = [CCMenu menuWithItems:menuItem1, menuItem2, menuItem3, nil];
-    myMenu.position =CGPointZero;
-    
-	// add the menu to your scene
-	[self addChild:myMenu];
-    
-    /*
-    inputter = [[UITextField alloc] initWithFrame:CGRectMake(40, 150, 240, 32)];
-    inputter.borderStyle = UITextBorderStyleRoundedRect;
-    inputter.textColor = [UIColor blackColor];
-    inputter.font = [UIFont systemFontOfSize:17.0];
-    inputter.placeholder = @"Enter Name";
-    inputter.backgroundColor = [UIColor whiteColor];
-    inputter.keyboardType = UIKeyboardTypeDefault;
-    inputter.returnKeyType = UIReturnKeyDone;
-    inputter.clearButtonMode = UITextFieldViewModeWhileEditing;
-    inputter.textColor = [UIColor blueColor];
-    [inputter setBorderStyle:UITextBorderStyleLine];
-    
-    [[[CCDirector sharedDirector] openGLView] addSubview:inputter];
-    MainViewController *blah = [[MainViewController alloc] init];
-    inputter.delegate = blah;
-    */
+}
 
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
     
+    [MGWU submitHighScore:-(score) byPlayer:inputter.text forLeaderboard:[NSString stringWithFormat:@"Level%iHighScores",levelCompleted]];
+    [textField removeFromSuperview];
+    
+    return YES;
 }
 
 -(void) nextLevel: (CCMenuItem *) menuItem

@@ -99,9 +99,9 @@ int levelCompleted = 0;
     CCLabelTTF *WordScore = [CCLabelTTF labelWithString:@"Score" fontName:@"Futura-CondensedExtraBold" fontSize:14];
     CCLabelTTF *WordRank = [CCLabelTTF labelWithString:@"Rank" fontName:@"Futura-CondensedExtraBold" fontSize:14];
     
-    WordName.position = ccp(170,330);
-    WordScore.position = ccp(220,330);
-    WordRank.position = ccp(100,330);
+    WordName.position = ccp(170,320);
+    WordScore.position = ccp(220,320);
+    WordRank.position = ccp(100,320);
     
     WordName.color = ccBLUE;
     WordScore.color = ccBLUE;
@@ -119,24 +119,46 @@ int levelCompleted = 0;
     }
     for (int k = 0; k<x; k++)
     {
-        item = [tempArray objectAtIndex:k];
-        name = [item objectForKey:@"name"];
-        score = [item objectForKey:@"score"];
-        CCLabelTTF *nameLabel = [CCLabelTTF labelWithString:name fontName:@"Futura-CondensedExtraBold" fontSize:14];
-        intScore = -[score intValue];
-        CCLabelTTF *scoreLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%i",intScore] fontName:@"Futura-CondensedExtraBold" fontSize:14];
-        CCLabelTTF *rankLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%i",k+1] fontName:@"Futura-CondensedExtraBold" fontSize:14];
-        yvalue = 310-k*20;
-        rankLabel.position = ccp(100,yvalue);
-        nameLabel.position = ccp(170,yvalue);
-        scoreLabel.position = ccp(220,yvalue);
-        rankLabel.color = ccBLUE;
-        nameLabel.color = ccBLUE;
-        scoreLabel.color = ccBLUE;
-        [self addChild:rankLabel];
-        [self addChild:nameLabel];
-        [self addChild:scoreLabel];
-        
+        if ([MGWU isFacebookActive])
+        {
+            item = [tempArray objectAtIndex:k];
+            name = [item objectForKey:@"name"];
+            score = [item objectForKey:@"score"];
+            CCLabelTTF *nameLabel = [CCLabelTTF labelWithString:name fontName:@"Futura-CondensedExtraBold" fontSize:14];
+            intScore = -[score intValue];
+            CCLabelTTF *scoreLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%i",intScore] fontName:@"Futura-CondensedExtraBold" fontSize:14];
+            CCLabelTTF *rankLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%i",k+1] fontName:@"Futura-CondensedExtraBold" fontSize:14];
+            yvalue = 300-k*15;
+            rankLabel.position = ccp(100,yvalue);
+            nameLabel.position = ccp(170,yvalue);
+            scoreLabel.position = ccp(220,yvalue);
+            rankLabel.color = ccBLUE;
+            nameLabel.color = ccBLUE;
+            scoreLabel.color = ccBLUE;
+            [self addChild:rankLabel];
+            [self addChild:nameLabel];
+            [self addChild:scoreLabel];
+        }
+        else
+        {
+            item = [tempArray objectAtIndex:k];
+            name = [item objectForKey:@"name"];
+            score = [item objectForKey:@"score"];
+            CCLabelTTF *nameLabel = [CCLabelTTF labelWithString:name fontName:@"Futura-CondensedExtraBold" fontSize:14];
+            intScore = -[score intValue];
+            CCLabelTTF *scoreLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%i",intScore] fontName:@"Futura-CondensedExtraBold" fontSize:14];
+            CCLabelTTF *rankLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%i",k+1] fontName:@"Futura-CondensedExtraBold" fontSize:14];
+            yvalue = 300-k*15;
+            rankLabel.position = ccp(100,yvalue);
+            nameLabel.position = ccp(170,yvalue);
+            scoreLabel.position = ccp(220,yvalue);
+            rankLabel.color = ccBLUE;
+            nameLabel.color = ccBLUE;
+            scoreLabel.color = ccBLUE;
+            [self addChild:rankLabel];
+            [self addChild:nameLabel];
+            [self addChild:scoreLabel];
+        }
     }
 }
 

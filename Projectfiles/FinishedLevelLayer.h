@@ -11,11 +11,13 @@
 #import "Box2D.h"
 
 
-@interface FinishedLevelLayer: CCLayer
+@interface FinishedLevelLayer: CCLayer <UITextFieldDelegate>
 {
     CCSprite *background;
     CCLabelTTF *timeLabel;
     CCLabelTTF *highScoreLabel;
+    CCLabelTTF *tutorialLabel;
+    CCMenu *myMenu;
     NSNumber *bolts;
     UITextField *inputter;
     int editingcounter;
