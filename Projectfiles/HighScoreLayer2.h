@@ -1,8 +1,8 @@
 //
-//  HighScoreLayer.h
+//  HighScoreLayer2.h
 //  Criss Cross
 //
-//  Created by Timothy on 11/16/12.
+//  Created by Timothy on 11/23/12.
 //
 //
 
@@ -10,7 +10,7 @@
 #import "cocos2d.h"
 #import "Box2D.h"
 
-@interface HighScoreLayer : CCLayer
+@interface HighScoreLayer2 : CCLayer
 {
     CCSprite *background;
     NSDictionary *item;
@@ -24,7 +24,7 @@
 +(id) scene;
 +(id) showLevel: (int) i;
 -(void) goBack: (id) sender;
--(void) nextList: (id) sender;
+-(void) previousList: (id) sender;
 -(void) setupMenus;
 -(void) receivedScores: (NSDictionary*) scores;
 

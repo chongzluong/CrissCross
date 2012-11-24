@@ -154,7 +154,7 @@ int leveltag = 0;
         clearButton = [CCMenuItemImage itemFromNormalImage:@"ClearButton.png" selectedImage:@"ClearButtonClicked.png" target:self selector:@selector(clearLines:)];
         clearButton.position = ccp(260, 30);
         
-        previousButton = [CCMenuItemImage itemFromNormalImage:@"previous.png" selectedImage:@"previousselect.png" target:self selector:@selector(previousLine:)];
+        previousButton = [CCMenuItemImage itemFromNormalImage:@"undo.png" selectedImage:@"undo_pressed.png" target:self selector:@selector(previousLine:)];
         previousButton.position = ccp(130, 30);
         
         homeButton = [CCMenuItemImage itemFromNormalImage:@"homebutton.png" selectedImage:@"homebuttonselect.png" target:self selector:@selector(goHome:)];

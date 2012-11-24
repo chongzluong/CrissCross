@@ -1,8 +1,8 @@
 //
-//  HighScoreLayer.m
+//  HighScoreLayer2.m
 //  Criss Cross
 //
-//  Created by Timothy on 11/16/12.
+//  Created by Timothy on 11/23/12.
 //
 //
 
@@ -13,12 +13,12 @@
 #import "LvlMenuLayer2.h"
 #import "LvlMenuLayer3.h"
 
-int levelCompleted = 0;
+int level = 0;
 
-@interface HighScoreLayer (PrivateMethods)
+@interface HighScoreLayer2 (PrivateMethods)
 @end
 
-@implementation HighScoreLayer
+@implementation HighScoreLayer2
 
 -(id) init
 {
@@ -35,7 +35,7 @@ int levelCompleted = 0;
 	CCScene *scene = [CCScene node];
     
 	// 'layer' is an autorelease object.
-	HighScoreLayer *layer = [HighScoreLayer node];
+	HighScoreLayer2 *layer = [HighScoreLayer2 node];
     
 	// add layer as a child to scene
 	[scene addChild: layer];
@@ -48,8 +48,8 @@ int levelCompleted = 0;
 
 +(id) showLevel:(int)i
 {
-    levelCompleted = i-1;
-    CCScene* myScene = [HighScoreLayer scene];
+    level = i-1;
+    CCScene* myScene = [HighScoreLayer2 scene];
     return myScene;
 }
 
@@ -59,31 +59,27 @@ int levelCompleted = 0;
     background.position = ccp(160,240);
     [self addChild:background];
     
-    [MGWU getHighScoresForLeaderboard:[NSString stringWithFormat:@"Level%iHighScores",levelCompleted] withCallback:@selector(receivedScores:) onTarget:self];
+    [MGWU getHighScoresForLeaderboard:[NSString stringWithFormat:@"Level%iHighScores",level] withCallback:@selector(receivedScores:) onTarget:self];
     
     CCMenuItem *menuItem = [CCMenuItemImage itemFromNormalImage:@"homebutton.png" selectedImage:@"homebuttonselect.png" target:self selector:@selector(goBack:)];
     menuItem.position = ccp(160, 20);
     
-    CCMenu *myMenu = [CCMenu menuWithItems:menuItem, nil];
-    myMenu.position = CGPointZero;
+    CCMenuItem *menuItem2 = [CCMenuItemImage itemWithNormalImage:@"previous.png" selectedImage:@"previousselect.png" target:self selector:@selector(previousList:)];
+    menuItem2.position = ccp(160,60);
     
-    if (![MGWU isFacebookActive])
-    {
-        CCMenuItem *menuItem2 = [CCMenuItemImage itemWithNormalImage:@"nextButton.png" selectedImage:@"nextButtonSelect.png" target:self selector:@selector(nextList:)];
-        menuItem2.position = ccp(160,60);
-        [myMenu addChild:menuItem2];
-    }
+    CCMenu *myMenu = [CCMenu menuWithItems:menuItem, menuItem2, nil];
+    myMenu.position = CGPointZero;
     
     [self addChild:myMenu];
 }
 
 -(void) goBack:(id)sender
 {
-    if(levelCompleted<16)
+    if(level<16)
     {
         [[CCDirector sharedDirector] replaceScene:[LvlMenuLayer scene]];
     }
-    else if(levelCompleted<31&&levelCompleted>15)
+    else if(level<31&&level>15)
     {
         [[CCDirector sharedDirector] replaceScene:[LvlMenuLayer2 scene]];
     }
@@ -93,9 +89,9 @@ int levelCompleted = 0;
     }
 }
 
--(void) nextList: (CCMenuItem *) menuItem
+-(void) previousList: (CCMenuItem *) menuItem
 {
-    [[CCDirector sharedDirector] replaceScene:[HighScoreLayer2 showLevel:levelCompleted+1]];
+    [[CCDirector sharedDirector] replaceScene:[HighScoreLayer showLevel:level+1]];
 }
 
 -(void) receivedScores:(NSDictionary *)scores

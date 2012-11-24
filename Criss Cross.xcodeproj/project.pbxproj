@@ -207,6 +207,17 @@
 		57B926141604F03200E55244 /* ClearButtonClicked-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B926121604F02B00E55244 /* ClearButtonClicked-hd.png */; };
 		57B926171604F06200E55244 /* ClearButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B926151604F03E00E55244 /* ClearButton.png */; };
 		57B926181604F06200E55244 /* ClearButtonClicked.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B926161604F04E00E55244 /* ClearButtonClicked.png */; };
+		57C4BD3A1660AA680057AD4E /* High Scores Blank-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C4BD391660AA680057AD4E /* High Scores Blank-hd.png */; };
+		57C4BD3D1660AA6E0057AD4E /* High Scores Blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C4BD3C1660AA6E0057AD4E /* High Scores Blank.png */; };
+		57C4BD401660ABCE0057AD4E /* undo_pressed-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C4BD3E1660ABCE0057AD4E /* undo_pressed-hd.png */; };
+		57C4BD411660ABCE0057AD4E /* undo-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C4BD3F1660ABCE0057AD4E /* undo-hd.png */; };
+		57C4BD441660ABD60057AD4E /* undo_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C4BD421660ABD60057AD4E /* undo_pressed.png */; };
+		57C4BD451660ABD60057AD4E /* undo.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C4BD431660ABD60057AD4E /* undo.png */; };
+		57C4BD481660ACAC0057AD4E /* nextButton-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C4BD461660ACAC0057AD4E /* nextButton-hd.png */; };
+		57C4BD491660ACAC0057AD4E /* nextButtonSelect-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C4BD471660ACAC0057AD4E /* nextButtonSelect-hd.png */; };
+		57C4BD4C1660ACD00057AD4E /* nextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C4BD4A1660ACD00057AD4E /* nextButton.png */; };
+		57C4BD4D1660ACD00057AD4E /* nextButtonSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C4BD4B1660ACD00057AD4E /* nextButtonSelect.png */; };
+		57C4BD501660AFD60057AD4E /* HighScoreLayer2.mm in Sources */ = {isa = PBXBuildFile; fileRef = 57C4BD4F1660AFD60057AD4E /* HighScoreLayer2.mm */; };
 		57C4CAAA161EB29900667FD1 /* light-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C4CAA9161EB29900667FD1 /* light-hd.png */; };
 		57C4CAAC161EB2A800667FD1 /* light.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C4CAAB161EB2A800667FD1 /* light.png */; };
 		57C4CAAE161EB80B00667FD1 /* Back-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C4CAAD161EB80B00667FD1 /* Back-hd.png */; };
@@ -928,6 +939,18 @@
 		57B926121604F02B00E55244 /* ClearButtonClicked-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ClearButtonClicked-hd.png"; path = "Retina/ClearButtonClicked-hd.png"; sourceTree = "<group>"; };
 		57B926151604F03E00E55244 /* ClearButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ClearButton.png; path = "Not Retina/ClearButton.png"; sourceTree = "<group>"; };
 		57B926161604F04E00E55244 /* ClearButtonClicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ClearButtonClicked.png; path = "Not Retina/ClearButtonClicked.png"; sourceTree = "<group>"; };
+		57C4BD391660AA680057AD4E /* High Scores Blank-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "High Scores Blank-hd.png"; path = "HD/Game Screen Overlays/High Scores Blank-hd.png"; sourceTree = "<group>"; };
+		57C4BD3C1660AA6E0057AD4E /* High Scores Blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "High Scores Blank.png"; path = "Small Resolution/Game Screen Overlays/High Scores Blank.png"; sourceTree = "<group>"; };
+		57C4BD3E1660ABCE0057AD4E /* undo_pressed-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "undo_pressed-hd.png"; path = "Retina/undo_pressed-hd.png"; sourceTree = "<group>"; };
+		57C4BD3F1660ABCE0057AD4E /* undo-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "undo-hd.png"; path = "Retina/undo-hd.png"; sourceTree = "<group>"; };
+		57C4BD421660ABD60057AD4E /* undo_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = undo_pressed.png; path = "Not Retina/undo_pressed.png"; sourceTree = "<group>"; };
+		57C4BD431660ABD60057AD4E /* undo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = undo.png; path = "Not Retina/undo.png"; sourceTree = "<group>"; };
+		57C4BD461660ACAC0057AD4E /* nextButton-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nextButton-hd.png"; path = "Retina/nextButton-hd.png"; sourceTree = "<group>"; };
+		57C4BD471660ACAC0057AD4E /* nextButtonSelect-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nextButtonSelect-hd.png"; path = "Retina/nextButtonSelect-hd.png"; sourceTree = "<group>"; };
+		57C4BD4A1660ACD00057AD4E /* nextButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nextButton.png; path = "Not Retina/nextButton.png"; sourceTree = "<group>"; };
+		57C4BD4B1660ACD00057AD4E /* nextButtonSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nextButtonSelect.png; path = "Not Retina/nextButtonSelect.png"; sourceTree = "<group>"; };
+		57C4BD4E1660AFD60057AD4E /* HighScoreLayer2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScoreLayer2.h; sourceTree = "<group>"; };
+		57C4BD4F1660AFD60057AD4E /* HighScoreLayer2.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HighScoreLayer2.mm; sourceTree = "<group>"; };
 		57C4CAA9161EB29900667FD1 /* light-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "light-hd.png"; path = "HD/GamePlay/light-hd.png"; sourceTree = "<group>"; };
 		57C4CAAB161EB2A800667FD1 /* light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = light.png; path = "Small Resolution/GamePlay/light.png"; sourceTree = "<group>"; };
 		57C4CAAD161EB80B00667FD1 /* Back-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Back-hd.png"; path = "HD/Game Screen Overlays/Back-hd.png"; sourceTree = "<group>"; };
@@ -1703,6 +1726,8 @@
 				5741B9C816333E9B00112F34 /* FailedLevelLayer.mm */,
 				57F6AF3F16570F79003914EE /* HighScoreLayer.h */,
 				57F6AF4016570F79003914EE /* HighScoreLayer.mm */,
+				57C4BD4E1660AFD60057AD4E /* HighScoreLayer2.h */,
+				57C4BD4F1660AFD60057AD4E /* HighScoreLayer2.mm */,
 				DCC1A39413A94F1A005BD75D /* Resources */,
 				DCC1A3CF13A94F2C005BD75D /* Supporting Files */,
 			);
@@ -1712,6 +1737,16 @@
 		DCC1A39413A94F1A005BD75D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				57C4BD4A1660ACD00057AD4E /* nextButton.png */,
+				57C4BD4B1660ACD00057AD4E /* nextButtonSelect.png */,
+				57C4BD461660ACAC0057AD4E /* nextButton-hd.png */,
+				57C4BD471660ACAC0057AD4E /* nextButtonSelect-hd.png */,
+				57C4BD421660ABD60057AD4E /* undo_pressed.png */,
+				57C4BD431660ABD60057AD4E /* undo.png */,
+				57C4BD3E1660ABCE0057AD4E /* undo_pressed-hd.png */,
+				57C4BD3F1660ABCE0057AD4E /* undo-hd.png */,
+				57C4BD3C1660AA6E0057AD4E /* High Scores Blank.png */,
+				57C4BD391660AA680057AD4E /* High Scores Blank-hd.png */,
 				575FCF77165DCC7E00D46436 /* black circle-hd.png */,
 				575FCF78165DCC7E00D46436 /* Green Arrow-hd.png */,
 				575FCF8B165DD8B400D46436 /* Red Arrow-hd.png */,
@@ -3071,6 +3106,16 @@
 				575FCF88165DCE3400D46436 /* yellow circle-hd.png in Resources */,
 				575FCF8A165DD89E00D46436 /* Red Arrow.png in Resources */,
 				575FCF8C165DD8B400D46436 /* Red Arrow-hd.png in Resources */,
+				57C4BD3A1660AA680057AD4E /* High Scores Blank-hd.png in Resources */,
+				57C4BD3D1660AA6E0057AD4E /* High Scores Blank.png in Resources */,
+				57C4BD401660ABCE0057AD4E /* undo_pressed-hd.png in Resources */,
+				57C4BD411660ABCE0057AD4E /* undo-hd.png in Resources */,
+				57C4BD441660ABD60057AD4E /* undo_pressed.png in Resources */,
+				57C4BD451660ABD60057AD4E /* undo.png in Resources */,
+				57C4BD481660ACAC0057AD4E /* nextButton-hd.png in Resources */,
+				57C4BD491660ACAC0057AD4E /* nextButtonSelect-hd.png in Resources */,
+				57C4BD4C1660ACD00057AD4E /* nextButton.png in Resources */,
+				57C4BD4D1660ACD00057AD4E /* nextButtonSelect.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3103,6 +3148,7 @@
 				57E91927163D086D0076F1BB /* FinishedLevelLayer.mm in Sources */,
 				57F6AF4116570F79003914EE /* HighScoreLayer.mm in Sources */,
 				575FCF84165DCCC500D46436 /* HelloWorldLayer.mm in Sources */,
+				57C4BD501660AFD60057AD4E /* HighScoreLayer2.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
