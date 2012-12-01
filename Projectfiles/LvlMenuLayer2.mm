@@ -9,6 +9,7 @@
 #import "MenuLayer.h"
 #import "LvlMenuLayer2.h"
 #import "HelloWorldLayer.h"
+#import "SimpleAudioEngine.h"
 
 @interface LvlMenuLayer2(PrivateMethods)
 @end

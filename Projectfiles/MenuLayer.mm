@@ -10,7 +10,9 @@
 #import "LvlMenuLayer.h"
 #import "LvlMenuLayer2.h"
 #import "LvlMenuLayer3.h"
+#import "HighScoreMenu.h"
 #import "HelloWorldLayer.h"
+#import "SimpleAudioEngine.h"
 
 @interface MenuLayer (PrivateMethods)
 @end
@@ -104,7 +106,11 @@
     menuItem3.position = ccp(160, 40);
     menuItem3.tag = 3;
     
-    CCMenu *newMenu = [CCMenu menuWithItems:menuItem1, menuItem2, menuItem3, nil];
+    CCMenuItem *menuItem4 = [CCMenuItemImage itemFromNormalImage:@"hs3.png" selectedImage:@"hs4.png" target:self selector:@selector(highScores:)];
+    menuItem4.position = ccp(160, 280);
+    menuItem4.tag = 3;
+    
+    CCMenu *newMenu = [CCMenu menuWithItems:menuItem1, menuItem2, menuItem3, menuItem4, nil];
     newMenu.position = CGPointZero;
     
     [self addChild:newMenu];
@@ -122,17 +128,30 @@
 
 -(void) startGame: (CCMenuItem *) menuItem
 {
+    [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:@"Super Kukicha.mp3"];
+    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Super Kukicha.mp3" loop:TRUE];
     [[CCDirector sharedDirector] replaceScene:[LvlMenuLayer scene]];
 }
 
 -(void) startGame2: (CCMenuItem *) menuItem
 {
+    [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:@"Pulse.mp3"];
+    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Pulse.mp3" loop:TRUE];
     [[CCDirector sharedDirector] replaceScene:[LvlMenuLayer2 scene]];
 }
 
 -(void) startGame3: (CCMenuItem *) menuItem
 {
+    [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:@"Dreadnought Machina.mp3"];
+    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Dreadnought Machina.mp3" loop:TRUE];
     [[CCDirector sharedDirector] replaceScene:[LvlMenuLayer3 scene]];
+}
+
+-(void) highScores: (CCMenuItem *) menuItem
+{
+    [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:@"Fragments.mp3"];
+    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Fragments.mp3" loop:TRUE];
+    [[CCDirector sharedDirector] replaceScene:[HighScoreMenu scene]];
 }
 
 -(void) fbLogin:(id) sender

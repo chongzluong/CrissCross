@@ -84,33 +84,116 @@ int score = 0;
     timeLabel.color = ccGREEN;
     [self addChild: timeLabel];
 
-    
-    if(score<3000)
-    {
-        CCSprite *boltscore = [CCSprite spriteWithFile:@"Score3.png"];
-        boltscore.position = ccp(160,255);
-        [self addChild:boltscore];
-    }
-    else if (score<6000)
-    {
-        CCSprite *boltscore = [CCSprite spriteWithFile:@"Score2.png"];
-        boltscore.position = ccp(160,255);
-        [self addChild:boltscore];
-    }
-    else if (score<12000)
-    {
-        CCSprite *boltscore = [CCSprite spriteWithFile:@"Score1.png"];
-        boltscore.position = ccp(160,255);
-        [self addChild:boltscore];
-    }
-    else
-    {
-        CCSprite *boltscore = [CCSprite spriteWithFile:@"Score0.png"];
-        boltscore.position = ccp(160,255);
-        [self addChild:boltscore];
-    }
-    
     levelCompleted = finishedtag-1;
+    
+    if (levelCompleted<21)
+    {
+        if (score < 6000)
+        {
+            CCSprite *boltscore = [CCSprite spriteWithFile:@"Score3.png"];
+            boltscore.position = ccp(160,255);
+            [self addChild:boltscore];
+        }
+        else if (score < 9000)
+        {
+            CCSprite *boltscore = [CCSprite spriteWithFile:@"Score2.png"];
+            boltscore.position = ccp(160,255);
+            [self addChild:boltscore];
+        }
+        else if (score < 12000)
+        {
+            CCSprite *boltscore = [CCSprite spriteWithFile:@"Score1.png"];
+            boltscore.position = ccp(160,255);
+            [self addChild:boltscore];
+        }
+        else
+        {
+            CCSprite *boltscore = [CCSprite spriteWithFile:@"Score0.png"];
+            boltscore.position = ccp(160,255);
+            [self addChild:boltscore];
+        }
+    }
+    else if (levelCompleted>20 && levelCompleted<36)
+    {
+        if (score < 9000)
+        {
+            CCSprite *boltscore = [CCSprite spriteWithFile:@"Score3.png"];
+            boltscore.position = ccp(160,255);
+            [self addChild:boltscore];
+        }
+        else if (score < 12000)
+        {
+            CCSprite *boltscore = [CCSprite spriteWithFile:@"Score2.png"];
+            boltscore.position = ccp(160,255);
+            [self addChild:boltscore];
+        }
+        else if (score < 18000)
+        {
+            CCSprite *boltscore = [CCSprite spriteWithFile:@"Score1.png"];
+            boltscore.position = ccp(160,255);
+            [self addChild:boltscore];
+        }
+        else
+        {
+            CCSprite *boltscore = [CCSprite spriteWithFile:@"Score0.png"];
+            boltscore.position = ccp(160,255);
+            [self addChild:boltscore];
+        }
+    }
+    else if (levelCompleted > 35 && levelCompleted <39)
+    {
+        if (score < 12000)
+        {
+            CCSprite *boltscore = [CCSprite spriteWithFile:@"Score3.png"];
+            boltscore.position = ccp(160,255);
+            [self addChild:boltscore];
+        }
+        else if (score < 18000)
+        {
+            CCSprite *boltscore = [CCSprite spriteWithFile:@"Score2.png"];
+            boltscore.position = ccp(160,255);
+            [self addChild:boltscore];
+        }
+        else if (score < 30000)
+        {
+            CCSprite *boltscore = [CCSprite spriteWithFile:@"Score1.png"];
+            boltscore.position = ccp(160,255);
+            [self addChild:boltscore];
+        }
+        else
+        {
+            CCSprite *boltscore = [CCSprite spriteWithFile:@"Score0.png"];
+            boltscore.position = ccp(160,255);
+            [self addChild:boltscore];
+        }
+    }
+    else if (levelCompleted > 38)
+    {
+        if (score < 60000)
+        {
+            CCSprite *boltscore = [CCSprite spriteWithFile:@"Score3.png"];
+            boltscore.position = ccp(160,255);
+            [self addChild:boltscore];
+        }
+        else if (score < 120000)
+        {
+            CCSprite *boltscore = [CCSprite spriteWithFile:@"Score2.png"];
+            boltscore.position = ccp(160,255);
+            [self addChild:boltscore];
+        }
+        else if (score < 180000)
+        {
+            CCSprite *boltscore = [CCSprite spriteWithFile:@"Score1.png"];
+            boltscore.position = ccp(160,255);
+            [self addChild:boltscore];
+        }
+        else
+        {
+            CCSprite *boltscore = [CCSprite spriteWithFile:@"Score0.png"];
+            boltscore.position = ccp(160,255);
+            [self addChild:boltscore];
+        }
+    }
     
     tutorialLabel = [CCLabelTTF labelWithString:@"The Lower the Score, the Better!" fontName:@"Futura-CondensedExtraBold" fontSize:14];
     tutorialLabel.position = ccp(160, 340);
@@ -152,21 +235,81 @@ int score = 0;
     
     currentHighScore = [MGWU objectForKey:[NSString stringWithFormat:@"Level%i highScore",levelCompleted]];
     hs = [currentHighScore intValue];
-    
-    if (hs < 3000)
+    if (levelCompleted<21)
     {
-        bolts = [NSNumber numberWithInt:3];
+        if (hs < 3000)
+        {
+            bolts = [NSNumber numberWithInt:3];
+        }
+        else if (hs < 6000)
+        {
+            bolts = [NSNumber numberWithInt:2];
+        }
+        else if (hs < 12000)
+        {
+            bolts = [NSNumber numberWithInt:1];
+        }
+        else
+        {
+            bolts = [NSNumber numberWithInt:0];
+        }
     }
-    else if (hs < 6000)
+    else if (levelCompleted>20 && levelCompleted<36)
     {
-        bolts = [NSNumber numberWithInt:2];
+        if (hs < 6000)
+        {
+            bolts = [NSNumber numberWithInt:3];
+        }
+        else if (hs < 12000)
+        {
+            bolts = [NSNumber numberWithInt:2];
+        }
+        else if (hs < 18000)
+        {
+            bolts = [NSNumber numberWithInt:1];
+        }
+        else
+        {
+            bolts = [NSNumber numberWithInt:0];
+        }
     }
-    else if (hs < 12000)
+    else if (levelCompleted > 35 && levelCompleted <39)
     {
-        bolts = [NSNumber numberWithInt:1];    }
-    else
+        if (hs < 12000)
+        {
+            bolts = [NSNumber numberWithInt:3];
+        }
+        else if (hs < 18000)
+        {
+            bolts = [NSNumber numberWithInt:2];
+        }
+        else if (hs < 30000)
+        {
+            bolts = [NSNumber numberWithInt:1];
+        }
+        else
+        {
+            bolts = [NSNumber numberWithInt:0];
+        }
+    }
+    else if (levelCompleted > 38)
     {
-        bolts = [NSNumber numberWithInt:0];
+        if (hs < 60000)
+        {
+            bolts = [NSNumber numberWithInt:3];
+        }
+        else if (hs < 120000)
+        {
+            bolts = [NSNumber numberWithInt:2];
+        }
+        else if (hs < 180000)
+        {
+            bolts = [NSNumber numberWithInt:1];
+        }
+        else
+        {
+            bolts = [NSNumber numberWithInt:0];
+        }
     }
     //[[NSUserDefaults standardUserDefaults] setObject:bolts forKey:[NSString stringWithFormat:@"Level%i bolts",levelCompleted]];
     [MGWU setObject:bolts forKey:[NSString stringWithFormat:@"Level%i bolts",levelCompleted]];
@@ -189,17 +332,20 @@ int score = 0;
 
 -(void) nextLevel: (CCMenuItem *) menuItem
 {
+    [inputter removeFromSuperview];
     [[CCDirector sharedDirector] replaceScene:[HelloWorldLayer showLevel:finishedtag]];
 }
 
 -(void) goHome: (CCMenuItem *) menuItem
 {
+    [inputter removeFromSuperview];
     [[CCDirector sharedDirector] replaceScene:[MenuLayer scene]];
 }
 
 -(void) highScoresList: (CCMenuItem *) menuItem
 {
-    [[CCDirector sharedDirector] replaceScene:[HighScoreLayer showLevel:finishedtag]];
+    [inputter removeFromSuperview];
+    [[CCDirector sharedDirector] replaceScene:[HighScoreLayer showLevel:finishedtag type:1]];
 }
 
 @end

@@ -22,7 +22,7 @@
 }
 
 +(id) scene;
-+(id) showLevel: (int) i;
++(id) showLevel: (int) i type: (int) k;
 -(void) goBack: (id) sender;
 -(void) nextList: (id) sender;
 -(void) setupMenus;

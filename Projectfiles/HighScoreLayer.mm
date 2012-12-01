@@ -12,8 +12,11 @@
 #import "LvlMenuLayer.h"
 #import "LvlMenuLayer2.h"
 #import "LvlMenuLayer3.h"
+#import "HighScoreMenu.h"
+#import "HighScoreMenu2.h"
 
 int levelCompleted = 0;
+int tempSomething = 0;
 
 @interface HighScoreLayer (PrivateMethods)
 @end
@@ -46,9 +49,10 @@ int levelCompleted = 0;
 }
 
 
-+(id) showLevel:(int)i
++(id) showLevel:(int)i type:(int)k
 {
     levelCompleted = i-1;
+    tempSomething = k;
     CCScene* myScene = [HighScoreLayer scene];
     return myScene;
 }
@@ -79,23 +83,37 @@ int levelCompleted = 0;
 
 -(void) goBack:(id)sender
 {
-    if(levelCompleted<16)
+    if (tempSomething == 1)
     {
-        [[CCDirector sharedDirector] replaceScene:[LvlMenuLayer scene]];
-    }
-    else if(levelCompleted<31&&levelCompleted>15)
-    {
-        [[CCDirector sharedDirector] replaceScene:[LvlMenuLayer2 scene]];
+        if(levelCompleted<21)
+        {
+            [[CCDirector sharedDirector] replaceScene:[LvlMenuLayer scene]];
+        }
+        else if(levelCompleted<36&&levelCompleted>20)
+        {
+            [[CCDirector sharedDirector] replaceScene:[LvlMenuLayer2 scene]];
+        }
+        else
+        {
+            [[CCDirector sharedDirector] replaceScene:[LvlMenuLayer3 scene]];
+        }
     }
     else
     {
-        [[CCDirector sharedDirector] replaceScene:[LvlMenuLayer3 scene]];
+        if(levelCompleted<21)
+        {
+            [[CCDirector sharedDirector] replaceScene:[HighScoreMenu scene]];
+        }
+        else
+        {
+            [[CCDirector sharedDirector] replaceScene:[HighScoreMenu2 scene]];
+        }
     }
 }
 
 -(void) nextList: (CCMenuItem *) menuItem
 {
-    [[CCDirector sharedDirector] replaceScene:[HighScoreLayer2 showLevel:levelCompleted+1]];
+    [[CCDirector sharedDirector] replaceScene:[HighScoreLayer2 showLevel:levelCompleted+1 type:tempSomething]];
 }
 
 -(void) receivedScores:(NSDictionary *)scores
@@ -112,9 +130,9 @@ int levelCompleted = 0;
     CCLabelTTF *WordScore = [CCLabelTTF labelWithString:@"Score" fontName:@"Futura-CondensedExtraBold" fontSize:14];
     CCLabelTTF *WordRank = [CCLabelTTF labelWithString:@"Rank" fontName:@"Futura-CondensedExtraBold" fontSize:14];
     
-    WordName.position = ccp(170,400);
-    WordScore.position = ccp(220,400);
-    WordRank.position = ccp(100,400);
+    WordName.position = ccp(160,400);
+    WordScore.position = ccp(260,400);
+    WordRank.position = ccp(60,400);
     
     WordName.color = ccBLUE;
     WordScore.color = ccBLUE;
@@ -140,9 +158,9 @@ int levelCompleted = 0;
         CCLabelTTF *scoreLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%i",intScore] fontName:@"Futura-CondensedExtraBold" fontSize:14];
         CCLabelTTF *rankLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%i",k+1] fontName:@"Futura-CondensedExtraBold" fontSize:14];
         yvalue = 380-k*15;
-        rankLabel.position = ccp(100,yvalue);
-        nameLabel.position = ccp(170,yvalue);
-        scoreLabel.position = ccp(220,yvalue);
+        rankLabel.position = ccp(60,yvalue);
+        nameLabel.position = ccp(160,yvalue);
+        scoreLabel.position = ccp(260,yvalue);
         rankLabel.color = ccBLUE;
         nameLabel.color = ccBLUE;
         scoreLabel.color = ccBLUE;

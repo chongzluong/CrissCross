@@ -193,24 +193,49 @@ int leveltag = 0;
         if (leveltag == 21)
         {
             startCounter = 2;
-            tutorialButton2 = [CCMenuItemImage itemFromNormalImage:@"Token Explanation.png" selectedImage:@"Token Explanation2.png" target:self selector:@selector(endTutorial2:)];
-            tutorialButton2.position = ccp(160, 240);
-            [tempMenu addChild:tutorialButton2];
+            tutorialButton = [CCMenuItemImage itemFromNormalImage:@"Token Explanation.png" selectedImage:@"Token Explanation2.png" target:self selector:@selector(endTutorial:)];
+            tutorialButton.position = ccp(160, 240);
+            [tempMenu addChild:tutorialButton];
         }
-            
+        
+        if (leveltag == 39)
+        {
+            startCounter = 2;
+            tutorialButton = [CCMenuItemImage itemFromNormalImage:@"warning.png" selectedImage:@"warning2.png" target:self selector:@selector(endTutorial:)];
+            tutorialButton.position = ccp(160, 240);
+            [tempMenu addChild:tutorialButton];
+        }
+        
+        if (leveltag == 40)
+        {
+            startCounter = 2;
+            tutorialButton = [CCMenuItemImage itemFromNormalImage:@"lolz.png" selectedImage:@"lolz2.png" target:self selector:@selector(endTutorial:)];
+            tutorialButton.position = ccp(160, 240);
+            [tempMenu addChild:tutorialButton];
+        }
+        
         [self scheduleUpdate];
+        
         [[SimpleAudioEngine sharedEngine] preloadEffect:@"ConnectStart.wav"];
         [[SimpleAudioEngine sharedEngine] preloadEffect:@"ConnectEnd.wav"];
         [[SimpleAudioEngine sharedEngine] preloadEffect:@"explo2.wav"];
+        
+        if(leveltag>37)
+        {
+            [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:@"Black Diamond.mp3"];
+            [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Black Diamond.mp3" loop:TRUE];
+        }
+        /*
         [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:@"Black Diamond.mp3"];
         [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:@"Pulse.mp3"];
         [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:@"Super Kukicha.mp3"];
-        if(leveltag>36)
+        if(leveltag>35)
         {[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Black Diamond.mp3" loop:TRUE];}
         else if (leveltag>20 && leveltag<36)
         {[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Pulse.mp3" loop:TRUE];}
         else if (leveltag<21)
         {[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Super Kukicha.mp3" loop:TRUE];}
+        */
 
 	}
 	return self;
@@ -546,27 +571,27 @@ int leveltag = 0;
         
         CCLabelTTF *tutorialLabel = [CCLabelTTF labelWithString:@"Swipe or Click" fontName:@"Futura-CondensedExtraBold" fontSize:14];
         tutorialLabel.position = ccp(130, 300);
-        tutorialLabel.color = ccGREEN;
+        tutorialLabel.color = ccRED;
         [self addChild:tutorialLabel];
         
         CCLabelTTF *tutorialLabel2 = [CCLabelTTF labelWithString:@"To Draw Lines" fontName:@"Futura-CondensedExtraBold" fontSize:14];
         tutorialLabel2.position = ccp(130, 285);
-        tutorialLabel2.color = ccGREEN;
+        tutorialLabel2.color = ccRED;
         [self addChild:tutorialLabel2];
         
         CCLabelTTF *tutorialLabel3 = [CCLabelTTF labelWithString:@"Lead Colored Sparks" fontName:@"Futura-CondensedExtraBold" fontSize:14];
         tutorialLabel3.position = ccp(250, 245);
-        tutorialLabel3.color = ccGREEN;
+        tutorialLabel3.color = ccRED;
         [self addChild:tutorialLabel3];
         
         CCLabelTTF *tutorialLabel4 = [CCLabelTTF labelWithString:@"To" fontName:@"Futura-CondensedExtraBold" fontSize:14];
         tutorialLabel4.position = ccp(250, 230);
-        tutorialLabel4.color = ccGREEN;
+        tutorialLabel4.color = ccRED;
         [self addChild:tutorialLabel4];
         
         CCLabelTTF *tutorialLabel5 = [CCLabelTTF labelWithString:@"Their Colored Plugs" fontName:@"Futura-CondensedExtraBold" fontSize:14];
         tutorialLabel5.position = ccp(250, 215);
-        tutorialLabel5.color = ccGREEN;
+        tutorialLabel5.color = ccRED;
         [self addChild:tutorialLabel5];
         
         CCLabelTTF *tutorialLabel6 = [CCLabelTTF labelWithString:@"Hit This To" fontName:@"Futura-CondensedExtraBold" fontSize:14];
@@ -578,6 +603,11 @@ int leveltag = 0;
         tutorialLabel7.position = ccp(70, 150);
         tutorialLabel7.color = ccRED;
         [self addChild:tutorialLabel7];
+        
+        CCLabelTTF *tutorialLabel8 = [CCLabelTTF labelWithString:@"Undo Last Line" fontName:@"Futura-CondensedExtraBold" fontSize:14];
+        tutorialLabel8.position = ccp(140, 60);
+        tutorialLabel8.color = ccRED;
+        [self addChild:tutorialLabel8];
     }
 }
 
@@ -587,11 +617,13 @@ int leveltag = 0;
     [tutorialButton removeFromParentAndCleanup:YES];
 }
 
+/*
 -(void)endTutorial2:(CCMenuItem *) menuItem
 {
     startCounter = 0;
     [tutorialButton2 removeFromParentAndCleanup:YES];
 }
+*/
 
 -(void) goHome:(CCMenuItem *) menuItem
 {

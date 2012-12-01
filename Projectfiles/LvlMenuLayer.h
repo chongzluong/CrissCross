@@ -10,13 +10,6 @@
 #import "cocos2d.h"
 #import "Box2D.h"
 
-/*
-enum
- {
- kTagBatchNode,
- };
-*/
-
 @interface LvlMenuLayer : CCLayer
 {
     CCSprite *background;

@@ -65,6 +65,7 @@
     CCMenuItem *homeButton;
     CCMenuItem *tutorialButton;
     CCMenuItem *tutorialButton2;
+    CCMenuItem *tutorialButton3;
     NSDictionary *test;
     NSArray *colored;
     NSArray *startlines;

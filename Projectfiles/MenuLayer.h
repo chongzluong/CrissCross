@@ -29,6 +29,7 @@ enum
 -(void) startGame:(id) sender;
 -(void) startGame2: (id) sender;
 -(void) startGame3: (id) sender;
+-(void) highScores: (id) sender;
 -(void) setUpMenus;
 -(void) fbLogin: (id) sender;
 
