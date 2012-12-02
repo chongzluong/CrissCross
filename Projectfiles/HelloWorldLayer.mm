@@ -609,6 +609,40 @@ int leveltag = 0;
         tutorialLabel8.color = ccRED;
         [self addChild:tutorialLabel8];
     }
+    if (leveltag == 2)
+    {
+        CCLabelTTF *tutorialLabel = [CCLabelTTF labelWithString:@"You Can Draw Diagonal Lines" fontName:@"Baskerville-Bold" fontSize:20];
+        tutorialLabel.position = ccp(160, 300);
+        tutorialLabel.color = ccRED;
+        [self addChild:tutorialLabel];
+        
+        CCLabelTTF *tutorialLabel2 = [CCLabelTTF labelWithString:@"But Your Lines" fontName:@"Baskerville-Bold" fontSize:20];
+        tutorialLabel2.position = ccp(160, 270);
+        tutorialLabel2.color = ccRED;
+        [self addChild:tutorialLabel2];
+        
+        CCLabelTTF *tutorialLabel3 = [CCLabelTTF labelWithString:@"Can't Be Too Long" fontName:@"Baskerville-Bold" fontSize:20];
+        tutorialLabel3.position = ccp(160, 240);
+        tutorialLabel3.color = ccRED;
+        [self addChild:tutorialLabel3];
+    }
+    if (leveltag == 3)
+    {
+        CCLabelTTF *tutorialLabel = [CCLabelTTF labelWithString:@"Where The Sparks Start" fontName:@"Baskerville-Bold" fontSize:20];
+        tutorialLabel.position = ccp(160, 300);
+        tutorialLabel.color = ccRED;
+        [self addChild:tutorialLabel];
+        
+        CCLabelTTF *tutorialLabel2 = [CCLabelTTF labelWithString:@"And Where They End" fontName:@"Baskerville-Bold" fontSize:20];
+        tutorialLabel2.position = ccp(160, 270);
+        tutorialLabel2.color = ccRED;
+        [self addChild:tutorialLabel2];
+        
+        CCLabelTTF *tutorialLabel3 = [CCLabelTTF labelWithString:@"Won't Always Be The Same" fontName:@"Baskerville-Bold" fontSize:20];
+        tutorialLabel3.position = ccp(160, 240);
+        tutorialLabel3.color = ccRED;
+        [self addChild:tutorialLabel3];
+    }
 }
 
 -(void)endTutorial:(CCMenuItem *) menuItem

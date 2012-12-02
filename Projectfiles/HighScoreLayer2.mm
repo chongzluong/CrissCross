@@ -114,11 +114,13 @@ int tempSomething2 = 0;
 
 -(void) receivedScores:(NSDictionary *)scores
 {
+    /*
     //Check what's in the scores
     for (NSString *key in [scores allKeys])
     {
         NSLog(@"%@",[scores objectForKey:key]);
     }
+    */
     
     NSArray *tempArray = [scores objectForKey:@"friends"];
     

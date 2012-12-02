@@ -78,6 +78,13 @@ int score = 0;
 	// add the menu to your scene
 	[self addChild:myMenu];
     
+    if (finishedtag == 41)
+    {
+        [myMenu removeChild:menuItem1 cleanup:YES];
+        CCMenuItem *menuItem4 = [CCMenuItemImage itemWithNormalImage:@"YouBeatTheGame.png" selectedImage:@"YouBeatTheGame2.png" target:self selector:@selector(goHome:)];
+        menuItem4.position = ccp(160,160);
+        [myMenu addChild:menuItem4];
+    }
     
     timeLabel =[CCLabelTTF labelWithString:[NSString stringWithFormat:@"Score:%i", score] fontName:@"Futura-CondensedExtraBold" fontSize:14];
     timeLabel.position = ccp(160, 320);
@@ -273,7 +280,7 @@ int score = 0;
             bolts = [NSNumber numberWithInt:0];
         }
     }
-    else if (levelCompleted > 35 && levelCompleted <39)
+    else if (levelCompleted > 35)
     {
         if (hs < 12000)
         {
@@ -284,25 +291,6 @@ int score = 0;
             bolts = [NSNumber numberWithInt:2];
         }
         else if (hs < 30000)
-        {
-            bolts = [NSNumber numberWithInt:1];
-        }
-        else
-        {
-            bolts = [NSNumber numberWithInt:0];
-        }
-    }
-    else if (levelCompleted > 38)
-    {
-        if (hs < 60000)
-        {
-            bolts = [NSNumber numberWithInt:3];
-        }
-        else if (hs < 120000)
-        {
-            bolts = [NSNumber numberWithInt:2];
-        }
-        else if (hs < 180000)
         {
             bolts = [NSNumber numberWithInt:1];
         }
