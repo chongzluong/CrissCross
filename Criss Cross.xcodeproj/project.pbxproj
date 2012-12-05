@@ -132,6 +132,8 @@
 		575FCF8A165DD89E00D46436 /* Red Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 575FCF89165DD89E00D46436 /* Red Arrow.png */; };
 		575FCF8C165DD8B400D46436 /* Red Arrow-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 575FCF8B165DD8B400D46436 /* Red Arrow-hd.png */; };
 		575FDC3C16471E5F00D2F3EB /* green1.png in Resources */ = {isa = PBXBuildFile; fileRef = 575FDC3B16471E5E00D2F3EB /* green1.png */; };
+		57696663166FCCA80086D3C8 /* redArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 57696662166FCCA80086D3C8 /* redArrow.png */; };
+		57696665166FCCB50086D3C8 /* redArrow-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57696664166FCCB50086D3C8 /* redArrow-hd.png */; };
 		577896BD165024CA004ACAC9 /* Black Diamond.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 577896B6165024CA004ACAC9 /* Black Diamond.mp3 */; };
 		577896BE165024CA004ACAC9 /* ConnectEnd.wav in Resources */ = {isa = PBXBuildFile; fileRef = 577896B7165024CA004ACAC9 /* ConnectEnd.wav */; };
 		577896BF165024CA004ACAC9 /* ConnectStart.wav in Resources */ = {isa = PBXBuildFile; fileRef = 577896B8165024CA004ACAC9 /* ConnectStart.wav */; };
@@ -782,11 +784,9 @@
 		57EA3220166F107C00BA2BF3 /* red circle-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EA321F166F107C00BA2BF3 /* red circle-hd.png */; };
 		57EA3226166F19F300BA2BF3 /* red circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EA3225166F19F300BA2BF3 /* red circle.png */; };
 		57EA322B166F1A0200BA2BF3 /* purple oval.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EA3227166F1A0100BA2BF3 /* purple oval.png */; };
-		57EA322C166F1A0200BA2BF3 /* Red Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EA3228166F1A0100BA2BF3 /* Red Arrow.png */; };
 		57EA322D166F1A0200BA2BF3 /* tutorial2.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EA3229166F1A0100BA2BF3 /* tutorial2.png */; };
 		57EA322E166F1A0200BA2BF3 /* tutorial5.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EA322A166F1A0100BA2BF3 /* tutorial5.png */; };
 		57EA3233166F1A1400BA2BF3 /* purple oval-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EA322F166F1A1400BA2BF3 /* purple oval-hd.png */; };
-		57EA3234166F1A1400BA2BF3 /* Red Arrow-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EA3230166F1A1400BA2BF3 /* Red Arrow-hd.png */; };
 		57EA3235166F1A1400BA2BF3 /* tutorial2-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EA3231166F1A1400BA2BF3 /* tutorial2-hd.png */; };
 		57EA3236166F1A1400BA2BF3 /* tutorial5-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EA3232166F1A1400BA2BF3 /* tutorial5-hd.png */; };
 		57F0B9AF162C6711002A287C /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F0B9AD162C6711002A287C /* home.png */; };
@@ -975,6 +975,8 @@
 		575FCF89165DD89E00D46436 /* Red Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Red Arrow.png"; path = "tutorial files/not retina/Red Arrow.png"; sourceTree = "<group>"; };
 		575FCF8B165DD8B400D46436 /* Red Arrow-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Red Arrow-hd.png"; path = "tutorial files/hd/Red Arrow-hd.png"; sourceTree = "<group>"; };
 		575FDC3B16471E5E00D2F3EB /* green1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = green1.png; path = "Small Resolution/GamePlay/green1.png"; sourceTree = "<group>"; };
+		57696662166FCCA80086D3C8 /* redArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redArrow.png; path = "tutorial files/not retina/redArrow.png"; sourceTree = "<group>"; };
+		57696664166FCCB50086D3C8 /* redArrow-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "redArrow-hd.png"; path = "tutorial files/hd/redArrow-hd.png"; sourceTree = "<group>"; };
 		577896B6165024CA004ACAC9 /* Black Diamond.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Black Diamond.mp3"; path = "Sound/Black Diamond.mp3"; sourceTree = "<group>"; };
 		577896B7165024CA004ACAC9 /* ConnectEnd.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = ConnectEnd.wav; path = Sound/ConnectEnd.wav; sourceTree = "<group>"; };
 		577896B8165024CA004ACAC9 /* ConnectStart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = ConnectStart.wav; path = Sound/ConnectStart.wav; sourceTree = "<group>"; };
@@ -1629,11 +1631,9 @@
 		57EA321F166F107C00BA2BF3 /* red circle-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "red circle-hd.png"; path = "tutorial files/hd/red circle-hd.png"; sourceTree = "<group>"; };
 		57EA3225166F19F300BA2BF3 /* red circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "red circle.png"; path = "tutorial files/not retina/red circle.png"; sourceTree = "<group>"; };
 		57EA3227166F1A0100BA2BF3 /* purple oval.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "purple oval.png"; path = "tutorial files/not retina/purple oval.png"; sourceTree = "<group>"; };
-		57EA3228166F1A0100BA2BF3 /* Red Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Red Arrow.png"; path = "tutorial files/not retina/Red Arrow.png"; sourceTree = "<group>"; };
 		57EA3229166F1A0100BA2BF3 /* tutorial2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tutorial2.png; path = "tutorial files/not retina/tutorial2.png"; sourceTree = "<group>"; };
 		57EA322A166F1A0100BA2BF3 /* tutorial5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tutorial5.png; path = "tutorial files/not retina/tutorial5.png"; sourceTree = "<group>"; };
 		57EA322F166F1A1400BA2BF3 /* purple oval-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "purple oval-hd.png"; path = "tutorial files/hd/purple oval-hd.png"; sourceTree = "<group>"; };
-		57EA3230166F1A1400BA2BF3 /* Red Arrow-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Red Arrow-hd.png"; path = "tutorial files/hd/Red Arrow-hd.png"; sourceTree = "<group>"; };
 		57EA3231166F1A1400BA2BF3 /* tutorial2-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tutorial2-hd.png"; path = "tutorial files/hd/tutorial2-hd.png"; sourceTree = "<group>"; };
 		57EA3232166F1A1400BA2BF3 /* tutorial5-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tutorial5-hd.png"; path = "tutorial files/hd/tutorial5-hd.png"; sourceTree = "<group>"; };
 		57F0B9AD162C6711002A287C /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = "Small Resolution/GamePlay/home.png"; sourceTree = "<group>"; };
@@ -1967,12 +1967,12 @@
 		DCC1A39413A94F1A005BD75D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				57696662166FCCA80086D3C8 /* redArrow.png */,
+				57696664166FCCB50086D3C8 /* redArrow-hd.png */,
 				57EA3227166F1A0100BA2BF3 /* purple oval.png */,
-				57EA3228166F1A0100BA2BF3 /* Red Arrow.png */,
 				57EA3229166F1A0100BA2BF3 /* tutorial2.png */,
 				57EA322A166F1A0100BA2BF3 /* tutorial5.png */,
 				57EA322F166F1A1400BA2BF3 /* purple oval-hd.png */,
-				57EA3230166F1A1400BA2BF3 /* Red Arrow-hd.png */,
 				57EA3231166F1A1400BA2BF3 /* tutorial2-hd.png */,
 				57EA3232166F1A1400BA2BF3 /* tutorial5-hd.png */,
 				57EA3225166F19F300BA2BF3 /* red circle.png */,
@@ -3559,13 +3559,13 @@
 				57EA3220166F107C00BA2BF3 /* red circle-hd.png in Resources */,
 				57EA3226166F19F300BA2BF3 /* red circle.png in Resources */,
 				57EA322B166F1A0200BA2BF3 /* purple oval.png in Resources */,
-				57EA322C166F1A0200BA2BF3 /* Red Arrow.png in Resources */,
 				57EA322D166F1A0200BA2BF3 /* tutorial2.png in Resources */,
 				57EA322E166F1A0200BA2BF3 /* tutorial5.png in Resources */,
 				57EA3233166F1A1400BA2BF3 /* purple oval-hd.png in Resources */,
-				57EA3234166F1A1400BA2BF3 /* Red Arrow-hd.png in Resources */,
 				57EA3235166F1A1400BA2BF3 /* tutorial2-hd.png in Resources */,
 				57EA3236166F1A1400BA2BF3 /* tutorial5-hd.png in Resources */,
+				57696663166FCCA80086D3C8 /* redArrow.png in Resources */,
+				57696665166FCCB50086D3C8 /* redArrow-hd.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
