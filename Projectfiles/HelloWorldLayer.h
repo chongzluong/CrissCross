@@ -91,10 +91,12 @@
     
     int updateCounter;
     int tutorialCounter;
+    int flashingCounter;
     
     CCSprite *tutorialArrow;
     CCSprite *redCircle;
     CCSprite *redCircle2;
+    CCSprite *purpleOval;
 }
 
 +(id) showLevel: (int) i;

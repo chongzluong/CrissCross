@@ -778,16 +778,19 @@ int leveltag = 0;
         
         redCircle.position = ccp(100,240);
         redCircle2.position = ccp(160,240);
+        
+        [tempMenu removeChild:tutorialButton cleanup:YES];
     }
     
     if (tutorialCounter==4)
     {
+        flashingCounter = 0;
         [self removeChild:tutorialArrow cleanup:YES];
         [self removeChild:redCircle cleanup:YES];
         [self removeChild:redCircle2 cleanup:YES];
         [tempMenu removeChild:tutorialButton cleanup:YES];
         
-        CCSprite* purpleOval = [CCSprite spriteWithFile:@"purple oval.png"];
+        purpleOval = [CCSprite spriteWithFile:@"purple oval.png"];
         purpleOval.position = ccp(160,415);
         [self addChild:purpleOval];
     }
@@ -965,6 +968,25 @@ int leveltag = 0;
     {
         if (startCounter == 0)
         {
+            //Flash the purple oval in the first level
+            if (leveltag == 1 && tutorialCounter == 4)
+            {
+                if (flashingCounter == 1)
+                {
+                    [self removeChild:purpleOval cleanup:YES];
+                }
+                else if (flashingCounter == 30)
+                {
+                    [self addChild:purpleOval];
+                }
+                else if (flashingCounter == 60)
+                {
+                    flashingCounter = 0;
+                }
+                flashingCounter++;
+            }
+            
+            
             KKInput *input = [KKInput sharedInput];
 
             input.gestureSwipeEnabled = YES;
@@ -1028,6 +1050,11 @@ int leveltag = 0;
                     KKSwipeGestureDirection direction = [input gestureSwipeDirection];
                     if (direction == KKSwipeGestureDirectionLeft && (int)blah.x > 60)
                     {
+                        if(leveltag == 1 && tutorialCounter == 3 && blah.x == 160)
+                        {
+                            [self nextTutorial:self];
+                        }
+                        
                         blah2 = ccp(blah.x-60, blah.y);
                         NSString *point2 = NSStringFromCGPoint(blah2);
                         
@@ -1043,6 +1070,11 @@ int leveltag = 0;
                     }
                     else if (direction == KKSwipeGestureDirectionRight && (int)blah.x < 260)
                     {
+                        if (leveltag == 1 && tutorialCounter == 3 && blah.x == 100)
+                        {
+                            [self nextTutorial:self];
+                        }
+                        
                         blah2 = ccp(blah.x+60, blah.y);
                         NSString *point2 = NSStringFromCGPoint(blah2);
                         
