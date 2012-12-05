@@ -166,6 +166,13 @@ int leveltag = 0;
         [tempMenu addChild:homeButton];
         
         //Load the tutorials
+        if (leveltag == 1)
+        {
+            tutorialButton = [CCMenuItemImage itemFromNormalImage:@"nextButton.png" selectedImage:@"nextButtonSelect.png" target:self selector:@selector(nextTutorial:)];
+            tutorialButton.position = ccp(190,185);
+            [tempMenu addChild:tutorialButton];
+        }
+        
         if (leveltag == 20)
         {
             startCounter = 2;
@@ -545,103 +552,19 @@ int leveltag = 0;
     
     if(leveltag == 1)
     {
-        CCSprite *greenArrow = [CCSprite spriteWithFile:@"Green Arrow.png"];
-        greenArrow.position = ccp(240,230);
-        [self addChild:greenArrow];
+        tutorialCounter = 1;
         
-        CCSprite *redArrow = [CCSprite spriteWithFile:@"Red Arrow.png"];
-        redArrow.position = ccp(70,90);
-        [self addChild:redArrow];
-
-        CCSprite *greenCircle = [CCSprite spriteWithFile:@"green circle.png"];
-        greenCircle.position = ccp(220,380);
-        [self addChild:greenCircle];
+        tutorialArrow = [CCSprite spriteWithFile:@"tutorial5.png"];
+        tutorialArrow.position = ccp(130,230);
+        [self addChild:tutorialArrow];
         
-        CCSprite *greenCircle2 = [CCSprite spriteWithFile:@"green circle.png"];
-        greenCircle2.position = ccp(220,80);
-        [self addChild:greenCircle2];
+        redCircle = [CCSprite spriteWithFile:@"red circle.png"];
+        redCircle.position = ccp(100,380);
+        [self addChild:redCircle];
         
-        CCSprite *yellowCircle = [CCSprite spriteWithFile:@"yellow circle.png"];
-        yellowCircle.position = ccp(100,260);
-        [self addChild:yellowCircle];
-        
-        CCSprite *yellowCircle2 = [CCSprite spriteWithFile:@"yellow circle.png"];
-        yellowCircle2.position = ccp(160,260);
-        [self addChild:yellowCircle2];
-        
-        CCLabelTTF *tutorialLabel = [CCLabelTTF labelWithString:@"Swipe or Click" fontName:@"Futura-CondensedExtraBold" fontSize:14];
-        tutorialLabel.position = ccp(130, 300);
-        tutorialLabel.color = ccRED;
-        [self addChild:tutorialLabel];
-        
-        CCLabelTTF *tutorialLabel2 = [CCLabelTTF labelWithString:@"To Draw Lines" fontName:@"Futura-CondensedExtraBold" fontSize:14];
-        tutorialLabel2.position = ccp(130, 285);
-        tutorialLabel2.color = ccRED;
-        [self addChild:tutorialLabel2];
-        
-        CCLabelTTF *tutorialLabel3 = [CCLabelTTF labelWithString:@"Lead Colored Sparks" fontName:@"Futura-CondensedExtraBold" fontSize:14];
-        tutorialLabel3.position = ccp(250, 245);
-        tutorialLabel3.color = ccRED;
-        [self addChild:tutorialLabel3];
-        
-        CCLabelTTF *tutorialLabel4 = [CCLabelTTF labelWithString:@"To" fontName:@"Futura-CondensedExtraBold" fontSize:14];
-        tutorialLabel4.position = ccp(250, 230);
-        tutorialLabel4.color = ccRED;
-        [self addChild:tutorialLabel4];
-        
-        CCLabelTTF *tutorialLabel5 = [CCLabelTTF labelWithString:@"Their Colored Plugs" fontName:@"Futura-CondensedExtraBold" fontSize:14];
-        tutorialLabel5.position = ccp(250, 215);
-        tutorialLabel5.color = ccRED;
-        [self addChild:tutorialLabel5];
-        
-        CCLabelTTF *tutorialLabel6 = [CCLabelTTF labelWithString:@"Hit This To" fontName:@"Futura-CondensedExtraBold" fontSize:14];
-        tutorialLabel6.position = ccp(70, 165);
-        tutorialLabel6.color = ccRED;
-        [self addChild:tutorialLabel6];
-        
-        CCLabelTTF *tutorialLabel7 = [CCLabelTTF labelWithString:@"Reset Falling Sparks" fontName:@"Futura-CondensedExtraBold" fontSize:14];
-        tutorialLabel7.position = ccp(70, 150);
-        tutorialLabel7.color = ccRED;
-        [self addChild:tutorialLabel7];
-        
-        CCLabelTTF *tutorialLabel8 = [CCLabelTTF labelWithString:@"Undo Last Line" fontName:@"Futura-CondensedExtraBold" fontSize:14];
-        tutorialLabel8.position = ccp(140, 60);
-        tutorialLabel8.color = ccRED;
-        [self addChild:tutorialLabel8];
-    }
-    if (leveltag == 2)
-    {
-        CCLabelTTF *tutorialLabel = [CCLabelTTF labelWithString:@"You Can Draw Diagonal Lines" fontName:@"Baskerville-Bold" fontSize:20];
-        tutorialLabel.position = ccp(160, 300);
-        tutorialLabel.color = ccRED;
-        [self addChild:tutorialLabel];
-        
-        CCLabelTTF *tutorialLabel2 = [CCLabelTTF labelWithString:@"But Your Lines" fontName:@"Baskerville-Bold" fontSize:20];
-        tutorialLabel2.position = ccp(160, 270);
-        tutorialLabel2.color = ccRED;
-        [self addChild:tutorialLabel2];
-        
-        CCLabelTTF *tutorialLabel3 = [CCLabelTTF labelWithString:@"Can't Be Too Long" fontName:@"Baskerville-Bold" fontSize:20];
-        tutorialLabel3.position = ccp(160, 240);
-        tutorialLabel3.color = ccRED;
-        [self addChild:tutorialLabel3];
-    }
-    if (leveltag == 3)
-    {
-        CCLabelTTF *tutorialLabel = [CCLabelTTF labelWithString:@"Where The Sparks Start" fontName:@"Baskerville-Bold" fontSize:20];
-        tutorialLabel.position = ccp(160, 300);
-        tutorialLabel.color = ccRED;
-        [self addChild:tutorialLabel];
-        
-        CCLabelTTF *tutorialLabel2 = [CCLabelTTF labelWithString:@"And Where They End" fontName:@"Baskerville-Bold" fontSize:20];
-        tutorialLabel2.position = ccp(160, 270);
-        tutorialLabel2.color = ccRED;
-        [self addChild:tutorialLabel2];
-        
-        CCLabelTTF *tutorialLabel3 = [CCLabelTTF labelWithString:@"Won't Always Be The Same" fontName:@"Baskerville-Bold" fontSize:20];
-        tutorialLabel3.position = ccp(160, 240);
-        tutorialLabel3.color = ccRED;
-        [self addChild:tutorialLabel3];
+        redCircle2 = [CCSprite spriteWithFile:@"red circle.png"];
+        redCircle2.position = ccp(100,80);
+        [self addChild:redCircle2];
     }
 }
 
@@ -829,6 +752,45 @@ int leveltag = 0;
 -(void) resetCounter:(id)sender
 {
     updateCounter = 0;
+}
+
+-(void) nextTutorial:(id)sender
+{
+    tutorialCounter++;
+    if (tutorialCounter==2)
+    {
+        [self removeChild:tutorialArrow cleanup:YES];
+        
+        tutorialArrow = [CCSprite spriteWithFile:@"tutorial2.png"];
+        tutorialArrow.position = ccp(130,230);
+        [self addChild:tutorialArrow];
+        
+        redCircle2.position = ccp(160,80);
+    }
+    
+    if (tutorialCounter==3)
+    {
+        [self removeChild:tutorialArrow cleanup:YES];
+        
+        tutorialArrow = [CCSprite spriteWithFile:@"redArrow.png"];
+        tutorialArrow.position = ccp(130,230);
+        [self addChild:tutorialArrow];
+        
+        redCircle.position = ccp(100,240);
+        redCircle2.position = ccp(160,240);
+    }
+    
+    if (tutorialCounter==4)
+    {
+        [self removeChild:tutorialArrow cleanup:YES];
+        [self removeChild:redCircle cleanup:YES];
+        [self removeChild:redCircle2 cleanup:YES];
+        [tempMenu removeChild:tutorialButton cleanup:YES];
+        
+        CCSprite* purpleOval = [CCSprite spriteWithFile:@"purple oval.png"];
+        purpleOval.position = ccp(160,415);
+        [self addChild:purpleOval];
+    }
 }
 
 -(void) update:(ccTime)delta

@@ -90,6 +90,11 @@
     CCLabelTTF *timeLabel;
     
     int updateCounter;
+    int tutorialCounter;
+    
+    CCSprite *tutorialArrow;
+    CCSprite *redCircle;
+    CCSprite *redCircle2;
 }
 
 +(id) showLevel: (int) i;
@@ -118,6 +123,7 @@
 -(void) buildGame:(NSDictionary *) nextLevel;
 
 -(void) resetCounter:(id) sender;
+-(void) nextTutorial:(id) sender;
 
 @property (nonatomic, copy) NSString* helloWorldString;
 @property (nonatomic, copy) NSString* helloWorldFontName;
