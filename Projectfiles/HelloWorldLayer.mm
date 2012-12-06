@@ -986,6 +986,13 @@ int leveltag = 0;
                 flashingCounter++;
             }
             
+            if (leveltag == 1 && tutorialCounter == 3)
+            {
+                if ([endpoints count]>[startlines count])
+                {
+                    [self nextTutorial:self];
+                }
+            }
             
             KKInput *input = [KKInput sharedInput];
 
@@ -1050,10 +1057,12 @@ int leveltag = 0;
                     KKSwipeGestureDirection direction = [input gestureSwipeDirection];
                     if (direction == KKSwipeGestureDirectionLeft && (int)blah.x > 60)
                     {
+                        /*
                         if(leveltag == 1 && tutorialCounter == 3 && blah.x == 160)
                         {
                             [self nextTutorial:self];
                         }
+                        */
                         
                         blah2 = ccp(blah.x-60, blah.y);
                         NSString *point2 = NSStringFromCGPoint(blah2);
@@ -1070,10 +1079,12 @@ int leveltag = 0;
                     }
                     else if (direction == KKSwipeGestureDirectionRight && (int)blah.x < 260)
                     {
+                        /*
                         if (leveltag == 1 && tutorialCounter == 3 && blah.x == 100)
                         {
                             [self nextTutorial:self];
                         }
+                        */
                         
                         blah2 = ccp(blah.x+60, blah.y);
                         NSString *point2 = NSStringFromCGPoint(blah2);
