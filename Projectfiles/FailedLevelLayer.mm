@@ -22,6 +22,7 @@ int failedtag = 0;
     self = [super init];
     {
         [self setupMenus];
+		[MGWU logEvent:@"level_failed" withParams:@{@"level":[NSNumber numberWithInt:failedtag]}];
     }
     return self;
 }

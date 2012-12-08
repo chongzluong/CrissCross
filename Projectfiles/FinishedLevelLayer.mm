@@ -24,6 +24,7 @@ int score = 0;
     self= [super init];
     {
         [self setUpMenus];
+		[MGWU logEvent:@"level_completed" withParams:@{@"level":[NSNumber numberWithInt:finishedtag]}];
     }
     return self;
 }
