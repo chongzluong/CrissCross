@@ -12,7 +12,17 @@
 -(void) initializationComplete
 {
     [MGWU loadMGWU:@"rLaserman"];
+	
     [MGWU preFacebook]; //Temporarily disables Facebook until you integrate it later
+	
+	[MGWU setReminderMessage:@"Come back and play Criss Cross!"];
+	
+	[MGWU setTapjoyAppId: @"11c2c6b4-aac4-45d9-9c2f-9adbca3b8e6a" andSecretKey:@"dKV7TO6G6K3YkuEj0ehk"];
+    
+    [MGWU useCrashlytics];
+    
+    [MGWU setAppiraterAppId:@"585867897" andAppName:@"Criss Cross"];
+	
 #ifdef KK_ARC_ENABLED
 	CCLOG(@"ARC is enabled");
 #else
@@ -29,7 +39,7 @@
 {
 	return nil;
 }
-/*
+
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)tokenId
 {
 	[MGWU registerForPush:tokenId];
@@ -45,5 +55,13 @@
 {
     [MGWU failedPush:error];
 }
-*/
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    // attempt to extract a token from the url
+    return [MGWU handleURL:url];
+}
+
 @end

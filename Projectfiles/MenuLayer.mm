@@ -59,27 +59,28 @@
     */
     
     CCMenuItem *menuItem1 = [CCMenuItemImage itemFromNormalImage:@"play.png" selectedImage:@"play2.png" target:self selector:@selector(difficultyButtons:)];
-    menuItem1.position = ccp(160, 200);
+    menuItem1.position = ccp(160, 230);
     menuItem1.tag = 1;
     
     CCMenuItem *menuItem2 = [CCMenuItemImage itemFromNormalImage:@"about.png" selectedImage:@"about2.png" target:self selector:@selector(about:)];
-    menuItem2.position = ccp(160, 120);
+    menuItem2.position = ccp(160, 150);
     menuItem2.tag = 2;
     
     CCMenuItem *menuItem3 = [CCMenuItemImage itemFromNormalImage:@"MoreGames.png" selectedImage:@"MoreGames2.png" target:self selector:@selector(moreGames:)];
-    menuItem3.position = ccp(160, 40);
+    menuItem3.position = ccp(160, 70);
     menuItem3.tag = 3;
     
     // Create a menu and add your menu items to it
 	myMenu = [CCMenu menuWithItems:menuItem1, menuItem2, menuItem3, nil];
     myMenu.position =CGPointZero;
-    
-    if (![MGWU isFacebookActive])
-    {
-        CCMenuItem *menuItem0 = [CCMenuItemImage itemFromNormalImage:@"FBLoginButton.png" selectedImage:@"FBLoginButtonPressed.png" target:self selector:@selector(fbLogin:)];
-        menuItem0.position = ccp(160, 280);
-        [myMenu addChild:menuItem0];
-    }
+   
+//Took out for v1
+//    if (![MGWU isFacebookActive])
+//    {
+//        CCMenuItem *menuItem0 = [CCMenuItemImage itemFromNormalImage:@"FBLoginButton.png" selectedImage:@"FBLoginButtonPressed.png" target:self selector:@selector(fbLogin:)];
+//        menuItem0.position = ccp(160, 280);
+//        [myMenu addChild:menuItem0];
+//    }
     
 	// Arrange the menu items vertically
 	//[myMenu alignItemsVertically];
