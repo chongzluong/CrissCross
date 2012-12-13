@@ -93,7 +93,7 @@
 -(void) difficultyButtons:(CCMenuItem *) menuItem
 {
     [myMenu removeAllChildrenWithCleanup:YES];
-    [self removeChild:myMenu cleanup:YES];
+ //   [self removeChild:myMenu cleanup:YES];
     
     CCMenuItem *menuItem1 = [CCMenuItemImage itemFromNormalImage:@"easy.png" selectedImage:@"easy2.png" target:self selector:@selector(startGame:)];
     menuItem1.position = ccp(160, 200);
@@ -111,10 +111,14 @@
     menuItem4.position = ccp(160, 280);
     menuItem4.tag = 3;
     
-    CCMenu *newMenu = [CCMenu menuWithItems:menuItem1, menuItem2, menuItem3, menuItem4, nil];
-    newMenu.position = CGPointZero;
+	[myMenu addChild:menuItem1];
+	[myMenu addChild:menuItem2];
+	[myMenu addChild:menuItem3];
+	[myMenu addChild:menuItem4];
+    //CCMenu *newMenu = [CCMenu menuWithItems:menuItem1, menuItem2, menuItem3, menuItem4, nil];
+   // newMenu.position = CGPointZero;
     
-    [self addChild:newMenu];
+   // [self addChild:newMenu];
 }
 
 -(void) about:(id)sender
