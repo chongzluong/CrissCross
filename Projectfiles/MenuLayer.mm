@@ -51,12 +51,27 @@
     background.position = ccp(160,240);
     [self addChild:background];
     
-    /*
-    //Create menu buttons
-    CCMenuItem *menuItem0 = [CCMenuItemImage itemFromNormalImage:@"beginnerbutton.png" selectedImage:@"beginnerbuttonselect.png" target:self selector:@selector(startTutorial:)];
-    menuItem0.position = ccp(160, 280);
-    menuItem0.tag = 0;
-    */
+    NSString *username = [MGWU objectForKey:[NSString stringWithFormat:@"username"]];
+    
+    //Lets the user input the name to go along with their high score
+    inputter = [[UITextField alloc] initWithFrame:CGRectMake(40, 160, 240, 30)];
+    inputter.borderStyle = UITextBorderStyleRoundedRect;
+    inputter.font = [UIFont systemFontOfSize:14.0];
+    inputter.placeholder = @"Enter a Username to Submit Scores!";
+    inputter.backgroundColor = [UIColor whiteColor];
+    inputter.keyboardType = UIKeyboardTypeDefault;
+    inputter.returnKeyType = UIReturnKeyDone;
+    inputter.clearButtonMode = UITextFieldViewModeWhileEditing;
+    inputter.textColor = [UIColor blackColor];
+    [inputter setBorderStyle:UITextBorderStyleLine];
+    inputter.delegate = self;
+    
+    [[[CCDirector sharedDirector] openGLView] addSubview:inputter];
+    
+    if (username)
+    {
+        inputter.placeholder = [NSString stringWithFormat:@"Current Username: %@",username];
+    }
     
     CCMenuItem *menuItem1 = [CCMenuItemImage itemFromNormalImage:@"play.png" selectedImage:@"play2.png" target:self selector:@selector(difficultyButtons:)];
     menuItem1.position = ccp(160, 230);
@@ -92,6 +107,7 @@
 
 -(void) difficultyButtons:(CCMenuItem *) menuItem
 {
+    [inputter removeFromSuperview];
     [myMenu removeAllChildrenWithCleanup:YES];
  //   [self removeChild:myMenu cleanup:YES];
     
@@ -119,6 +135,18 @@
    // newMenu.position = CGPointZero;
     
    // [self addChild:newMenu];
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    
+    [MGWU setObject:inputter.text forKey:[NSString stringWithFormat:@"username"]];
+    
+    [textField removeFromSuperview];
+    
+    return YES;
+    
 }
 
 -(void) about:(id)sender
@@ -154,13 +182,14 @@
 
 -(void) highScores: (CCMenuItem *) menuItem
 {
-    [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:@"Fragments.mp3"];
-    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Fragments.mp3" loop:TRUE];
+    [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:@"Pulse.mp3"];
+    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Pulse.mp3" loop:TRUE];
     [[CCDirector sharedDirector] replaceScene:[HighScoreMenu scene]];
 }
 
 -(void) fbLogin:(id) sender
 {
+    [inputter removeFromSuperview];
     [MGWU loginToFacebook];
     [MGWU likeAppWithPageId:@"128509683968807"];
 }

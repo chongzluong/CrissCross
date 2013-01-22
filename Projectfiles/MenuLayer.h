@@ -16,10 +16,11 @@ enum
  };
 
 
-@interface MenuLayer : CCLayer
+@interface MenuLayer : CCLayer <UITextFieldDelegate>
 {
     CCSprite *background;
     CCMenu *myMenu;
+    UITextField *inputter;
 }
 
 +(id) scene;

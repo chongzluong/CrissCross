@@ -224,20 +224,29 @@ int score = 0;
         }
         else
         {
+            NSString *username = [MGWU objectForKey:@"username"];
+            
             //Lets the user input the name to go along with their high score
             inputter = [[UITextField alloc] initWithFrame:CGRectMake(40, 100, 240, 30)];
             inputter.borderStyle = UITextBorderStyleRoundedRect;
             inputter.font = [UIFont systemFontOfSize:14.0];
-            inputter.placeholder = @"Enter A Name to Submit Your Score!";
-            inputter.backgroundColor = [UIColor blackColor];
+            inputter.placeholder = @"Enter to Change Your Username!";
+            inputter.backgroundColor = [UIColor whiteColor];
             inputter.keyboardType = UIKeyboardTypeDefault;
             inputter.returnKeyType = UIReturnKeyDone;
             inputter.clearButtonMode = UITextFieldViewModeWhileEditing;
-            inputter.textColor = [UIColor blueColor];
+            inputter.textColor = [UIColor blackColor];
             [inputter setBorderStyle:UITextBorderStyleLine];
             inputter.delegate = self;
             
             [[[CCDirector sharedDirector] openGLView] addSubview:inputter];
+            
+            if (username)
+            {
+                [MGWU submitHighScore:-(score) byPlayer:username forLeaderboard:[NSString stringWithFormat:@"Level%iHighScores",levelCompleted]];
+                inputter.placeholder = [NSString stringWithFormat:@"Current Username: %@",username]; 
+            }
+            
         }
     }
     
@@ -312,6 +321,8 @@ int score = 0;
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
+    
+    [MGWU setObject:inputter.text forKey:[NSString stringWithFormat:@"username"]];
     
     [MGWU submitHighScore:-(score) byPlayer:inputter.text forLeaderboard:[NSString stringWithFormat:@"Level%iHighScores",levelCompleted]];
     [textField removeFromSuperview];

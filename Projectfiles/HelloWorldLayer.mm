@@ -10,7 +10,6 @@
 #import "HelloWorldLayer.h"
 #import "SimpleAudioEngine.h"
 #import "FinishedLevelLayer.h"
-#import "FailedLevelLayer.h"
 #define d(p1x, p1y, p2x, p2y) sqrt((p1x - p2x) * (p1x - p2x) + (p1y - p2y) * (p1y - p2y))
 
 int leveltag = 0;
@@ -574,13 +573,13 @@ int leveltag = 0;
     [tutorialButton removeFromParentAndCleanup:YES];
 }
 
-/*
--(void)endTutorial2:(CCMenuItem *) menuItem
+-(void)failedLevel:(CCMenuItem *) menuItem
 {
     startCounter = 0;
-    [tutorialButton2 removeFromParentAndCleanup:YES];
+    [self restartGame:self];
+    [tempMenu removeChild:failedButton cleanup:YES];
 }
-*/
+
 
 -(void) goHome:(CCMenuItem *) menuItem
 {
@@ -946,7 +945,15 @@ int leveltag = 0;
             }
             else if (tempColor.position.y == 80.0 && !CGPointEqualToPoint(tempColor.position, tempPlug.position))
             {
-                [[CCDirector sharedDirector] replaceScene:[FailedLevelLayer showLevel:leveltag]];
+                if (startCounter != 3)
+                {
+                    startCounter = 3;
+                    failedButton = [CCMenuItemImage itemFromNormalImage:@"WrongPorts.png" selectedImage:@"WrongPorts2.png" target:self selector:@selector(failedLevel:)];
+                    failedButton.position = ccp(150, 240);
+                    [tempMenu addChild:failedButton];
+                    
+                    [MGWU logEvent:@"level_failed" withParams:@{@"level":[NSNumber numberWithInt:leveltag]}];
+                }
             }
         }
         
