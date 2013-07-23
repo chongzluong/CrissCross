@@ -1,0 +1,477 @@
+{
+    "xcode_project": "Criss Cross.xcodeproj", 
+    "sources": [
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "Projectfiles/AppDelegate.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "Projectfiles/main.m", 
+            "flags": [], 
+            "defines": {}
+        }
+    ], 
+    "infoplists": [
+        "./Projectfiles-Mac/Resources/Info.plist"
+    ], 
+    "libs": [
+        "z", 
+        "stdc++", 
+        "chipmunk-spacemanager-mac", 
+        "cocos2d-extensions-mac", 
+        "cocosdenshion-mac", 
+        "box2d-mac", 
+        "chipmunk-mac", 
+        "cocos2d-mac", 
+        "kobold2d-mac"
+    ], 
+    "defines": {
+        "NS_BLOCK_ASSERTIONS": 1, 
+        "RELEASE": 1, 
+        "NDEBUG": 1, 
+        "NO_LOG_MACROS": 1
+    }, 
+    "pchs": [
+        "./Projectfiles/Prefix-Mac.pch"
+    ], 
+    "assets": [
+        {
+            "asset": "Projectfiles-Mac/Resources/English.lproj/MainMenu.xib", 
+            "target": null
+        }, 
+        {
+            "asset": "Projectfiles-Mac/Resources/fps_images.png", 
+            "target": "fps_images.png"
+        }, 
+        {
+            "asset": "Projectfiles/Resources/config.lua", 
+            "target": "config.lua"
+        }, 
+        {
+            "asset": "Projectfiles-Mac/Resources/English.lproj/InfoPlist.strings", 
+            "target": "English.lproj/InfoPlist.strings"
+        }
+    ], 
+    "type": "app", 
+    "header_paths": [
+        {
+            "type": "iquote", 
+            "header_path": "Criss Cross-Mac-generated-files.hmap", 
+            "hmap": {}
+        }, 
+        {
+            "type": "I", 
+            "header_path": "Criss Cross-Mac-own-target-headers.hmap", 
+            "hmap": {}
+        }, 
+        {
+            "type": "I", 
+            "header_path": "Criss Cross-Mac-all-target-headers.hmap", 
+            "hmap": {}
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "Criss Cross-Mac-project-headers.hmap", 
+            "hmap": {
+                "AppDelegate.h": {
+                    "prefix": "Projectfiles/", 
+                    "suffix": "AppDelegate.h", 
+                    "key": "AppDelegate.h"
+                }, 
+                "LvlMenuLayer2.h": {
+                    "prefix": "Projectfiles/", 
+                    "suffix": "LvlMenuLayer2.h", 
+                    "key": "LvlMenuLayer2.h"
+                }, 
+                "Prefix-Mac.pch": {
+                    "prefix": "Projectfiles/", 
+                    "suffix": "Prefix-Mac.pch", 
+                    "key": "Prefix-Mac.pch"
+                }, 
+                "MenuLayer.h": {
+                    "prefix": "Projectfiles/", 
+                    "suffix": "MenuLayer.h", 
+                    "key": "MenuLayer.h"
+                }, 
+                "HighScoreMenu.h": {
+                    "prefix": "Projectfiles/", 
+                    "suffix": "HighScoreMenu.h", 
+                    "key": "HighScoreMenu.h"
+                }, 
+                "HighScoreLayer2.h": {
+                    "prefix": "Projectfiles/", 
+                    "suffix": "HighScoreLayer2.h", 
+                    "key": "HighScoreLayer2.h"
+                }, 
+                "HighScoreLayer.h": {
+                    "prefix": "Projectfiles/", 
+                    "suffix": "HighScoreLayer.h", 
+                    "key": "HighScoreLayer.h"
+                }, 
+                "LvlMenuLayer3.h": {
+                    "prefix": "Projectfiles/", 
+                    "suffix": "LvlMenuLayer3.h", 
+                    "key": "LvlMenuLayer3.h"
+                }, 
+                "FinishedLevelLayer.h": {
+                    "prefix": "Projectfiles/", 
+                    "suffix": "FinishedLevelLayer.h", 
+                    "key": "FinishedLevelLayer.h"
+                }, 
+                "LvlMenuLayer.h": {
+                    "prefix": "Projectfiles/", 
+                    "suffix": "LvlMenuLayer.h", 
+                    "key": "LvlMenuLayer.h"
+                }, 
+                "HelloWorldLayer.h": {
+                    "prefix": "Projectfiles/", 
+                    "suffix": "HelloWorldLayer.h", 
+                    "key": "HelloWorldLayer.h"
+                }, 
+                "Prefix-iOS.pch": {
+                    "prefix": "Projectfiles/", 
+                    "suffix": "Prefix-iOS.pch", 
+                    "key": "Prefix-iOS.pch"
+                }, 
+                "HighScoreMenu2.h": {
+                    "prefix": "Projectfiles/", 
+                    "suffix": "HighScoreMenu2.h", 
+                    "key": "HighScoreMenu2.h"
+                }
+            }
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/kobold2d"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/koboldscript/nodes"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/kobold2d/cocos2d-ext"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/koboldscript"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/koboldscript/actions"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/koboldscript/conditions"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/koboldscript/statemachine"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/koboldscript/variables"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/koboldscript/wrapper"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/koboldscript/scriptnodes"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/koboldscript/nodeabilities"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/koboldscript/nodebehaviors"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/Chipmunk-SpaceManager/src"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/Chipmunk-SpaceManager/src/cpSpaceSerializer"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/Chipmunk-SpaceManager/src/ccExtras"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/Chipmunk-SpaceManager/src/cpExtras"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/Chipmunk-SpaceManager/src/PhysicsEditorExtras"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Platforms"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Platforms/iOS"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Platforms/Mac"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Support"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCBigImage"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCLayerPanZoom"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCMenuAdvanced"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCMenuItemSpriteIndependent"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCScrollLayer"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCSendMessages"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCSlider"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCVideoPlayer"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCVideoPlayer/iOS"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCVideoPlayer/Mac"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/FilesDownloader"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/TMXGenerator"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos3d/cocos3d/cc3Extras"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos3d/cocos3d/cc3PVR"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos3d/cocos3d/CCNodeController"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos3d/cocos3d/cocos3d"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos3d/cocos3d/cocos3d/OpenGLES11"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos3d/cocos3d/cocos3d/Utility"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos3d/cocos3d/cc3PVR/PVRT 2.08"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos3d/cocos3d/cc3PVR/PVRT 2.08/OGLES"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos2d-iphone/CocosDenshion"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/Chipmunk/include/chipmunk"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/Actions"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/AudioTrack"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/OpenAL"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/Session"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/Support"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/VTPG"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/Lua/src"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/SneakyInput/Classes"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/kobold2d/sneaky-ext"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/bitarray_c"
+        }, 
+        {
+            "type": "iquote", 
+            "header_path": "../__Kobold2D__/libs/cocos2d-iphone/external/kazmath/include"
+        }, 
+        {
+            "type": "I", 
+            "header_path": "../__Kobold2D__/libs/Box2D"
+        }, 
+        {
+            "type": "I", 
+            "header_path": "../__Kobold2D__/libs/Box2D/Box2D"
+        }, 
+        {
+            "type": "I", 
+            "header_path": "../__Kobold2D__/libs/Box2D/Box2D/Rope"
+        }, 
+        {
+            "type": "I", 
+            "header_path": "../__Kobold2D__/libs/Box2D/Box2D/Collision"
+        }, 
+        {
+            "type": "I", 
+            "header_path": "../__Kobold2D__/libs/Box2D/Box2D/Collision/Shapes"
+        }, 
+        {
+            "type": "I", 
+            "header_path": "../__Kobold2D__/libs/Box2D/Box2D/Common"
+        }, 
+        {
+            "type": "I", 
+            "header_path": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics"
+        }, 
+        {
+            "type": "I", 
+            "header_path": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/Contacts"
+        }, 
+        {
+            "type": "I", 
+            "header_path": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/Joints"
+        }
+    ], 
+    "modules": [], 
+    "version": "1", 
+    "flags": [
+        "-DNS_BLOCK_ASSERTIONS=1", 
+        "-ffast-math", 
+        "-fwritable-strings", 
+        "-fasm-blocks", 
+        {
+            "flag": "-std=gnu99", 
+            "not_type": "c++"
+        }, 
+        {
+            "flag": "-fgnu-keywords", 
+            "not_type": "c++"
+        }, 
+        "-fno-asm", 
+        "-fno-exceptions", 
+        "-fno-rtti", 
+        "-fpascal-strings", 
+        "-Wshorten-64-to-32", 
+        "-Wno-deprecated-declarations", 
+        "-Wmissing-field-initializers", 
+        "-Wreturn-type", 
+        "-Wswitch", 
+        "-Wparentheses", 
+        "-Wsign-compare", 
+        "-Wformat", 
+        "-Wunused-value", 
+        "-Wunused-variable", 
+        {
+            "flag": "-Winvalid-offsetof", 
+            "type": "c++"
+        }, 
+        {
+            "flag": "-Wprotocol", 
+            "type": "objc"
+        }, 
+        {
+            "flag": "-Wundeclared-selector", 
+            "type": "objc"
+        }
+    ], 
+    "deps": [
+        "UIKit", 
+        "Foundation", 
+        "AudioToolbox", 
+        "OpenAL", 
+        "QuartzCore", 
+        "AppKit", 
+        "ApplicationServices", 
+        "Cocoa", 
+        "CoreAudio", 
+        "CoreAudioKit", 
+        "OpenGL", 
+        "QTKit"
+    ], 
+    "config": {
+        "APPLICATION_IDENTIFIER": "com.yourcompany.Criss_Cross_Mac", 
+        "TEMPLATE_VALUES": {
+            "MACOSX_DEPLOYMENT_TARGET": "10.7", 
+            "PRODUCT_NAME": "Criss Cross-Mac", 
+            "EXECUTABLE_NAME": "Criss Cross-Mac"
+        }, 
+        "LONG_VERSION": "1", 
+        "SHORT_VERSION": "1.0", 
+        "APPLICATION_NAME": "CrissCross-Mac", 
+        "APPLICATION_FULL_NAME": "Criss Cross-Mac"
+    }
+}
