@@ -308,6 +308,7 @@ int leveltag = 0;
     { return pinklength;}
     if (k == 9)
     { return greenlength;}
+	return 0.0;
 }
 
 -(void) deleteLength:(int)k
@@ -335,6 +336,7 @@ int leveltag = 0;
     { return pinkdestination;}
     if (k == 9)
     { return greendestination;}
+	return CGPointZero;
 }
 
 -(float) smallestDistanceFromPoint:(CGPoint) point
@@ -585,6 +587,22 @@ int leveltag = 0;
 {
     [[CCDirector sharedDirector] replaceScene:[MenuLayer scene]];
 }
+
+#ifdef APPORTABLE
+-(void)androidBack
+{
+	[[CCDirector sharedDirector] replaceScene:[MenuLayer scene]];
+	
+	[MGWU logEvent:@"android_back_pressed"];
+}
+
+-(void)androidMenu
+{
+	[[CCDirector sharedDirector] replaceScene:[MenuLayer scene]];
+	
+	[MGWU logEvent:@"android_menu_pressed"];
+}
+#endif
 
 -(void) startGame: (CCMenuItem *) menuItem
 {
@@ -1003,7 +1021,7 @@ int leveltag = 0;
             
             KKInput *input = [KKInput sharedInput];
 
-            input.gestureSwipeEnabled = YES;
+           // input.gestureSwipeEnabled = YES;
             
             if ([input gestureSwipeRecognizedThisFrame])
             {
@@ -1169,15 +1187,18 @@ int leveltag = 0;
                     {
                         if (counter == 0) 
                         {
-                            [startpoints addObject: point];
-                            [points addObject: point];
-                            counter++;
-                            target = [CCSprite spriteWithFile:@"target.png"];
-                            target.position = blah;
-                            [self addChild:target];
-                            [[SimpleAudioEngine sharedEngine] playEffect:@"ConnectStart.wav"];
+							if (input.anyTouchBeganThisFrame)
+							{
+								[startpoints addObject: point];
+								[points addObject: point];
+								counter++;
+								target = [CCSprite spriteWithFile:@"target.png"];
+								target.position = blah;
+								[self addChild:target];
+								[[SimpleAudioEngine sharedEngine] playEffect:@"ConnectStart.wav"];
+							}
                         }
-                        else 
+                        else
                         {
                             
                             if (abs(

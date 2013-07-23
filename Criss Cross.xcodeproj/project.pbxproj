@@ -842,6 +842,149 @@
 		DCF95CD413A97EC500AE3B80 /* libkobold2d-mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF95CCB13A97EC500AE3B80 /* libkobold2d-mac.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		54C4E7661728446A002F2B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCECA97C13A90BF500788FBF;
+			remoteInfo = "cocos2d-ios";
+		};
+		54C4E7681728446A002F2B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCECA98813A90C2200788FBF;
+			remoteInfo = "cocos2d-mac";
+		};
+		54C4E76A1728446A002F2B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCDD4EE413A9126300EC4F3A;
+			remoteInfo = "wax-ios";
+		};
+		54C4E76C1728446A002F2B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCDD4EF013A9126B00EC4F3A;
+			remoteInfo = "wax-mac";
+		};
+		54C4E76E1728446A002F2B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCDD509213A9175B00EC4F3A;
+			remoteInfo = "kobold2d-ios";
+		};
+		54C4E7701728446A002F2B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCDD509E13A9176400EC4F3A;
+			remoteInfo = "kobold2d-mac";
+		};
+		54C4E7721728446A002F2B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCDD50F613A9195C00EC4F3A;
+			remoteInfo = "cocosdenshion-ios";
+		};
+		54C4E7741728446A002F2B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCDD510213A9196700EC4F3A;
+			remoteInfo = "cocosdenshion-mac";
+		};
+		54C4E7761728446A002F2B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCDD51F413A91B0900EC4F3A;
+			remoteInfo = "objectal-ios";
+		};
+		54C4E7781728446A002F2B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCDD527D13A91BC200EC4F3A;
+			remoteInfo = "box2d-ios";
+		};
+		54C4E77A1728446A002F2B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCDD528913A91BCB00EC4F3A;
+			remoteInfo = "box2d-mac";
+		};
+		54C4E77C1728446A002F2B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCCC3FB213A923F700EE6641;
+			remoteInfo = "chipmunk-ios";
+		};
+		54C4E77E1728446A002F2B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCCC3FBE13A9240100EE6641;
+			remoteInfo = "chipmunk-mac";
+		};
+		54C4E7801728446A002F2B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCCC40CF13A926A400EE6641;
+			remoteInfo = "chipmunk-spacemanager-ios";
+		};
+		54C4E7821728446A002F2B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCCC40DB13A926B100EE6641;
+			remoteInfo = "chipmunk-spacemanager-mac";
+		};
+		54C4E7841728446A002F2B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCA6154913A930F400D781D5;
+			remoteInfo = "cocos3d-ios";
+		};
+		54C4E7861728446A002F2B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCA617C313A935A500D781D5;
+			remoteInfo = "cocos2d-extensions-ios";
+		};
+		54C4E7881728446A002F2B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCA617CF13A935AF00D781D5;
+			remoteInfo = "cocos2d-extensions-mac";
+		};
+		54C4E78A1728446A002F2B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCA6184313A9399600D781D5;
+			remoteInfo = "sneakyinput-ios";
+		};
+		54C4E78C17284476002F2B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DCDD509113A9175B00EC4F3A;
+			remoteInfo = "kobold2d-ios";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		5441A10F1671CDA400F06158 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		5441A1101671CDA400F06158 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -897,6 +1040,7 @@
 		54C2655816B09E0000118231 /* send-button-inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send-button-inactive.png"; sourceTree = "<group>"; };
 		54C2655916B09E0000118231 /* send-button-instate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send-button-instate.png"; sourceTree = "<group>"; };
 		54C2655A16B09E0000118231 /* send-field-landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send-field-landscape.png"; sourceTree = "<group>"; };
+		54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Kobold2D-Libraries.xcodeproj"; path = "../__Kobold2D__/Kobold2D-Libraries.xcodeproj"; sourceTree = "<group>"; };
 		5702A696161EABD300F1AB5F /* VerticalLine-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "VerticalLine-hd.png"; path = "HD/GamePlay/VerticalLine-hd.png"; sourceTree = "<group>"; };
 		570DF17D166C18E40071047D /* YouBeatTheGame-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "YouBeatTheGame-hd.png"; path = "HD/Game Screen Overlays/YouBeatTheGame-hd.png"; sourceTree = "<group>"; };
 		570DF17E166C18E40071047D /* YouBeatTheGame2-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "YouBeatTheGame2-hd.png"; path = "HD/Game Screen Overlays/YouBeatTheGame2-hd.png"; sourceTree = "<group>"; };
@@ -1810,6 +1954,32 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		54C4E75117284468002F2B08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54C4E7671728446A002F2B08 /* libcocos2d-ios.a */,
+				54C4E7691728446A002F2B08 /* libcocos2d-mac.a */,
+				54C4E76B1728446A002F2B08 /* libwax-ios.a */,
+				54C4E76D1728446A002F2B08 /* libwax-mac.a */,
+				54C4E76F1728446A002F2B08 /* libkobold2d-ios.a */,
+				54C4E7711728446A002F2B08 /* libkobold2d-mac.a */,
+				54C4E7731728446A002F2B08 /* libcocosdenshion-ios.a */,
+				54C4E7751728446A002F2B08 /* libcocosdenshion-mac.a */,
+				54C4E7771728446A002F2B08 /* libobjectal-ios.a */,
+				54C4E7791728446A002F2B08 /* libbox2d-ios.a */,
+				54C4E77B1728446A002F2B08 /* libbox2d-mac.a */,
+				54C4E77D1728446A002F2B08 /* libchipmunk-ios.a */,
+				54C4E77F1728446A002F2B08 /* libchipmunk-mac.a */,
+				54C4E7811728446A002F2B08 /* libchipmunk-spacemanager-ios.a */,
+				54C4E7831728446A002F2B08 /* libchipmunk-spacemanager-mac.a */,
+				54C4E7851728446A002F2B08 /* libcocos3d-ios.a */,
+				54C4E7871728446A002F2B08 /* libcocos2d-extensions-ios.a */,
+				54C4E7891728446A002F2B08 /* libcocos2d-extensions-mac.a */,
+				54C4E78B1728446A002F2B08 /* libsneakyinput-ios.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		DC1BE68414F417CC00F49D25 /* ubuntu-font-family-0.80 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1869,6 +2039,7 @@
 		DCC1A0E613A94ED5005BD75D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */,
 				54C2652916B09E0000118231 /* mgwuSDK.embeddedframework */,
 			);
 			name = Frameworks;
@@ -2718,6 +2889,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				54C4E78D17284476002F2B08 /* PBXTargetDependency */,
 			);
 			name = "Criss Cross-iOS";
 			productName = "Hello-World-iOS";
@@ -2760,6 +2932,12 @@
 			mainGroup = DCC1A0D613A94EC0005BD75D;
 			productRefGroup = DCC1A0E413A94ED5005BD75D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 54C4E75117284468002F2B08 /* Products */;
+					ProjectRef = 54C4E75017284468002F2B08 /* Kobold2D-Libraries.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DCC1A0E213A94ED5005BD75D /* Criss Cross-iOS */,
@@ -2767,6 +2945,142 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		54C4E7671728446A002F2B08 /* libcocos2d-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcocos2d-ios.a";
+			remoteRef = 54C4E7661728446A002F2B08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		54C4E7691728446A002F2B08 /* libcocos2d-mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcocos2d-mac.a";
+			remoteRef = 54C4E7681728446A002F2B08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		54C4E76B1728446A002F2B08 /* libwax-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libwax-ios.a";
+			remoteRef = 54C4E76A1728446A002F2B08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		54C4E76D1728446A002F2B08 /* libwax-mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libwax-mac.a";
+			remoteRef = 54C4E76C1728446A002F2B08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		54C4E76F1728446A002F2B08 /* libkobold2d-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libkobold2d-ios.a";
+			remoteRef = 54C4E76E1728446A002F2B08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		54C4E7711728446A002F2B08 /* libkobold2d-mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libkobold2d-mac.a";
+			remoteRef = 54C4E7701728446A002F2B08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		54C4E7731728446A002F2B08 /* libcocosdenshion-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcocosdenshion-ios.a";
+			remoteRef = 54C4E7721728446A002F2B08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		54C4E7751728446A002F2B08 /* libcocosdenshion-mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcocosdenshion-mac.a";
+			remoteRef = 54C4E7741728446A002F2B08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		54C4E7771728446A002F2B08 /* libobjectal-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libobjectal-ios.a";
+			remoteRef = 54C4E7761728446A002F2B08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		54C4E7791728446A002F2B08 /* libbox2d-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libbox2d-ios.a";
+			remoteRef = 54C4E7781728446A002F2B08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		54C4E77B1728446A002F2B08 /* libbox2d-mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libbox2d-mac.a";
+			remoteRef = 54C4E77A1728446A002F2B08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		54C4E77D1728446A002F2B08 /* libchipmunk-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libchipmunk-ios.a";
+			remoteRef = 54C4E77C1728446A002F2B08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		54C4E77F1728446A002F2B08 /* libchipmunk-mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libchipmunk-mac.a";
+			remoteRef = 54C4E77E1728446A002F2B08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		54C4E7811728446A002F2B08 /* libchipmunk-spacemanager-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libchipmunk-spacemanager-ios.a";
+			remoteRef = 54C4E7801728446A002F2B08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		54C4E7831728446A002F2B08 /* libchipmunk-spacemanager-mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libchipmunk-spacemanager-mac.a";
+			remoteRef = 54C4E7821728446A002F2B08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		54C4E7851728446A002F2B08 /* libcocos3d-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcocos3d-ios.a";
+			remoteRef = 54C4E7841728446A002F2B08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		54C4E7871728446A002F2B08 /* libcocos2d-extensions-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcocos2d-extensions-ios.a";
+			remoteRef = 54C4E7861728446A002F2B08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		54C4E7891728446A002F2B08 /* libcocos2d-extensions-mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcocos2d-extensions-mac.a";
+			remoteRef = 54C4E7881728446A002F2B08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		54C4E78B1728446A002F2B08 /* libsneakyinput-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libsneakyinput-ios.a";
+			remoteRef = 54C4E78A1728446A002F2B08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DCC1A0E113A94ED5005BD75D /* Resources */ = {
@@ -3621,6 +3935,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54C4E78D17284476002F2B08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "kobold2d-ios";
+			targetProxy = 54C4E78C17284476002F2B08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DCC1A26713A94EE6005BD75D /* InfoPlist.strings */ = {

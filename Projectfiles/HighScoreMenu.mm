@@ -95,6 +95,21 @@
     [[CCDirector sharedDirector] replaceScene:[MenuLayer scene]];
 }
 
+#ifdef APPORTABLE
+-(void)androidBack
+{
+	[[CCDirector sharedDirector] replaceScene:[MenuLayer scene]];
+	
+	[MGWU logEvent:@"android_back_pressed"];
+}
+
+-(void)androidMenu
+{
+	[[CCDirector sharedDirector] replaceScene:[MenuLayer scene]];
+	
+	[MGWU logEvent:@"android_menu_pressed"];
+}
+#endif
 
 
 @end

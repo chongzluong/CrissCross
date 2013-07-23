@@ -348,4 +348,20 @@ int score = 0;
     [[CCDirector sharedDirector] replaceScene:[HighScoreLayer showLevel:finishedtag type:1]];
 }
 
+#ifdef APPORTABLE
+-(void)androidBack
+{
+	[[CCDirector sharedDirector] replaceScene:[MenuLayer scene]];
+	
+	[MGWU logEvent:@"android_back_pressed"];
+}
+
+-(void)androidMenu
+{
+	[[CCDirector sharedDirector] replaceScene:[MenuLayer scene]];
+	
+	[MGWU logEvent:@"android_menu_pressed"];
+}
+#endif
+
 @end

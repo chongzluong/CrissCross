@@ -14,6 +14,7 @@
 #import "LvlMenuLayer3.h"
 #import "HighScoreMenu.h"
 #import "HighScoreMenu2.h"
+#import "MenuLayer.h"
 
 int level = 0;
 int tempSomething2 = 0;
@@ -175,5 +176,21 @@ int tempSomething2 = 0;
         [self addChild:scoreLabel];
     }
 }
+
+#ifdef APPORTABLE
+-(void)androidBack
+{
+	[[CCDirector sharedDirector] replaceScene:[MenuLayer scene]];
+	
+	[MGWU logEvent:@"android_back_pressed"];
+}
+
+-(void)androidMenu
+{
+	[[CCDirector sharedDirector] replaceScene:[MenuLayer scene]];
+	
+	[MGWU logEvent:@"android_menu_pressed"];
+}
+#endif
 
 @end

@@ -151,7 +151,11 @@
 
 -(void) about:(id)sender
 {
-    [MGWU displayAboutPage];
+#ifdef APPORTABLE
+	[MGWU displayAboutMessage:@"Criss Cross was built by Timothy Luong!" andTitle:@"About Criss Cross"];
+#else
+	[MGWU displayAboutPage];
+#endif
 }
 
 -(void) moreGames:(id)sender
@@ -193,5 +197,12 @@
     [MGWU loginToFacebook];
     [MGWU likeAppWithPageId:@"128509683968807"];
 }
+
+#ifdef APPORTABLE
+-(void)androidBack
+{
+	exit(0);
+}
+#endif
 
 @end
